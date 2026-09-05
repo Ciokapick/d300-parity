@@ -17,7 +17,8 @@ oracle, and every case goes through both implementations.
 | identical end to end | **418 / 418** |
 | unexpected differences | **0** |
 | declared intentional deviations | 0 |
-| rules exercised by the corpus | 43 / 52 in `trace`, 52 / 52 with indirect evidence |
+| rules exercised by the corpus | 52 / 52 in `trace` |
+| XML accepted by ANAF's official validator (oracle 3) | 206 / 364, every refusal explained in [`docs/DUK.md`](docs/DUK.md) |
 | XML valid against the official XSD v12 | 359 / 364 (the 5 invalid ones are defect #14, faithfully reproduced) |
 | messages produced across the corpus | 918 |
 | unit tests | 849 green |
@@ -45,7 +46,7 @@ The runner was itself checked by injecting errors in all five comparison categor
 | parity harness | done: `harness/parity/run.mjs`, table above |
 | web interface | done: `src/ui/`, `src/store/`, see [`docs/UI.md`](docs/UI.md) |
 | confirm runtime assumptions A1 to A4 in Adobe Reader | pending, for the author |
-| publish on GitHub Pages | workflow ready in `.github/workflows/pages.yml`; the repository stays local by decision |
+| publish on GitHub Pages | live at [ciokapick.github.io/d300-parity](https://ciokapick.github.io/d300-parity/), deployed by `.github/workflows/pages.yml` on every push to `main`; `?caz=sample-01&valideaza` opens a corpus case validated |
 
 `npm run typecheck`, `npm run lint` and `npm run build` are clean.
 
@@ -97,6 +98,8 @@ legacy/extracted/   what extract_legacy.py pulls out: XFA packets, every script,
 harness/            extraction, generators, XSD validation
 harness/oracle/     legacy-runtime.mjs (the original code in Node), cases/, golden/, generate.mjs
 harness/parity/     run.mjs (both implementations, one table), expected.json, parity.json, xsd.py
+harness/duk/        run.mjs, ANAF's official Java validator on every XML (npm run duk), duk.json
+harness/reader/     make-xdp.mjs + compare.mjs, the Adobe Reader check of the runtime assumptions
 
 src/domain/         the new implementation: rules/registry.ts (the spec), fields.ts and rows.ts
                     (generated), engine.ts (the execution order), and one module per event kind
@@ -104,9 +107,9 @@ src/store/          form.ts, the single point where the interface touches the do
 src/ui/             the screens: sections, totals panel, message journal, FieldInput, display.ts
 tests/              Vitest, over the golden files and the rule registry
 
-docs/               PLAN.md, INVENTAR-LEGACY.md, PARITATE.md (generated), DIFERENTE.md,
-                    UI.md, STUDIU-DE-CAZ.md
-.github/workflows/  pages.yml, the GitHub Pages build, ready but not yet used
+docs/               PLAN.md, INVENTAR-LEGACY.md, PARITATE.md (generated), DUK.md, DIFERENTE.md,
+                    UI.md, STUDIU-DE-CAZ.md, ARTICOL.md
+.github/workflows/  pages.yml, the GitHub Pages build and deploy
 ```
 
 ## Method
