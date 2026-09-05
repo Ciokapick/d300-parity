@@ -1,0 +1,23 @@
+{
+  "name": "pro-01-peste-100",
+  "descriere": "Pro-rata in afara intervalului 0-100 (150): singurul script de validare ramas activ o readuce la 100.",
+  "inputs": [
+    ["form1.Antet.metaDate.an_r","2026"],
+    ["form1.Antet.metaDate.tipDecont","L"],
+    ["form1.Antet.metaDate.luna_r","3"],
+    ["form1.identifCntr.denumire.cif","{{CUI}}"],
+    ["form1.identifCntr.denumire.den","Exemplu Software SRL"],
+    ["form1.identifCntr.adresa.judet","40"],
+    ["form1.identifCntr.adresa.sect","3"],
+    ["form1.identifCntr.adresa.str","Calea Victoriei"],
+    ["form1.identifCntr.adresa.nr","12"],
+    ["form1.identifCntr.adresa.codPst","030167"],
+    ["form1.identifCntr.banca.den","Banca Exemplu"],
+    ["form1.identifCntr.banca.iban","{{IBAN}}"],
+    ["form1.identifCntr.caen","6201"],
+    ["form1.identifCntr.proRata","150"],
+    ["form1.semnatura.nume","Popescu"],
+    ["form1.semnatura.prenume","Ion"],
+    ["form1.semnatura.smnFnc","Administrator"]
+  ]
+}

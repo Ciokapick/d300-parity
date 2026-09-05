@@ -1,0 +1,471 @@
+/* Fără framework CSS. Formularul e un document, nu o aplicație: fundal deschis,
+   o coloană de citit, panou lateral lipicios de la 1100 px în sus. */
+
+:root {
+  --text: #17202a;
+  --muted: #5b6672;
+  --line: #c9d2dc;
+  --line-soft: #e3e9ef;
+  --bg: #f4f6f9;
+  --paper: #ffffff;
+  --accent: #14486d;
+  --accent-text: #ffffff;
+  --bad: #a4262c;
+  --bad-bg: #fdeced;
+  --calc-bg: #eef2f6;
+  --focus: #0a6ebd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background: var(--bg);
+  font: 15px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 1px;
+}
+
+h1 {
+  margin: 0 0 0.4rem;
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.05rem;
+  letter-spacing: 0.01em;
+}
+
+h3 {
+  margin: 1.25rem 0 0.5rem;
+  font-size: 0.95rem;
+}
+
+a {
+  color: var(--accent);
+}
+
+/* ---------------------------------------------------------------- structură */
+
+.layout {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.main {
+  max-width: 1100px;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 1100px) {
+  .layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1100px) 340px;
+    gap: 1.5rem;
+    align-items: start;
+    max-width: 1500px;
+  }
+
+  .side {
+    position: sticky;
+    top: 1rem;
+    margin-top: 0;
+    max-height: calc(100vh - 2rem);
+    overflow-y: auto;
+  }
+}
+
+.card,
+.panel,
+.head {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.panel {
+  margin-bottom: 0;
+}
+
+/* -------------------------------------------------------------------- antet */
+
+.nota {
+  margin: 0 0 0.5rem;
+  color: var(--muted);
+  max-width: 70ch;
+}
+
+.linkuri {
+  margin: 0 0 0.75rem;
+}
+
+.linkuri a + a {
+  margin-left: 1rem;
+}
+
+.presets {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 0.75rem;
+  padding: 0.75rem 0;
+  border-top: 1px solid var(--line-soft);
+}
+
+.presets .field {
+  flex: 1 1 auto;
+  min-width: min(22rem, 100%);
+  max-width: 30rem;
+}
+
+.descriere {
+  flex-basis: 100%;
+  margin: 0;
+  color: var(--muted);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--line-soft);
+}
+
+.stampila {
+  margin-left: auto;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+
+button,
+.btn {
+  font: inherit;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--paper);
+  color: var(--text);
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+button:hover,
+.btn:hover {
+  border-color: var(--accent);
+}
+
+button.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-text);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+.btn.disabled {
+  color: var(--muted);
+  background: var(--calc-bg);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* ------------------------------------------------------------------ câmpuri */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 0.75rem 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.field.wide {
+  grid-column: span 2;
+}
+
+.field.indent {
+  margin: 0 0 0.5rem 1.6rem;
+  max-width: 26rem;
+}
+
+.field > span {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+abbr[title] {
+  color: var(--bad);
+  text-decoration: none;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+  font: inherit;
+  padding: 0.35rem 0.45rem;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: var(--paper);
+  color: var(--text);
+  width: 100%;
+  min-width: 0;
+}
+
+input[readonly] {
+  background: var(--calc-bg);
+  color: var(--muted);
+}
+
+select:disabled,
+input:disabled {
+  background: var(--calc-bg);
+  color: var(--muted);
+}
+
+input.num,
+.num,
+td .calc {
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+[aria-invalid="true"] {
+  border-color: var(--bad);
+  background: var(--bad-bg);
+}
+
+.calc {
+  display: block;
+  padding: 0.35rem 0.45rem;
+  background: var(--calc-bg);
+  border: 1px solid var(--line-soft);
+  border-radius: 3px;
+  color: var(--muted);
+  min-height: 1.9rem;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.calc.invalid {
+  border-color: var(--bad);
+  background: var(--bad-bg);
+  color: var(--text);
+}
+
+.bifa-set {
+  margin: 1rem 0 0;
+  border: 1px solid var(--line-soft);
+  border-radius: 4px;
+  padding: 0.75rem 1rem 1rem;
+}
+
+.bifa-set legend {
+  padding: 0 0.4rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.bifa {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.bifa input[type="checkbox"] {
+  margin-top: 0.2rem;
+}
+
+.bife {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bife li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.bifa-text {
+  flex: 1 1 22rem;
+}
+
+.radio-group {
+  display: inline-flex;
+  gap: 0.9rem;
+  white-space: nowrap;
+}
+
+.radio {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* ------------------------------------------------------------------- tabele */
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid var(--line-soft);
+  padding: 0.3rem 0.4rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+thead th {
+  background: var(--calc-bg);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+tbody th {
+  font-weight: 600;
+}
+
+.c-nr {
+  width: 4rem;
+  white-space: nowrap;
+}
+
+.c-val {
+  width: 9.5rem;
+}
+
+.c-label {
+  font-weight: 400;
+  min-width: 20rem;
+}
+
+/* ------------------------------------------------------------------- panouri */
+
+.totals {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.3rem 0.75rem;
+  margin: 0;
+}
+
+.totals dt {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.totals dd {
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.journal {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.msg {
+  border: 1px solid var(--line-soft);
+  border-left: 4px solid var(--line);
+  border-radius: 3px;
+  padding: 0.5rem 0.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.msg.alert,
+.msg.respins {
+  border-left-color: var(--bad);
+}
+
+.msg.messageBox {
+  border-left-color: var(--accent);
+}
+
+.msg-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 0.3rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.tag {
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+}
+
+.msg-title {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.msg-step {
+  margin-left: auto;
+}
+
+.msg-text,
+.erori {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font: inherit;
+}
+
+.erori {
+  border: 1px solid var(--line-soft);
+  background: var(--calc-bg);
+  padding: 0.6rem;
+  border-radius: 3px;
+}
+
+.highlighted {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--bad);
+}

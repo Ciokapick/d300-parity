@@ -1,0 +1,23 @@
+{
+  "name": "den-03-majuscule-fortate",
+  "descriere": "Scriptul de change forteaza majusculele pe denumire, banca, strada si nume declarant.",
+  "inputs": [
+    ["form1.Antet.metaDate.an_r","2026"],
+    ["form1.Antet.metaDate.tipDecont","L"],
+    ["form1.Antet.metaDate.luna_r","3"],
+    ["form1.identifCntr.denumire.cif","{{CUI}}"],
+    ["form1.identifCntr.denumire.den","exemplu software srl"],
+    ["form1.identifCntr.adresa.judet","40"],
+    ["form1.identifCntr.adresa.sect","3"],
+    ["form1.identifCntr.adresa.str","calea victoriei"],
+    ["form1.identifCntr.adresa.nr","12"],
+    ["form1.identifCntr.adresa.codPst","030167"],
+    ["form1.identifCntr.banca.den","banca exemplu"],
+    ["form1.identifCntr.banca.iban","{{IBAN}}"],
+    ["form1.identifCntr.caen","6201"],
+    ["form1.identifCntr.proRata","100"],
+    ["form1.semnatura.nume","popescu"],
+    ["form1.semnatura.prenume","ion"],
+    ["form1.semnatura.smnFnc","administrator"]
+  ]
+}

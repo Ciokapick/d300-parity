@@ -1,0 +1,29 @@
+{
+  "name": "calc-05-rd30-total-taxa-deductibila",
+  "descriere": "Calcul rd.30 (TOTAL TAXA DEDUCTIBILA) = rd.20-28 fara subranduri (FormCalc pe achizitiiIMP.r31).",
+  "inputs": [
+    ["form1.Antet.metaDate.an_r","2026"],
+    ["form1.Antet.metaDate.tipDecont","L"],
+    ["form1.Antet.metaDate.luna_r","3"],
+    ["form1.identifCntr.denumire.cif","{{CUI}}"],
+    ["form1.identifCntr.denumire.den","Exemplu Software SRL"],
+    ["form1.identifCntr.adresa.judet","40"],
+    ["form1.identifCntr.adresa.sect","3"],
+    ["form1.identifCntr.adresa.str","Calea Victoriei"],
+    ["form1.identifCntr.adresa.nr","12"],
+    ["form1.identifCntr.adresa.codPst","030167"],
+    ["form1.identifCntr.banca.den","Banca Exemplu"],
+    ["form1.identifCntr.banca.iban","{{IBAN}}"],
+    ["form1.identifCntr.caen","6201"],
+    ["form1.identifCntr.proRata","100"],
+    ["form1.date.comert.r5.c2","10000"],
+    ["form1.date.comert.r5.c3","2100"],
+    ["form1.date.achizitiiIMP.r24.c2","40000"],
+    ["form1.date.achizitiiIMP.r25.c2","20000"],
+    ["form1.date.achizitiiIMP.r28.c3","300"],
+    ["form1.date.achizitiiIMP.r29.c3","100"],
+    ["form1.semnatura.nume","Popescu"],
+    ["form1.semnatura.prenume","Ion"],
+    ["form1.semnatura.smnFnc","Administrator"]
+  ]
+}

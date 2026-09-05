@@ -1,0 +1,222 @@
+{
+ "data": "2026-09-04",
+ "sursa": {
+  "pdf": "D300_v12.0.2_12022026.pdf",
+  "xsd": "legacy/anaf/d300_v12_11022026.xml"
+ },
+ "comenzi": {
+  "genereaza": "node harness/oracle/generate.mjs --seed 1 --count 300 --out cases/gen",
+  "paritate": "npm run parity",
+  "paritateRegen": "npm run parity:regen"
+ },
+ "cazuri": {
+  "total": 418,
+  "manual": 118,
+  "generate": 300,
+  "cuXml": 364,
+  "cuErori": 27,
+  "opriteObligatorii": 27,
+  "mesajeTotal": 918,
+  "identice": 418
+ },
+ "diferente": {
+  "neasteptate": 0,
+  "asteptate": 0,
+  "listaNeasteptate": [],
+  "listaAsteptate": []
+ },
+ "acoperire": {
+  "live": 52,
+  "atinse": 43,
+  "neatinse": [
+   "xml.genXML",
+   "checksums.cui",
+   "checksums.cnp",
+   "checksums.cnpNif",
+   "checksums.iban",
+   "checksums.telefon",
+   "checksums.email",
+   "checksums.text",
+   "nrEvid.calcul"
+  ],
+  "neatinseDoarManual": [
+   "xml.genXML",
+   "checksums.cui",
+   "checksums.cnp",
+   "checksums.cnpNif",
+   "checksums.iban",
+   "checksums.telefon",
+   "checksums.email",
+   "checksums.text",
+   "nrEvid.calcul"
+  ],
+  "neatinseDoarGenerat": [
+   "change.uppercase",
+   "change.numeric.silent",
+   "change.numeric.alert",
+   "change.numeric.codPst",
+   "enter.loc.judet-intai",
+   "enter.temeiLegal.conditie",
+   "enter.cifS.conditie",
+   "exit.an.minim",
+   "exit.perioada.data",
+   "exit.temeiLegal.fortat",
+   "exit.caractere.setB",
+   "exit.caen.exclusiv",
+   "exit.r30.min",
+   "exit.nedeductibil.A",
+   "xml.genXML",
+   "checksums.cui",
+   "checksums.cnp",
+   "checksums.cnpNif",
+   "checksums.iban",
+   "checksums.telefon",
+   "checksums.email",
+   "checksums.text",
+   "nrEvid.calcul"
+  ],
+  "atinseManual": 43,
+  "atinseGenerat": 29,
+  "neatinseFaraInstrumentare": [
+   "xml.genXML",
+   "checksums.cui",
+   "checksums.cnp",
+   "checksums.cnpNif",
+   "checksums.iban",
+   "checksums.telefon",
+   "checksums.email",
+   "checksums.text",
+   "nrEvid.calcul"
+  ],
+  "neatinseCuInstrumentare": [],
+  "doveziIndirecte": [
+   {
+    "id": "xml.genXML",
+    "criteriu": "cazuri in care validForm a trecut si s-a generat D300.xml",
+    "manual": 107,
+    "gen": 257,
+    "total": 364,
+    "inTrace": false
+   },
+   {
+    "id": "nrEvid.calcul",
+    "criteriu": "cazuri in care Antet.nr_evid a iesit nenul (calc.nr_evid a apelat calculateRegistrationNumber)",
+    "manual": 115,
+    "gen": 300,
+    "total": 415,
+    "inTrace": false
+   },
+   {
+    "id": "checksums.cui",
+    "criteriu": "cazuri cu un cod de identificare nenul de cel mult 10 caractere (ramura isCUI din exit.cif.identificare)",
+    "manual": 112,
+    "gen": 300,
+    "total": 412,
+    "inTrace": false
+   },
+   {
+    "id": "checksums.cnpNif",
+    "criteriu": "cazuri cu un cod de identificare de 11-13 caractere (ramura isCnpNif)",
+    "manual": 4,
+    "gen": 0,
+    "total": 4,
+    "inTrace": false
+   },
+   {
+    "id": "checksums.cnp",
+    "criteriu": "cazuri cu un cod de 13 caractere care nu incepe cu 9 (isCnpNif deleaga spre isCNP)",
+    "manual": 2,
+    "gen": 0,
+    "total": 2,
+    "inTrace": false
+   },
+   {
+    "id": "checksums.iban",
+    "criteriu": "cazuri cu identifCntr.banca.iban nenul (exit.iban apeleaza isValidIBANNumber)",
+    "manual": 116,
+    "gen": 300,
+    "total": 416,
+    "inTrace": false
+   },
+   {
+    "id": "checksums.telefon",
+    "criteriu": "cazuri cu telefon sau fax nenul (regex-ul regTel e evaluat)",
+    "manual": 5,
+    "gen": 188,
+    "total": 193,
+    "inTrace": false
+   },
+   {
+    "id": "checksums.email",
+    "criteriu": "cazuri cu identifCntr.contact.email nenul (regex-ul de email e evaluat)",
+    "manual": 3,
+    "gen": 148,
+    "total": 151,
+    "inTrace": false
+   },
+   {
+    "id": "checksums.text",
+    "criteriu": "cazuri cu cel putin un camp text nenul supus trimSpaces / invalidChr",
+    "manual": 117,
+    "gen": 300,
+    "total": 417,
+    "inTrace": false
+   }
+  ],
+  "idNecunoscuteInTrace": [],
+  "moarte": [
+   {
+    "id": "change.ctrl-clears",
+    "source": "#44 #46 #87",
+    "when": "utilizatorul tine Ctrl apasat"
+   },
+   {
+    "id": "enter.r12.dead",
+    "source": "#150 #153 #155 #158",
+    "when": "comentat integral"
+   },
+   {
+    "id": "exit.dead",
+    "source": "#134 #135 #159 #160 #194",
+    "when": "comentat integral (corelatiile rd.7/7.1 si rd.17 eliminate in A11.0.5)"
+   },
+   {
+    "id": "validate.dead",
+    "source": "#145 #147 #204 #208 #210",
+    "when": "comentat integral (defect #7)"
+   }
+  ]
+ },
+ "xsd": {
+  "rulat": true,
+  "eroare": null,
+  "valide": 359,
+  "invalide": 5,
+  "faraXml": 54,
+  "invalidList": [
+   {
+    "case": "id-03-nif-valid-13-cifre",
+    "message": "Element '{mfp:anaf:dgti:d300:declaratie:v12}declaratie300', attribute 'cui': [facet 'pattern'] The value '9000000000015' is not accepted by the pattern '[1-9]\\d{1,9}'."
+   },
+   {
+    "case": "id-04-nif-invalid-13-cifre",
+    "message": "Element '{mfp:anaf:dgti:d300:declaratie:v12}declaratie300', attribute 'cui': [facet 'pattern'] The value '9000000000016' is not accepted by the pattern '[1-9]\\d{1,9}'."
+   },
+   {
+    "case": "id-09-cui-cu-zero-la-inceput",
+    "message": "Element '{mfp:anaf:dgti:d300:declaratie:v12}declaratie300', attribute 'cui': [facet 'pattern'] The value '01234567' is not accepted by the pattern '[1-9]\\d{1,9}'."
+   },
+   {
+    "case": "id-12-cnp-valid-13-cifre",
+    "message": "Element '{mfp:anaf:dgti:d300:declaratie:v12}declaratie300', attribute 'cui': [facet 'pattern'] The value '1800101221144' is not accepted by the pattern '[1-9]\\d{1,9}'."
+   },
+   {
+    "case": "id-13-cnp-31-februarie-trece",
+    "message": "Element '{mfp:anaf:dgti:d300:declaratie:v12}declaratie300', attribute 'cui': [facet 'pattern'] The value '1800231221144' is not accepted by the pattern '[1-9]\\d{1,9}'."
+   }
+  ],
+  "verdictDiferitOracolModel": []
+ },
+ "probleme": [],
+ "durataMs": 6587
+}

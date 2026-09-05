@@ -1,0 +1,27 @@
+{
+  "name": "bife-01-toate-da",
+  "descriere": "Cele patru bife de livrari (cereale, telefoane mobile, dispozitive, console) setate pe DA.",
+  "inputs": [
+    ["form1.Antet.metaDate.an_r","2026"],
+    ["form1.Antet.metaDate.tipDecont","L"],
+    ["form1.Antet.metaDate.luna_r","3"],
+    ["form1.identifCntr.denumire.cif","{{CUI}}"],
+    ["form1.identifCntr.denumire.den","Exemplu Software SRL"],
+    ["form1.identifCntr.adresa.judet","40"],
+    ["form1.identifCntr.adresa.sect","3"],
+    ["form1.identifCntr.adresa.str","Calea Victoriei"],
+    ["form1.identifCntr.adresa.nr","12"],
+    ["form1.identifCntr.adresa.codPst","030167"],
+    ["form1.identifCntr.banca.den","Banca Exemplu"],
+    ["form1.identifCntr.banca.iban","{{IBAN}}"],
+    ["form1.identifCntr.caen","6201"],
+    ["form1.identifCntr.proRata","100"],
+    ["form1.date.bife.caption.bifa_cereale","D"],
+    ["form1.date.bife.caption.bifa_mob","D"],
+    ["form1.date.bife.caption.bifa_disp","D"],
+    ["form1.date.bife.caption.bifa_cons","D"],
+    ["form1.semnatura.nume","Popescu"],
+    ["form1.semnatura.prenume","Ion"],
+    ["form1.semnatura.smnFnc","Administrator"]
+  ]
+}

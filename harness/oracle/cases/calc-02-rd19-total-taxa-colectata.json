@@ -1,0 +1,31 @@
+{
+  "name": "calc-02-rd19-total-taxa-colectata",
+  "descriere": "Calcul rd.19 (TOTAL TAXA COLECTATA) = suma rd.1-18, cu exceptia subrandurilor (FormCalc pe date.livrari.r19).",
+  "inputs": [
+    ["form1.Antet.metaDate.an_r","2026"],
+    ["form1.Antet.metaDate.tipDecont","L"],
+    ["form1.Antet.metaDate.luna_r","3"],
+    ["form1.identifCntr.denumire.cif","{{CUI}}"],
+    ["form1.identifCntr.denumire.den","Exemplu Software SRL"],
+    ["form1.identifCntr.adresa.judet","40"],
+    ["form1.identifCntr.adresa.sect","3"],
+    ["form1.identifCntr.adresa.str","Calea Victoriei"],
+    ["form1.identifCntr.adresa.nr","12"],
+    ["form1.identifCntr.adresa.codPst","030167"],
+    ["form1.identifCntr.banca.den","Banca Exemplu"],
+    ["form1.identifCntr.banca.iban","{{IBAN}}"],
+    ["form1.identifCntr.caen","6201"],
+    ["form1.identifCntr.proRata","100"],
+    ["form1.date.comert.r1.c2","10000"],
+    ["form1.date.comert.r5.c2","20000"],
+    ["form1.date.comert.r5.c3","4200"],
+    ["form1.date.livrari.r9.c2","100000"],
+    ["form1.date.livrari.r10.c2","50000"],
+    ["form1.date.livrari.r13.c2","7000"],
+    ["form1.date.livrari.r16.c2","3000"],
+    ["form1.date.livrari.r16.c3","630"],
+    ["form1.semnatura.nume","Popescu"],
+    ["form1.semnatura.prenume","Ion"],
+    ["form1.semnatura.smnFnc","Administrator"]
+  ]
+}

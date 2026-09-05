@@ -1,0 +1,22 @@
+{
+  "name": "sample-02-erori",
+  "descriere": "Caz negativ: an vechi, tip decont incompatibil cu luna, CUI si IBAN cu cifra de control gresita, email invalid, pro-rata peste 100, rambursare sub prag, rd.A < rd.A1, campuri obligatorii lipsa.",
+  "inputs": [
+    ["form1.Antet.metaDate.an_r","2023"],
+    ["form1.Antet.metaDate.tipDecont","T"],
+    ["form1.Antet.metaDate.luna_r","1"],
+    ["form1.identifCntr.denumire.cif","12345678"],
+    ["form1.identifCntr.adresa.judet","5"],
+    ["form1.identifCntr.adresa.loc","Oradea"],
+    ["form1.identifCntr.contact.email","fara-arond"],
+    ["form1.identifCntr.banca.iban","RO49AAAA1B31007593840001"],
+    ["form1.identifCntr.caen","6201"],
+    ["form1.identifCntr.proRata","150"],
+    ["form1.date.livrari.r9.c2","1000"],
+    ["form1.date.nedeductibil.r50_1.c2","500"],
+    ["form1.date.nedeductibil.r50.c2","100"],
+    ["form1.date.rambursare.bifa_rambursare","D"],
+    ["form1.semnatura.prenume","Ion"],
+    ["form1.semnatura.smnFnc","Administrator"]
+  ]
+}

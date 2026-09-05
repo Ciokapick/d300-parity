@@ -1,0 +1,25 @@
+{
+  "name": "calc-04-rd26-din-261-262",
+  "descriere": "Calcul rd.26 = rd.26.1 + rd.26.2, iar rd.26.1/26.2 oglindesc rd.12.1/12.2 (FormCalc pe achizitiiIMP.r27).",
+  "inputs": [
+    ["form1.Antet.metaDate.an_r","2026"],
+    ["form1.Antet.metaDate.tipDecont","L"],
+    ["form1.Antet.metaDate.luna_r","3"],
+    ["form1.identifCntr.denumire.cif","{{CUI}}"],
+    ["form1.identifCntr.denumire.den","Exemplu Software SRL"],
+    ["form1.identifCntr.adresa.judet","40"],
+    ["form1.identifCntr.adresa.sect","3"],
+    ["form1.identifCntr.adresa.str","Calea Victoriei"],
+    ["form1.identifCntr.adresa.nr","12"],
+    ["form1.identifCntr.adresa.codPst","030167"],
+    ["form1.identifCntr.banca.den","Banca Exemplu"],
+    ["form1.identifCntr.banca.iban","{{IBAN}}"],
+    ["form1.identifCntr.caen","6201"],
+    ["form1.identifCntr.proRata","100"],
+    ["form1.date.livrari.r12_1.c2","80000"],
+    ["form1.date.livrari.r12_2.c2","20000"],
+    ["form1.semnatura.nume","Popescu"],
+    ["form1.semnatura.prenume","Ion"],
+    ["form1.semnatura.smnFnc","Administrator"]
+  ]
+}

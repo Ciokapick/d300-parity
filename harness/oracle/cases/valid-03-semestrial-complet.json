@@ -1,0 +1,27 @@
+{
+  "name": "valid-03-semestrial-complet",
+  "descriere": "Decont semestrial complet valid, luna 12.",
+  "inputs": [
+    ["form1.Antet.metaDate.an_r","2026"],
+    ["form1.Antet.metaDate.tipDecont","S"],
+    ["form1.Antet.metaDate.luna_r","12"],
+    ["form1.identifCntr.denumire.cif","{{CUI}}"],
+    ["form1.identifCntr.denumire.den","Exemplu Software SRL"],
+    ["form1.identifCntr.adresa.judet","10"],
+    ["form1.identifCntr.adresa.loc","Constanta"],
+    ["form1.identifCntr.adresa.str","Calea Victoriei"],
+    ["form1.identifCntr.adresa.nr","12"],
+    ["form1.identifCntr.adresa.codPst","030167"],
+    ["form1.identifCntr.banca.den","Banca Exemplu"],
+    ["form1.identifCntr.banca.iban","{{IBAN}}"],
+    ["form1.identifCntr.caen","6201"],
+    ["form1.identifCntr.proRata","100"],
+    ["form1.date.livrari.r9.c2","90000"],
+    ["form1.date.livrari.r10.c2","10000"],
+    ["form1.date.achizitiiIMP.r24.c2","30000"],
+    ["form1.date.achizitiiIMP.r32.c3","6300"],
+    ["form1.semnatura.nume","Popescu"],
+    ["form1.semnatura.prenume","Ion"],
+    ["form1.semnatura.smnFnc","Administrator"]
+  ]
+}

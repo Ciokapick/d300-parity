@@ -1,0 +1,7 @@
+{
+  "name": "oblig-01-formular-aproape-gol",
+  "descriere": "Campuri obligatorii lipsa: doar tipul de decont completat, restul campurilor evidentiate cu rosu si niciun XML.",
+  "inputs": [
+    ["form1.Antet.metaDate.tipDecont","L"]
+  ]
+}

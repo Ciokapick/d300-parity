@@ -1,0 +1,21 @@
+{
+  "name": "jud-04-localitate-inainte-de-judet",
+  "descriere": "Localitatea completata inaintea judetului: mesaj de conditie prealabila, iar schimbarea judetului goleste localitatea.",
+  "inputs": [
+    ["form1.Antet.metaDate.an_r","2026"],
+    ["form1.Antet.metaDate.tipDecont","L"],
+    ["form1.Antet.metaDate.luna_r","3"],
+    ["form1.identifCntr.denumire.cif","{{CUI}}"],
+    ["form1.identifCntr.denumire.den","Exemplu Software SRL"],
+    ["form1.identifCntr.adresa.loc","Oradea"],
+    ["form1.identifCntr.adresa.judet","5"],
+    ["form1.identifCntr.adresa.loc","Oradea"],
+    ["form1.identifCntr.banca.den","Banca Exemplu"],
+    ["form1.identifCntr.banca.iban","{{IBAN}}"],
+    ["form1.identifCntr.caen","6201"],
+    ["form1.identifCntr.proRata","100"],
+    ["form1.semnatura.nume","Popescu"],
+    ["form1.semnatura.prenume","Ion"],
+    ["form1.semnatura.smnFnc","Administrator"]
+  ]
+}

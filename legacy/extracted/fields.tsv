@@ -1,0 +1,296 @@
+btnDoc.btnIstoric	button				Istoric versiuni
+btnDoc.btnHelp	button				Asistenta
+btnDoc.btnRpt	button				Raporteaza o problema tehnica
+btnDoc.btnValid	button				VALIDEAZA FORMULARUL
+btnDoc.btnList	button				LISTARE
+btnDoc.btnDebloc	button				DEBLOCARE FORMULAR
+btnDoc.btnZip	button				ATAȘEAZĂ ARHIVA
+btnDoc.btnWait	button				AȘTEPTAȚI UN MOMENT! Datele sunt verific
+btnDoc.btnSalt	button			Click pentru salt la butonul 'VALIDEAZA DATE PRIVIND ASOCIATII/ ADMINI	VALIDEAZĂ DATE PRIVIND ASOCIATII / ADMIN
+Antet.IdDoc.universalCode	textEdit		protected		
+Antet.IdDoc.formValid	textEdit		protected		
+Antet.IdDoc.sgn	signature		protected		Semnatura
+Antet.nr_evid	textEdit		readOnly	protected	Nr.de evidenţă a  plăţii
+Antet.opInterne.mtdSimplificata	checkButton			Formular rectificativ	Se aplica metoda simplificata pentru ope
+Antet.metaDate.an_r	textEdit	error		Anul	Anul (aaaa)
+Antet.metaDate.totalPlata_A	numericEdit		readOnly		Suma de control:
+Antet.metaDate.tipDecont	choiceList	error			Perioada de raportare
+Antet.metaDate.luna_r	choiceList	error			Luna
+Antet.metaDate.perioada.dataInceput	dateTimeEdit				Data inceput (zz.ll.aaaa)
+Antet.metaDate.perioada.dataSfarsit	dateTimeEdit				Data sfarsit (zz.ll.aaaa)
+Antet.metaDate.d_rez	checkButton			Formular rectificativ	Declaraţie depusă după anularea  rezerve
+Antet.metaDate.d_scc	checkButton			Formular rectificativ	Declarație depusă potrivit art.90 alin.(
+Antet.metaDate.d_rec	checkButton				Declaraţie rectificativă
+Antet.temeiLegal	choiceList			A.1. Denumire	Temeiul legal  (Lege 207/2015  privind C
+Antet.cifS	textEdit			A.2. Cod de identificare fiscală	Cod de identificare fiscală a succesorul
+Antet.d_reprezentant	checkButton				Decont consolidat de TVA, depus de repre
+identifCntr.denumire.den	textEdit	error		A.1. Denumire	A.1.Denumire
+identifCntr.denumire.cif	textEdit	error		A.2. Cod de identificare fiscală	A.2.Cod de identificare fiscală
+identifCntr.adresa.str	textEdit			B.4.Strada	A.3.Strada
+identifCntr.adresa.nr	textEdit			B.5.Numar	A.4.Număr
+identifCntr.adresa.loc	textEdit	error		B.3.Localitate	A.5.Localitate
+identifCntr.adresa.judet	choiceList	error		B.1.Judeţ	A.6.Judeţ
+identifCntr.adresa.sect	choiceList		readOnly	B.2.Sector	A.7.Sector
+identifCntr.adresa.bloc	textEdit			B.6.Bloc	A.8.Bloc
+identifCntr.adresa.scara	textEdit			B.7.Scara	A.9.Scara
+identifCntr.adresa.etaj	textEdit			B.8.Etaj	A.10.Etaj
+identifCntr.adresa.apt	textEdit			D.4.8.Apt.	A.11.Apt.
+identifCntr.adresa.codPst	textEdit			B.7.Scara	A.12.Cod postal
+identifCntr.contact.telefon	textEdit			B.2.Telefon	A.13.Telefon
+identifCntr.contact.fax	textEdit			B.3.Fax	A.14. Fax
+identifCntr.contact.email	textEdit			B.4.E-mail	A.15. E-mail
+identifCntr.banca.den	textEdit	error		A.1. Denumire	A.16.Banca
+identifCntr.banca.iban	textEdit	error		A.8.Cont bancar (IBAN)	A.17.Cont bancar (IBAN)
+identifCntr.caen	choiceList			Lista coduri CAEN	CAEN 2024
+identifCntr.caen1	choiceList			Lista coduri CAEN	CAEN 2025
+identifCntr.proRata	numericEdit	error			Pro-rata de deducere %
+date.comert.r1.nrCrt	textEdit		protected		
+date.comert.r1.c1	textEdit		protected		
+date.comert.r1.c2	numericEdit				
+date.comert.r1.c3	numericEdit		protected		
+date.comert.r2.nrCrt	textEdit		protected		
+date.comert.r2.c1	textEdit		protected		
+date.comert.r2.c2	numericEdit				
+date.comert.r2.c3	numericEdit		protected		
+date.comert.r3.nrCrt	textEdit		protected		
+date.comert.r3.c1	textEdit		protected		
+date.comert.r3.c2	numericEdit				
+date.comert.r3.c3	numericEdit		protected		
+date.comert.r3_1.nrCrt	textEdit		protected		
+date.comert.r3_1.c1	textEdit		protected		
+date.comert.r3_1.c2	numericEdit				
+date.comert.r3_1.c3	numericEdit		protected		
+date.comert.r4.nrCrt	textEdit		protected		
+date.comert.r4.c1	textEdit		protected		
+date.comert.r4.c2	numericEdit				
+date.comert.r4.c3	numericEdit		protected		
+date.comert.r5.nrCrt	textEdit		protected		
+date.comert.r5.c1	textEdit		protected		
+date.comert.r5.c2	numericEdit				
+date.comert.r5.c3	numericEdit				
+date.comert.r5_1.nrCrt	textEdit		protected		
+date.comert.r5_1.c1	textEdit		protected		
+date.comert.r5_1.c2	numericEdit				
+date.comert.r5_1.c3	numericEdit				
+date.comert.r6.nrCrt	textEdit		protected		
+date.comert.r6.c1	textEdit		protected		
+date.comert.r6.c2	numericEdit				
+date.comert.r6.c3	numericEdit				
+date.comert.r7.nrCrt	textEdit		protected		
+date.comert.r7.c1	textEdit		protected		
+date.comert.r7.c2	numericEdit				
+date.comert.r7.c3	numericEdit				
+date.comert.r7_1.nrCrt	textEdit		protected		
+date.comert.r7_1.c1	textEdit		protected		
+date.comert.r7_1.c2	numericEdit				
+date.comert.r7_1.c3	numericEdit				
+date.comert.r8.nrCrt	textEdit		protected		
+date.comert.r8.c1	textEdit		protected		
+date.comert.r8.c2	numericEdit				
+date.comert.r8.c3	numericEdit				
+date.livrari.r9.nrCrt	textEdit		protected		
+date.livrari.r9.c1	textEdit		protected		
+date.livrari.r9.c2	numericEdit				
+date.livrari.r9.c3	numericEdit			Rd.9 col.TVA	
+date.livrari.r10.nrCrt	textEdit		protected		
+date.livrari.r10.c1	textEdit		protected		
+date.livrari.r10.c2	numericEdit				
+date.livrari.r10.c3	numericEdit			Rd.10 col.TVA	
+date.livrari.r11.nrCrt	textEdit		protected		
+date.livrari.r11.c1	textEdit		protected		
+date.livrari.r11.c2	numericEdit				
+date.livrari.r11.c3	numericEdit			Rd.11 col.TVA	
+date.livrari.r12.nrCrt	textEdit		protected		
+date.livrari.r12.c1	textEdit		protected		
+date.livrari.r12.c2	numericEdit		readOnly	Rd.12 col.Valoare	
+date.livrari.r12.c3	numericEdit		readOnly	Rd.12 col.TVA	
+date.livrari.r12_1.nrCrt	textEdit		protected		
+date.livrari.r12_1.c1	textEdit		protected		
+date.livrari.r12_1.c2	numericEdit			Rd.12.3 col.Valoare	
+date.livrari.r12_1.c3	numericEdit			Rd.12.3 col.TVA	
+date.livrari.r12_2.nrCrt	textEdit		protected		
+date.livrari.r12_2.c1	textEdit		protected		
+date.livrari.r12_2.c2	numericEdit			Rd.12.3 col.Valoare	
+date.livrari.r12_2.c3	numericEdit			Rd.12.3 col.TVA	
+date.livrari.r13.nrCrt	textEdit		protected		
+date.livrari.r13.c1	textEdit		protected		
+date.livrari.r13.c2	numericEdit				
+date.livrari.r13.c3	numericEdit		protected		
+date.livrari.r14.nrCrt	textEdit		protected		
+date.livrari.r14.c1	textEdit		protected		
+date.livrari.r14.c2	numericEdit				
+date.livrari.r14.c3	numericEdit		protected		
+date.livrari.r15.nrCrt	textEdit		protected		
+date.livrari.r15.c1	textEdit		protected		
+date.livrari.r15.c2	numericEdit				
+date.livrari.r15.c3	numericEdit		protected		
+date.livrari.r16.nrCrt	textEdit		protected		
+date.livrari.r16.c1	textEdit		protected		
+date.livrari.r16.c2	numericEdit				
+date.livrari.r16.c3	numericEdit				
+date.livrari.r17.nrCrt	textEdit		protected		
+date.livrari.r17.c2	numericEdit				
+date.livrari.r17.c3	numericEdit				
+date.livrari.r18.nrCrt	textEdit		protected		
+date.livrari.r18.c2	numericEdit				
+date.livrari.r18.c3	numericEdit				
+date.livrari.r19.nrCrt	textEdit		protected		
+date.livrari.r19.c1	textEdit		protected		
+date.livrari.r19.c2	numericEdit		readOnly		
+date.livrari.r19.c3	numericEdit		readOnly		
+date.achizitiiRO.r20.nrCrt	textEdit		protected		
+date.achizitiiRO.r20.c1	textEdit		protected		
+date.achizitiiRO.r20.c2	numericEdit		readOnly		
+date.achizitiiRO.r20.c3	numericEdit		readOnly		
+date.achizitiiRO.r20_1.nrCrt	textEdit		protected		
+date.achizitiiRO.r20_1.c1	textEdit		protected		
+date.achizitiiRO.r20_1.c2	numericEdit		readOnly		
+date.achizitiiRO.r20_1.c3	numericEdit		readOnly		
+date.achizitiiRO.r21.nrCrt	textEdit		protected		
+date.achizitiiRO.r21.c1	textEdit		protected		
+date.achizitiiRO.r21.c2	numericEdit		readOnly		
+date.achizitiiRO.r21.c3	numericEdit		readOnly		
+date.achizitiiRO.r22.nrCrt	textEdit		protected		
+date.achizitiiRO.r22.c1	textEdit		protected		
+date.achizitiiRO.r22.c2	numericEdit		readOnly		
+date.achizitiiRO.r22.c3	numericEdit		readOnly		
+date.achizitiiRO.r22_1.nrCrt	textEdit		protected		
+date.achizitiiRO.r22_1.c1	textEdit		protected		
+date.achizitiiRO.r22_1.c2	numericEdit		readOnly		
+date.achizitiiRO.r22_1.c3	numericEdit		readOnly		
+date.achizitiiRO.r23.nrCrt	textEdit		protected		
+date.achizitiiRO.r23.c1	textEdit		protected		
+date.achizitiiRO.r23.c2	numericEdit		readOnly		
+date.achizitiiRO.r23.c3	numericEdit		readOnly		
+date.achizitiiIMP.r24.nrCrt	textEdit		protected		
+date.achizitiiIMP.r24.c1	textEdit		protected		
+date.achizitiiIMP.r24.c2	numericEdit				
+date.achizitiiIMP.r24.c3	numericEdit			Rd.24 col.TVA	
+date.achizitiiIMP.r25.nrCrt	textEdit		protected		
+date.achizitiiIMP.r25.c1	textEdit		protected		
+date.achizitiiIMP.r25.c2	numericEdit				
+date.achizitiiIMP.r25.c3	numericEdit			Rd.25 col.TVA	
+date.achizitiiIMP.r27.nrCrt	textEdit		protected		
+date.achizitiiIMP.r27.c1	textEdit		protected		
+date.achizitiiIMP.r27.c2	numericEdit		readOnly		
+date.achizitiiIMP.r27.c3	numericEdit		readOnly		
+date.achizitiiIMP.r27_1.nrCrt	textEdit		protected		
+date.achizitiiIMP.r27_1.c1	textEdit		protected		
+date.achizitiiIMP.r27_1.c2	numericEdit		readOnly		
+date.achizitiiIMP.r27_1.c3	numericEdit		readOnly		
+date.achizitiiIMP.r27_2.nrCrt	textEdit		protected		
+date.achizitiiIMP.r27_2.c1	textEdit		protected		
+date.achizitiiIMP.r27_2.c2	numericEdit		readOnly		
+date.achizitiiIMP.r27_2.c3	numericEdit		readOnly		
+date.achizitiiIMP.r28.nrCrt	textEdit		protected		
+date.achizitiiIMP.r28.c1	textEdit		protected		
+date.achizitiiIMP.r28.c2	numericEdit		protected		
+date.achizitiiIMP.r28.c3	numericEdit				
+date.achizitiiIMP.r29.nrCrt	textEdit		protected		
+date.achizitiiIMP.r29.c1	textEdit		protected		
+date.achizitiiIMP.r29.c2	numericEdit		protected		
+date.achizitiiIMP.r29.c3	numericEdit				
+date.achizitiiIMP.r30.nrCrt	textEdit		protected		
+date.achizitiiIMP.r30.c1	textEdit		protected		
+date.achizitiiIMP.r30.c2	numericEdit				
+date.achizitiiIMP.r30.c3	numericEdit		protected		
+date.achizitiiIMP.r30_1.nrCrt	textEdit		protected		
+date.achizitiiIMP.r30_1.c1	textEdit		protected		
+date.achizitiiIMP.r30_1.c2	numericEdit				
+date.achizitiiIMP.r30_1.c3	numericEdit		protected		
+date.achizitiiIMP.r31.nrCrt	textEdit		protected		
+date.achizitiiIMP.r31.c1	textEdit		protected		
+date.achizitiiIMP.r31.c2	numericEdit		readOnly		
+date.achizitiiIMP.r31.c3	numericEdit		readOnly		
+date.achizitiiIMP.r32.nrCrt	textEdit		protected		
+date.achizitiiIMP.r32.c1	textEdit		protected		
+date.achizitiiIMP.r32.c2	numericEdit		protected		
+date.achizitiiIMP.r32.c3	numericEdit				
+date.achizitiiIMP.r33.nrCrt	textEdit		protected		
+date.achizitiiIMP.r33.c1	textEdit		protected		
+date.achizitiiIMP.r33.c2	numericEdit		protected		
+date.achizitiiIMP.r33.c3	numericEdit				
+date.achizitiiIMP.r34.nrCrt	textEdit		protected		
+date.achizitiiIMP.r34.c1	textEdit		protected		
+date.achizitiiIMP.r34.c2	numericEdit				
+date.achizitiiIMP.r34.c3	numericEdit				
+date.achizitiiIMP.r35.nrCrt	textEdit		protected		
+date.achizitiiIMP.r35.c1	textEdit		protected		
+date.achizitiiIMP.r35.c2	numericEdit		protected		
+date.achizitiiIMP.r35.c3	numericEdit				
+date.achizitiiIMP.r36.nrCrt	textEdit		protected		
+date.achizitiiIMP.r36.c1	textEdit		protected		
+date.achizitiiIMP.r36.c2	numericEdit		protected		
+date.achizitiiIMP.r36.c3	numericEdit		readOnly		
+date.regularizari.r37.nrCrt	textEdit		protected		
+date.regularizari.r37.c1	textEdit		protected		
+date.regularizari.r37.c3	numericEdit		readOnly		
+date.regularizari.r38.nrCrt	textEdit		protected		
+date.regularizari.r38.c1	textEdit		protected		
+date.regularizari.r38.c3	numericEdit		readOnly		
+date.regularizari.r39.nrCrt	textEdit		protected		
+date.regularizari.r39.c1	textEdit		protected		
+date.regularizari.r39.c3	numericEdit				
+date.regularizari.r40.nrCrt	textEdit		protected		
+date.regularizari.r40.c1	textEdit		protected		
+date.regularizari.r40.c3	numericEdit				
+date.regularizari.r41.nrCrt	textEdit		protected		
+date.regularizari.r41.c1	textEdit		protected		
+date.regularizari.r41.c3	numericEdit		readOnly		
+date.regularizari.r42.nrCrt	textEdit		protected		
+date.regularizari.r42.c1	textEdit		protected		
+date.regularizari.r42.c3	numericEdit				
+date.regularizari.r43.nrCrt	textEdit		protected		
+date.regularizari.r43.c1	textEdit		protected		
+date.regularizari.r43.c3	numericEdit				
+date.regularizari.r44.nrCrt	textEdit		protected		
+date.regularizari.r44.c1	textEdit		protected		
+date.regularizari.r44.c3	numericEdit		readOnly		
+date.regularizari.r45.nrCrt	textEdit		protected		
+date.regularizari.r45.c1	textEdit		protected		
+date.regularizari.r45.c3	numericEdit		readOnly		
+date.regularizari.r46.nrCrt	textEdit		protected		
+date.regularizari.r46.c1	textEdit		protected		
+date.regularizari.r46.c3	numericEdit		readOnly		
+date.bife.caption.bifa_cereale.DA	checkButton				DA
+date.bife.caption.bifa_cereale.NU	checkButton				NU
+date.bife.caption.bifa_mob.DA	checkButton				DA
+date.bife.caption.bifa_mob.NU	checkButton				NU
+date.bife.caption.bifa_disp.DA	checkButton				DA
+date.bife.caption.bifa_disp.NU	checkButton				NU
+date.bife.caption.bifa_cons.DA	checkButton				DA
+date.bife.caption.bifa_cons.NU	checkButton				NU
+date.rambursare.bifa_rambursare.DA	checkButton				DA
+date.rambursare.bifa_rambursare.NU	checkButton				NU
+date.r47.c1	numericEdit				
+date.r47.c2	numericEdit				
+date.r47.c3	numericEdit				
+date.r48.c1	numericEdit				
+date.r48.c2	numericEdit				
+date.r48.c3	numericEdit				
+date.r49.c1	numericEdit				
+date.r49.c2	numericEdit				
+date.r49.c3	numericEdit				
+date.nedeductibil.r50.nrCrt	textEdit		protected		
+date.nedeductibil.r50.c1	textEdit		protected		
+date.nedeductibil.r50.c2	numericEdit				
+date.nedeductibil.r50.c3	numericEdit				
+date.nedeductibil.r50_1.nrCrt	textEdit		protected		
+date.nedeductibil.r50_1.c1	textEdit		protected		
+date.nedeductibil.r50_1.c2	numericEdit				
+date.nedeductibil.r50_1.c3	numericEdit				
+date.nedeductibil.r60.nrCrt	textEdit		protected		
+date.nedeductibil.r60.c1	textEdit		protected		
+date.nedeductibil.r60.c2	numericEdit				
+date.nedeductibil.r60.c3	numericEdit				
+date.nedeductibil.r60_1.nrCrt	textEdit		protected		
+date.nedeductibil.r60_1.c1	textEdit		protected		
+date.nedeductibil.r60_1.c2	numericEdit				
+date.nedeductibil.r60_1.c3	numericEdit				
+date.alteInfo.r50.c1	numericEdit				
+date.alteInfo.r50.c2	numericEdit				
+semnatura.prenume	textEdit	error		S.1 Nume si Prenume	Prenume
+semnatura.nume	textEdit	error		S.1 Nume si Prenume	Nume
+semnatura.smnFnc	textEdit	error		S.2 Functia	Funcția
+locOF.TextField1	textEdit		protected		Numar de inregistrare
+locOF.TextField2	textEdit		protected		Data

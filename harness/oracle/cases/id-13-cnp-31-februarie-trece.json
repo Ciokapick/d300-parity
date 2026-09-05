@@ -1,0 +1,20 @@
+{
+  "name": "id-13-cnp-31-februarie-trece",
+  "descriere": "Defect #3: isCNP nu verifica niciodata ziua prea mare (expresia cu / in loc de ||). CNP cu data 31 februarie 1980 si cifra de control corecta este acceptat fara mesaj; ziua 00 ar fi respinsa.",
+  "inputs": [
+    ["form1.Antet.metaDate.an_r", "2026"],
+    ["form1.Antet.metaDate.tipDecont", "L"],
+    ["form1.Antet.metaDate.luna_r", "2"],
+    ["form1.identifCntr.denumire.cif", "1800231221144"],
+    ["form1.identifCntr.denumire.den", "Persoana Fizica Exemplu"],
+    ["form1.identifCntr.adresa.judet", "22"],
+    ["form1.identifCntr.adresa.loc", "Deva"],
+    ["form1.identifCntr.banca.den", "Banca Exemplu"],
+    ["form1.identifCntr.banca.iban", "RO49AAAA1B31007593840000"],
+    ["form1.identifCntr.caen", "6201"],
+    ["form1.date.livrari.r9.c2", "10000"],
+    ["form1.semnatura.nume", "Popescu"],
+    ["form1.semnatura.prenume", "Ion"],
+    ["form1.semnatura.smnFnc", "Titular"]
+  ]
+}

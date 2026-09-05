@@ -1,0 +1,1206 @@
+Structura fiier XML pentru declaratia 300
+Pentru an >= 2025 august
+UniversalCode= D300_A10.0.0 (din 01.08.2025)
+
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="mfp:anaf:dgti:d300:declaratie:v12 D300.xsd"
+xmlns="mfp:anaf:dgti:d300:declaratie:v12"
+
+Data Nr. crt. Nr.rd. Elemente/ atribute                     Denumire câmp           Tip i lungime câmp  Câm    Câmp
+                                                                                              N(2)        p    calcul
+modificr                decon
+                                                                                                        oblig    at
+ii                      t                                                                               atori          Formule i restricii     Erori
+
+                                                                                                          u
+
+                    1.         <declaratie300>
+                    2.
+                                                                                                                       1>=luna <=12
+05.2024
+                               luna               Perioada de raportare - Luna                          DA             IF an = 2024            ERR - luna raportare
+                                                                                                                       THEN 5 = luna  12
+
+                    3.                                                                                                 an >= 2016
+01.01.16
+10.01.17                                                                                                               an >= 2017
+06.2023
+05.2024                                                                                                                an >= 2019
+01.08.25
+                               an                 Perioada de raportare - An        N(4)                DA             an >= 2023              ERR - an raportare
+              3.a                                                                                                      an >= 2024
+
+10.03.21                                                                                                               an >= 2025
+
+                    4.                            Decont consolidat de TVA,
+12.12.11
+                                                  depus de reprezentantul                                              depusReprezentant =
+
+                                                  grupului fiscal unic, constituit                                     (0,1)
+
+                               depusReprezentant  potrivit  art.269 alin.(9) din    N(1)                DA             0 = nu s-a bifat        ERR ­ valoare eronata
+                                                  Legea     nr.227/2015 privind
+                                                                                                                       optiunea
+                                                  Codul fiscal, cu modificrile i
+                                                                                                                       1 ­ s-a bifat optiunea
+                                                  completrile ulterioare
+
+                                                                                                                       bifa_interne = (0,1)
+
+                                                  Se bifeaza daca se aplica                                            bifa_interne = 0 daca
+
+                               bifa_interne       metoda simplificata pentru        N(1)                DA             NU se aplica metoda
+
+                                                  operatiuni interne                                                   simplificata pentru
+
+                                                                                                                       operatiuni interne
+                    5.                                                                bifa_interne = 1 daca
+01.01.16                                                                              se aplica metoda
+                                                                                      simplificata pentru
+                                                                                      operatiuni interne
+
+                                                                                      temei=0 nu s-a bifat
+                                                                                      temeiul
+
+                                        Temeiul legal pentru depunerea                temei = 2 cf art. 105
+                                                                                      alin. (6) lit. b) din
+                        temei           decontului de tax pe valoarea    N(1)     DA  Legea nr. 207/2015     ERR ­ valoare eronata
+                                        adugat dup anularea                           privind Codul de
+                                                                                      procedur fiscal, cu    ERR- cuiSuccesor
+                                        rezervei verificrii ulterioare:               modificrile i          invalid
+                                                                                      completrile            ERR - nume declarant
+5.a                     cuiSuccesor     Codul de identificaer al         N(10)        ulterioare             necompletat
+                                        succesorului                                  Valiadre cui           ERR - prenume
+                                                                                                             declarant necompletat
+6.                      nume_declar     Nume declarant                   C(75)    DA  Verificare cui         ERR ­ functie declarant
+                                                                                                             necompletat
+7.                      prenume_declar  Prenume declarant                C(75)    DA                         ERR - cui invalid sau
+                                                                                                             inexistent
+8.                      functie_declar  Functie declarant                C(50)    DA                         ERR - denumire
+                                                                                                             necompletat
+9.                      cui             Cod de înregistrare în scopuri   N(10)    DA                         ERR ­ adres
+                                        de tva                                                               necompletat
+10.                     den             Denumire sau Nume i              C(200)   DA
+                                        Prenume
+11.                     adresa                                           C(1000)  DA
+                                        Adres domiciliu fiscal
+
+12.                     telefon         Telefon domiciliu fiscal         C(15)
+                                        Fax domiciliu fiscal             C(15)
+13.                     fax             E-mail domiciliu fiscal          C(200)
+
+14.                     mail
+
+15.                                                                                                          ERR ­ banca
+                                                                                                             necompletat
+                        banca           Banca                            C(50)    DA                         ERR ­ banca contine
+                                                                                                             caracterele , #
+                    16.                                                                                ERR ­ cont necompletat
+
+                    17.                                                                                ERR ­ contul contine
+01.08.25
+                         cont        Contul                          C(50)  DA                         caracterele , #
+                    18.  caen        Cod CAEN                        C(4)
+                                                                                caen in lista de valori ERR ­ cod caen
+                                                                     C(1)
+                                                                            DA  rev2 si rev3 se        necompletat
+                                                                                accepta si valori din
+
+                                                                                rev2
+
+                                                                                tip_decont in          ERR ­
+
+                                                                                (L,T,S,A)              tip_decont=T si luna #
+
+                                                                                                       (02,03,05,06,08,09,11,12
+
+                                                                                                       ) tip_decont = S si luna
+
+                                                                                Atentie pentru         # (06,12)
+
+                                                                                platitorii de TVA      tip_decont = A si luna
+
+                                                                                TRIMESTRIAL si         #12
+
+                                                                                achizitii
+
+                                                                                intracomunitare!
+
+                                                                                Daca in lunile
+
+                                                                                02,05,08 sau 11 se
+
+                                                                                opereaza achizitii
+
+                                                                                intracomunitare,
+
+                                                                                pentru aceste luni se
+
+                                                                                va incarca decont
+
+                                                                                TRIMESTRIAL, cu
+
+                         tip_decont  Tip decont lunar/ trimestrial/         DA  valoarea cumulata
+                                     semestrial/ anual                          din lunile 01+02,
+
+                                                                                04+05, 07+08,
+
+                                                                                respectiv 10+11
+
+                                                                                Decontul urmator va
+
+                                                                                trebui sa fie LUNAR
+
+                                                                                (pentru lunile
+
+                                                                                03,06,09,12).
+
+                                                                                Daca tip_decont = L
+                                                                                ,
+                                                                                atunci luna_r in
+                                                                                (01,02,03,04,05,06,0
+                                                                                7,08,09,10,
+                                                                                11,12)
+                                                                                Daca tip_decont = T
+                                                                                ,
+                                                                                atunci luna_r in
+                                                                              (02,03,05,06,08,09,1
+                                                                              1,12)
+                                                                              Daca tip_decont =
+                                                                              S , atunci luna_r in
+                                                                              (06,12)
+                                                                              Daca tip_decont =
+                                                                              A , atunci luna_r =12
+
+          19.  pro_rata      Pro-rata                             N(7.2)  DA  pro_rata in [0,100]
+
+          20.                                                                 bifa_cereale = (N,D)
+
+                             Ai efectuat livrari de cereale i                 bifa_cereale = N
+
+                             plante tehnice pentru care se                    daca NU s-au
+
+12.12.11       bifa_cereale  aplic taxarea invers în              C(1)                         efectuat livrari
+01.01.16                     conformitate cu prevederile                  DA
+                             art.160 din Codul fiscal, a cror
+                                                                                               bifa_cereale = D
+
+                             exigibilitate intervine în perioada              daca s-au efectuat
+
+                             de raportare ?                                   livrari
+
+          21.                Ai efectuat livrari de telefoane                 bifa_mob = (N,D)
+
+                             mobile pentru care se aplic                      bifa_mob = N daca
+
+                             taxarea invers în                                NU s-au efectuat
+                                                                              livrari
+01.01.16       bifa_mob      conformitate cu prevederile          C(1)    DA
+
+                             art.331 din Codul fiscal, a cror                 bifa_mob = D daca s-
+
+                             exigibilitate intervine în perioada              au efectuat livrari
+
+                             de raportare ?
+
+          22.                Ai efectuat livrari de dispozitive
+
+                             cu circuite integrate inainte de                 bifa_disp = (N,D)
+
+                             integrarea lor in produse                        bifa_disp = N daca
+
+                             destinate utilizatorului final                   NU s-au efectuat
+
+01.01.16       bifa_disp     pentru care se aplic taxarea         C(1)    DA  livrari
+                             invers în
+
+                             conformitate cu prevederile                      bifa_disp = D daca s-
+                                                                              au efectuat livrari
+                             art.331 din Codul fiscal, a cror
+
+                             exigibilitate intervine în perioada
+
+                             de raportare ?
+
+          23.                Ai efectuat livrari de console
+
+                             de jocuri, tablete PC si laptopuri               bifa_cons = (N,D)
+
+                             pentru care se aplic taxarea                     bifa_cons = N daca
+
+01.01.16       bifa_cons     invers în                            C(1)    DA  NU s-au efectuat
+                             conformitate cu prevederile                      livrari
+
+                             art.331 din Codul fiscal, a cror
+
+                             exigibilitate intervine în perioada              bifa_cons = D daca
+                                                                              s-au efectuat livrari
+                             de raportare ?
+                    24.  solicit_ramb  Solicitare rambursare TVA         C(1)   DA      solicit_ramb in ( D,     ERR -
+12.12.11                                                                                N)                       rd. `42 46.Soldul sumei
+                                                                         C(23)          solicit_ramb = N daca    negative de TVA la
+                    25.                                                                 R40_2 R42_2 < 5000       sfarsitul perioadei de
+                                                                         N(18)                                   raportare' < 5000 si
+                                                                         N(15)
+                                                                         N(15)                                   solicit_ramb=D
+
+                                                                                        Ex.nr.evid.a platii :
+
+                                                                                        10301010111250211
+
+                                                                                        000020
+
+                                                                                        Verificare
+
+                                                                                        componenta si suma
+
+                                                                                        de control :
+
+                                                                                        Poz.1-2 :10
+
+                                                                                        Poz.3-5 :
+
+                         nr_evid       Nr.de evidenta a platii                  DA  DA  301,302,303,304          ERR ­ `Nr.de evidenta a
+                                                                                        corelat cu tip_decont    platii' este eronat
+                                                                                        = L/T/S/A
+
+                                                                                        Poz.6-7 :01
+
+                                                                                        Poz.8-11 : LLAA
+
+                                                                                        (sf.per.de raportare)
+
+                                                                                        Poz.12-17 : ZZLLAA
+
+                                                                                        (scadenta platii)
+
+                                                                                        Poz.18-21 : 0000
+
+                                                                                        Poz.22-23 : suma de
+
+                                                                                        control = suma
+
+                                                                                        primelor 21 pozitii (se
+
+                                                                                        iau ultimele 2 cifre)
+
+          26.                                                                           totalPlata_A=
+          27. 1
+                                                                                        suma(camp 27 la
+
+12.12.11                 totalPlata_A  Suma de control                          DA  DA  124)                     ERR ­ suma de control
+05.2024                                                                                 ATENTIE au fost          eronata
+                         R1_1          Rd.1 col.1
+                         R2_1          Livrri intracomunitare de                        eliminate campurile
+                                       bunuri, scutite conform art. 294
+                                       alin.(2) lit.a) i d) din Codul                   62 (14.1 ) si 63 (14.2)
+                                       fiscal
+          28. 2                        Rd.2 col.1
+                                       Regularizri livrri
+29. 3    R3_1    intracomunitare scutite conform
+                 art. 294 alin.(2) lit.a) i d) din
+30. 3.1  R3_1_1  Codul fiscal                        N(15)
+
+31. 4    R4_1    Rd.3 col.1                          N(15)
+                 Livrri de bunuri sau prestri de     N(15)
+32. 5    R5_1    servicii pentru care locul          N(15)
+                 livrrii/locul prestrii este în      N(15)
+33.      R5_2    afara României (în UE sau în        N(15)
+                 afara UE), precum i livrri
+34. 5.1  R5_1_1  intracomunitare de bunuri,
+                 scutite conform art. 294 alin.(2)
+                 lit.b) i c) din Codul fiscal, din
+                 care:
+                 Rd.3.1 col.1
+                 Prestri de servicii
+                 intracomunitare care nu
+                 beneficiaz de scutire in statul
+                 membru in care taxa este
+                 datorat
+                 Rd.4 col.1
+                 Regularizri privind prestri de
+                 servicii intracomunitare care nu
+                 beneficiaz de scutire in statul
+                 membru in care taxa este
+                 datorat
+
+                 Rd.5 col.1
+                 Achizitii intracomunitare de
+                 bunuri pentru care cumprtorul
+                 este obligat la plata TVA (taxare
+                 invers), din care:
+                 Rd.5 col.2
+                 Achizitii intracomunitare de
+                 bunuri pentru care cumprtorul
+                 este obligat la plata TVA (taxare
+                 invers), din care:
+                 Rd.5.1 col.1
+                 Achiziii intracomunitare pentru
+                 care cumprtorul este obligat
+                 la plata TVA (taxare invers),
+                 iar furnizorul este înregistrat în
+                 scopuri de TVA în statul
+                 membru din care a avut loc
+                 livrarea intracomunitar
+35.      R5_1_2  Rd.5.1 col.2
+                 Achiziii intracomunitare pentru
+36. 6    R6_1    care cumprtorul este obligat         N(15)
+                 la plata TVA (taxare invers),        N(15)
+37.      R6_2    iar furnizorul este înregistrat în   N(15)
+                 scopuri de TVA în statul             N(15)
+38. 7    R7_1    membru din care a avut loc           N(15)
+                 livrarea intracomunitar              N(15)
+39.      R7_2    Rd.6 col.1                           N(15)
+                 Regularizri privind achiziiile
+40. 7.1  R7_1_1  intracomunitare de bunuri
+                 pentru care cumprtorul este
+41.      R7_1_2  obligat la plata TVA(taxare
+                 invers)
+                 Rd.6 col.2
+                 Regularizri privind achiziiile
+                 intracomunitare de bunuri
+                 pentru care cumprtorul este
+                 obligat la plata TVA(taxare
+                 invers)
+                 Rd.7 col.1
+                 Achizitii de bunuri, altele decat
+                 cele de la rd.5 i 6 si achizitii de
+                 servicii pentru care beneficiarul
+                 din Romania este obligat la
+                 plata TVA (taxare inversa) din
+                 care:
+                 Rd.7 col.2
+                 Achizitii de bunuri, altele decat
+                 cele de la rd.5 i 6 si achizitii de
+                 servicii pentru care beneficiarul
+                 din Romania este obligat la
+                 plata TVA (taxare inversa) din
+                 care:
+                 Rd.7.1 col.1
+                 Achiziii de servicii
+                 intracomunitare pentru care
+                 beneficiarul este obligat la plata
+                 TVA (taxare inversa)
+                 Rd.7.1 col.2
+                 Achiziii de servicii
+                 intracomunitare pentru care
+                 beneficiarul este obligat la plata
+12.12.11  42. 7.1.1      R7_1_1_1  TVA (taxare inversa)               N(15)
+12.12.11  43.            R7_1_1_2  Rd.7.1.1 col.1                     N(15)
+          44. 8          R8_1      Rd.7.1.1 col.2                     N(15)
+                                   Rd.8 col.1
+          45.            R8_2      Regularizri privind achiziii de    N(15)
+                                   servicii intracomunitare pentru    N(15)
+01.08.25    46. 9        R9_1      care beneficiarul este obligat la  N(15)  Round(18% *         ATT : TVA(9.1) nu se
+01.01.26           9.1   R69_1     plata TVA (taxare inversa)         N(15)  R9_1,0)<=           incadreaza in 20 19%+-
+12.12.11                 R9_2      Rd.8 col.2                         N(15)  R9_2 <=             marja 1%
+01.01.16    47.          R69_2     Regularizri privind achiziii de           Round(20%* R9_1,0)
+10.01.17                           servicii intracomunitare pentru    N(15)
+01.08.25  47.a 9         R9_1      care beneficiarul este obligat la         Round(20% *         ATT : TVA(9.) nu se
+01.01.26  47.b                     plata TVA (taxare inversa)         N(15)  R9_1,0)<=           incadreaza in 21%+-
+                         R9_2      Rd.9.1 col.1                       N(15)  R9_2 <=             marja 1%
+01.08.25    48. 10                 Livrri de bunuri i prestri de      N(15)  Round(22%* R9_1,0)
+                   10.1  R10_1     servicii taxabile cu cota 19%
+01.08.25                 R70_1     Rd.9.1 col.2
+                                   Livrri de bunuri i prestri de
+01.08.25                           servicii taxabile cu cota 19%
+01.01.26
+                                   Rd.9 col.1
+12.12.11    49.          R10_2     Livrri de bunuri i prestri de             Round(8% *          ATT : TVA(10.1) nu se
+01.08.25                 R70_2     servicii taxabile cu cota 21%             R10_1,0)<=          incadreaza in 9%+-marja
+01.01.26  49.a 10        R10_1     Rd.9 col.2                                R10_2 <=            1%
+          49.b           R10_2                                               Round(10% *
+01.08.25                           Rd.10.1 col.1                             R10_1,0)            ATT : TVA(10) nu se
+                                   Livrri de bunuri i prestri de
+01.08.25                           servicii, taxabile cu cota 9%,            Round(10% *
+                                   cu excepia operaiunilor care
+                                   se declar la rd. 11.
+                                   Rd.10.1 col.2
+
+                                   Rd.10 col.1
+                                   Livrri de bunuri i prestri de
+                                   servicii taxabile cu cota 11%
+                                   Rd.10 col.2
+                                                                           R69_1,0)<=          incadreaza in 11%+-
+                                                                           R79_2 <=            marja 1%
+                                                                           Round(21%* R9_1,0)
+
+01.08.25   50. 11        R11_1    Rd.11.1 col.1                     N(15)  Round(4% *          ATT : TVA(11.1) nu se
+01.01.26           11.1  R71_1    Livrri de bunuri i prestri de     N(15)  R11_1,0) <=         incadreaza in 5%+-marja
+                         R11_2    servicii taxabile cu cota 5%      N(15)  R11_2 <=            1%
+12.12.11   51.           R71_2    Rd.11.1 col.2                     N(15)  Round(6% *
+01.08.25                          Livrri de bunuri i prestri de            R11_1,0)
+01.01.26  51.a 11        R11_1    servicii taxabile cu cota 5%      N(15)
+                                                                    N(15)
+01.08.25                          Rd.11 col.1                       N(15)
+                                  Livrri de bunuri taxabile cu      N(15)
+          51.b           R11_2    cota 9% conform art. III din      N(15)  Round(8% *
+                                  Legea nr. 141/2025                N(15)  R11_1,0)<=
+01.08.25                          Rd.11 col.2                              R11_2 <=            ATT : TVA(11) nu se
+                                                                           Round(10% *         incadreaza in 9%+-marja
+                                  Rd.12 col.1                              R11_1,0)            1%
+                                  Achiziii de bunuri i servicii
+          52. 12         R12_1    supuse msurilor de simplificare
+                                  pentru care beneficiarul este
+01.01.16                          obligat la plata TVA (taxare             R12_1>= R12_1_1 +   ERR : Baza(12) trebuie
+                                  invers) , din care:                      R12_2_1 + R12_3_1   s fie mai mare sau egal
+                                  Rd.12 col.2                                                  cu Baza(12.1) +
+                                                                                               Baza(12.2) + Baza(12.3)
+                                  Rd.12.1 col.1
+          53.            R12_2    Achizitii de bunuri si servicii,                             ERR : TVA(12) trebuie
+                                  taxabile cu cota 19 21%                                      s fie mai mare sau egal
+01.01.16                          Rd.12.1 col.2                            R12_2>= R12_1_2 +   cu TVA(12.1) +
+                                                                           R12_2_2 + R12_3_2   TVA(12.2) + TVA(12.3)
+01.01.16                          Rd.12.2 col.1
+01.08.25  54. 12.1 R12_1_1        Achizitii de bunuri, taxabile cu
+                                  cota 9 11%
+01.01.16  55.            R12_1_2  Rd.12.2 col.2                            Round(20% *
+10.01.17                                                                   R12_1_1,0)<=
+01.08.25                                                                   R12_1_2<=           ATT : TVA(12.1) nu se
+                                                                           Round(22%*          incadreaza in 21%+-
+01.01.16                                                                   R12_1_1,0)          marja 1%
+01.08.25
+01.01.16  56. 12.2 R12_2_1
+
+          57.            R12_2_2                                           Round(10% *         ATT : TVA(12.2) nu se
+01.08.25                                                                R12_2_1,0)<=      incadreaza in 11%+-
+                                                                        R12_2_2 <=        marja 1%
+                                                                        Round(12% *
+                                                                        R12_2_1,0)
+
+01.08.25    58. 12.3  R12_3_1  Rd.12.3 col.1                     N(15)  Round(18% *       ATT : TVA(12.3) nu se
+01.01.26    59.       R12_3_2  Achiziii de bunuri i servicii,    N(15)  R12_3_1 ,0) <=    incadreaza in 19%+-
+          59.a 12.4   R72_1    taxabile cu cota 19%              N(15)  R12_3_2 <=        marja 1%
+01.08.25  59.b        R72_2    Rd.12.3 col.2                     N(15)  Round(20% *
+01.01.26  59.c 12.5   R73_1                                      N(15)  R12_3_1,0)
+          59.d        R73_2    Rd.12.4 col.1                     N(15)
+01.08.25    60. 13    R13_1    Achiziii de bunuri i servicii,    N(15)  Round(8% * R72_1  ATT : TVA(12.4) nu se
+01.01.26                       taxabile cu cota 9%               N(15)  ,0) <=            incadreaza in 9%+-marja
+                               Rd.12.4 col.2                     N(15)  R72_2 <=          1%
+01.08.25                                                                Round(10% *
+01.01.26                       Rd.12.5 col.1                            R72_1,0)
+                               Achiziii de bunuri, taxabile cu
+01.08.25                       cota 5%                                  Round(4% * R73_1  ATT : TVA(12.5) nu se
+01.01.26                       Rd.12.5 col.2                            ,0) <=            incadreaza in 5%+-marja
+                                                                        R73_2 <=          1%
+01.08.25                       Rd.13 col.1                              Round(6% *
+01.01.26                       Livrri de bunuri i prestri de            R73_1,0)
+                               servicii supuse msurilor de
+12.12.11                       simplificare (taxare invers)
+                               Rd.14 col.1
+          61. 14      R14_1    Livrri de bunuri i prestri de
+                               servicii scutite fr drept de
+06.2023   62. 14.1 R67_1       deducere altele decat cele de la
+05.2024                        rd.1-3 , din care:
+                               Livrri de bunuri i prestri de
+                               servicii scutite cu drept de
+                               deducere, prevzute la art. 294
+                               alin. (5) lit. a) i b) din Codul
+          63. 14.2 R68_1  fiscal
+                          Livrri de bunuri scutite cu
+05.2024                   drept de deducere, prevzute la       N(15)
+                          art. 294 alin. (5) lit. c) i d) din  N(15)
+          64. 15   R15_1  Codul fiscal                         N(15)
+                          Rd.15 col.1                          N(15)
+           65. 16  R16_1  Livrri de bunuri i prestri de
+           66.     R16_2  servicii scutite fr drept de         N(15)
+          64.a 17  R64_1  deducere
+                          Rd.16 col.1                          N(15)
+01.08.25                  Regularizri tax colectat             N(15)
+                          Rd.16 col.2
+          64.b     R64_2  Regularizri tax colectat
+          64.c 18  R65_1  Rd.17 col.1
+                          Prestri de servicii
+01.08.25                  intracomunitare conform art.278
+                          alin.(8) din Codul fiscal pentru
+                          care locul prestrii este în
+                          România
+                          Vânzri intracomunitare de
+                          bunuri la distan i prestri de
+                          servicii de telecomunicaii, de
+                          radiodifuziune i televiziune,
+                          precum i servicii furnizate pe
+                          cale electronic ctre persoane
+                          neimpozabile dintr-un alt stat
+                          membru, pentru care locul
+                          livrrii/prestrii este în
+                          România, conform art. 2781
+                          alin. (1) din Codul fiscal
+                          Rd.17 col.2
+
+                          Rd.18 col.1
+                          Regularizri privind prestri de
+                          servicii intracomunitare conform
+                          art.278 alin.(8) din Codul fiscal
+                          pentru care locul prestrii este
+                          în România
+                          Regularizri privind vânzrile
+                          intracomunitare de bunuri la
+                          distan i prestrile de servicii
+          64.d           R65_2    de telecomunicaii, de              N(15)
+                         R17_1    radiodifuziune i televiziune,
+            67. 17                precum i servicii furnizate pe     N(15)
+                   19             cale electronic ctre persoane                 R17_1 = R1_1+
+                                  neimpozabile dintr-un alt stat     N(15)
+                                  membru, conform art. 2781 alin.    N(15)      R2_1+ R3_1+ R4_1+
+                                  (1) din Codul fiscal               N(15)
+                                  Rd.18 col.2                        N(15)      R5_1+ R6_1+ R7_1+
+                                                                     N(15)
+12.12.11                          Rd.17 col.1                                   R8_1+ R9_1+
+06.2023                           Rd.19col.1
+01.08.25                          TOTAL TAX COLECTAT                        DA  R10_1+ R11_1+      ERR : calcul VAL(1719)
+                                  (sum de la rd.1 pân la rd.18,                 R12_1+ R14_1+
+                                  cu excepia celor de la rd.3.1,
+                                  7.1 , 9.1, 14.1, 14.2 , 14.3)                 R15_1+ R16_1+
+
+                                  ( sum de la rd.1 pân la                       R13_1 + R64_1 +
+                                  rd.18, cu excepia celor de la
+                                  rd. 3.1, 5.1, 7.1, 12.1, 12.2,                R65_1+ R69_1 +
+                                  12.3, 12.4, 12.5)
+                                  Rd.17 col.2                                   R70_1 + R71_1
+                                  Rd.19 col.1
+                    68.  R17_2    TOTAL TAX COLECTAT
+                                  (sum de la rd.1 pân la rd.18,
+12.12.11                          cu excepia celor de la rd.3.1,                R17_2 =R5_2+
+06.2023                           7.1 , 9.1, 14.1, 14.2 , 14.3)
+01.08.25                                                                        R6_2+ R7_2+ R8_2+
+                                  ( sum de la rd.1 pân la
+                                  rd.18, cu excepia celor de la                 R9_2+ R10_2+
+                                  rd. 3.1, 5.1, 7.1, 12.1, 12.2,
+                                  12.3, 12.4, 12.5)                         DA R11_2+ R12_2 +      ERR : calcul TVA(1719)
+                                  Rd.17.1 col.1
+                                  Rd.17.1 col.2                                 R16_2 + R64_2 +
+                                  Rd.18 col.1
+                                  Rd.20 col.1                                   R65_2+ R69_2 +
+                                  Achiziii intracomunitare de
+                                  bunuri pentru care cumprtorul                 R70_1 + R71_2
+                                  este obligat la plata TVA (taxare
+16.11.12  69. 17.1       R17_1_1  invers), din care:
+16.11.12  70.            R17_1_2  Rd.18 col.2
+          71. 18         R18_1    Rd.20 col.2
+
+                 20
+
+          72.            R18_2
+73. 18.1     R18_1_1  Achiziii intracomunitare de
+       20.1           bunuri pentru care cumprtorul
+                      este obligat la plata TVA (taxare
+74.          R18_1_2  invers), din care:                  N(15)
+                      Rd.18.1 col.1
+75. 19       R19_1    Rd.20.1 col.1                       N(15)
+       21             Achiziii intracomunitare pentru     N(15)
+                      care cumprtorul este obligat        N(15)
+76.          R19_2    la plata TVA (taxare invers),       N(15)
+                      iar furnizorul este înregistrat în  N(15)
+77. 20       R20_1    scopuri de TVA în statul
+       22             membru din care a avut loc
+                      livrarea
+78.          R20_2    Rd.18.1 col.2
+                      Rd.20.1 col.2
+                      Achiziii intracomunitare pentru
+                      care cumprtorul este obligat
+                      la plata TVA (taxare invers),
+                      iar furnizorul este înregistrat în
+                      scopuri de TVA în statul
+                      membru din care a avut loc
+                      livrarea
+
+                      Rd.19 col.1
+                      Rd.21 col.1
+                      Regularizri privind achiziiile
+                      intracomunitare bunuri pentru
+                      care cumprtorul este obligat
+                      la plata TVA (taxare invers)
+                      Rd.19 col.2
+                      Rd.21col.2
+                      Regularizri privind achiziiile
+                      intracomunitare bunuri pentru
+                      care cumprtorul este obligat
+                      la plata TVA (taxare invers)
+                      Rd.20 col.1
+                      Rd.22 col.1
+                      Achizitii de bunuri, altele decat
+                      cele de la rd.20 i 21 si achizitii
+                      de servicii pentru care
+                      beneficiarul din Romania este
+                      obligat la plata TVA (taxare
+                      inversa) din care:
+                      Rd.20 col.2
+          79. 20.1       R20_1_1    Rd.22 col.2
+                 22.1               Achizitii de bunuri, altele decat
+                                    cele de la rd.20 i 21 si achizitii
+          80.            R20_1_2    de servicii pentru care             N(15)
+                                    beneficiarul din Romania este
+12.12.11  81. 20.1.1     R19_1_1_1  obligat la plata TVA (taxare        N(15)
+12.12.11  82.            R19_1_1_2  inversa) din care:                  N(15)
+          83. 21         R21_1      Rd.20.1 col.1                       N(15)
+                                    Rd.22.1 col.1                       N(15)
+                 23                 Achiziii de servicii                N(15)
+                                    intracomunitare pentru care         N(15)
+          84.            R21_2      beneficiarul este obligat la plata
+                         R22_1      TVA (taxare inversa)                N(15)
+          85. 22                    Rd.20.1 col.2
+                 24                 Rd.22.1 col.2
+                                    Achiziii de servicii
+01.08.25                            intracomunitare pentru care
+                                    beneficiarul este obligat la plata
+                    86.  R22_2      TVA (taxare inversa)                       Round(20% *
+12.12.11                            Rd.20.1.1 col.1                            R22_1,0) <= R22_2
+01.01.16                            Rd.20.1.1 col.2                            <=                 ATT : TVA(2224) nu se
+10.01.17                            Rd.21 col.1                                Round(22% *        incadreaza in 20 21%+-
+                                    Rd.23 col1                                 R22_1,0)           marja 1%
+                                    Regularizri privind achiziii de
+                                    servicii intracomunitare pentru
+                                    care beneficiarul este obligat la
+                                    plata TVA (taxare inversa)
+                                    Rd.21 col.2
+                                    Rd.23 col.2
+
+                                    Rd.22 col.1
+                                    Rd.24 col.1
+                                    Achiziii de bunuri i servicii
+                                    taxabile cu cota de 19 21%,
+                                    altele decât cele de la rd.27
+
+                                    Rd.22 col.2
+                                    Rd.24 col.2
+                  86.a 24.1 R74_1  Rd.24.1 col.1                    N(15)
+                                   Achiziii de bunuri i servicii
+01.08.25                           taxabile cu cota de 19%, altele  N(15)
+01.01.26                           decât cele de la rd.27           N(15)
+                                                                    N(15)
+01.08.25  86.b         R74_2       Rd.24.1 col.2                    N(15)  Round(18% *        ATT : TVA(24.1) nu se
+01.01.26               R23_1                                        N(15)  R74_1,0) <=        incadreaza in 19%+-
+            87. 23     R75_1       Rd.23 col.1                      N(15)  R74_2 <=           marja 1%
+01.08.25           25  R75_2       Rd.25 col.1                      N(15)  Round(20% *
+01.08.25               R23_2       Achiziii de bunuri i servicii    N(15)  R74_1,0)
+01.01.26  87.a 25.1    R24_1       taxabile cu cota de 11%
+01.08.25  87.b                     Achiziii de bunuri, taxabile cu         Round(8% *         ATT : TVA(25.1) nu se
+01.01.26                           cota 9%                                 R75_1,0) <=        incadreaza in 9%+-marja
+            88.                                                            R75_2 <=           1%
+12.12.11                           Rd.23 col.2                             Round(10% *
+01.08.25    89. 24                 Rd.25 col.2                             R75_1,0)           ATT : TVA(25) nu se
+                   26                                                      Round(10% *        incadreaza in 11%+-
+01.01.26                           Rd.24 col.1                             R23_1,0) <=        marja 1%
+                                   Rd.26 col.1                             R23_2 <=
+                                   Achiziii de bunuri i servicii,          Round(12% *
+                                   taxabile cu cota de 5%                  R23_1,0)
+                                   Rd.24 col.2
+12.12.11  90.          R24_2       Rd.26 col.2                             Round(4% *         ATT : TVA(2426) nu se
+01.01.26               R25_1                                               R24_1,0) <=        incadreaza in 5%+-marja
+          91. 25                   Rd.25 col.1                             R24_2 <=           1%
+12.12.11         27                Rd.27 col.1                             Round(6% *
+01.01.16                           Rd.26 col.1                             R24_1,0)           ERR : Baza(2527)
+                                                                                              trebuie s fie mai mare
+                                                                           R25_1>= R25_1_1 +  sau egal cu
+                                                                           R25_2_1 + R25_3_1  Baza(2527.1) +
+                                 Achiziii de bunuri i servicii                              Baza(2527.2) +
+                                 supuse msurilor de simplificare                            Baza(2527.3)
+                                 pentru care beneficiarul este
+12.12.11   92.          R25_2    obligat la plata TVA (taxare                               ERR : TVA(2527) trebuie
+                                 invers) ), din care:                                       s ie mai mare sau egal
+01.01.16                                                                                    cu TVA(2527.1) +
+                                 Rd.25 col.2                                                TVA(2527.2) +
+                                 Rd.27 col.2                      N(15)  R25_2>= R25_1_2 +  TVA(2527.3)
+                                 Rd.26 col.2                      N(15)  R25_2_2 + R25_3_2
+                                                                  N(15)
+01.01.16   93. 25.1     R25_1_1  Rd.25.1 col.1                    N(15)
+01.08.25          27.1           Rd.27.1 col.1                    N(15)
+                                 Rd.26.1 col.1                    N(15)
+01.01.16   94.          R25_1_2                                          Round(20% *
+                                 Achiziii de bunuri i servicii,          R25_1_1,0)<=
+10.01.17                         taxabile cu cota 19 21%                 R25_1_2<=          ATT : TVA(2527.1) nu se
+                                                                         Round(21%*         incadreaza in 20 21%+-
+01.08.25                         Rd.25.1 col.2                           R25_1_1,0)         marja 1%
+                                 Rd.27.1 col.2
+ 01.01.1   95. 25.2     R25_2_1  Rd.26.1 col.2
+01.08.256         27.2
+                                 Rd.25.2 col.1
+01.01.16   96.          R25_2_2  Rd.27.2 col.1                           Round(10% *
+                                 Rd.26.2 col.1                           R25_2_1,0)<=
+01.08.25                                                                 R25_2_2 <=         ATT : TVA(2527.2) nu se
+                                 Achiziii de bunuri, taxabile cu         Round(12% *        incadreaza in 11%+-
+                                 cota 9 11%                              R25_2_1,0)         marja 1%
+
+01.01.16   97. 25.3     R25_3_1  Rd.25.2 col.2
+01.08.25          27.3           Rd.27.2 col.2
+01.01.26                         Rd.26.2 col.2
+
+                                 Rd.25.3 col.1
+                                 Rd.27.3 col.1
+                                 Achiziii de bunuri, taxabile cu
+                                 cota 5 19%
+01.01.16  98.          R25_3_2  Rd.25.3 col.2                             Round(18% *
+                                Rd.27.3 col.2                             R25_3_1 ,0) <=
+01.08.25                                                                  R25_3_2 <=      ATT : TVA(2527.3) nu se
+                                Rd.27,4 col.1                             Round(20% *     incadreaza in 19%+-
+01.01.26                        Achiziii de bunuri, taxabile cu    N(15)  R25_3_1,0)      marja 1%
+                                cota 9%                            N(15)
+01.08.25  98.a 27.4    R76_1    Rd.27,4 col.2                      N(15)  Round(8% *
+01.01.26  98.b         R76_2                                       N(15)  R76_1,0) <=
+                                Rd.27,5col.1                       N(15)  R76_2 <=
+01.08.25                        Achiziii de bunuri, taxabile cu           Round(10% *     ATT : TVA(27.4) nu se
+01.01.26                        cota 5%                            N(15)  R76_1,0)        incadreaza in 9%+-marja
+                                Rd.27,5col.2                                              1%
+                                                                   N(15)
+01.08.25  98.c 27.5    R77_1    Rd. 26 col. 2                      N(15)  Round(4% *
+01.01.26  98.d         R77_2    Rd. 28 col. 2                             R77_1,0) <=
+                                Rd. 27 col. 2                             R77_2 <=
+01.08.25                                                                  Round(6% *      ATT : TVA(27.5) nu se
+01.01.26                        Compensaia în cot forfetar                R77_1,0)        incadreaza in 5%+-marja
+                                pentru achiziii de produse i                              1%
+                                servicii agricole de la furnizori
+10.01.17  96.a 26      R43_2    care aplic regimul special
+                   28           pentru agricultori
+
+10.01.17  96.b 27      R44_2    Rd. 27 col. 2
+                   29           Rd. 29 col. 2
+                                Rd. 28 col. 2
+          99. 28       R26_1
+                 30             Regularizri privind
+                                compensaia în cot forfetar
+
+                                Rd.28 col.1
+                                Rd.30 col.1
+                                Rd. 29 col. 1
+          100. 28.1    R26_1_1  Achiziii de bunuri i servicii
+                 30.1           scutite de tax sau
+                                neimpozabile, din care :
+12.12.11  101. 29      R27_1    Rd.28.1 col.1                      N(15)
+                 31             Rd.30.1 col.1
+                                Rd. 29.1 col. 1                    N(15)
+                                                                              R27_1 = R18_1+
+                                Achiziii de servicii               N(15)
+                                intracomunitare scutite de tax     N(15)      R19_1+ R20_1+
+                                                                   N(15)
+                                Rd.29 col.1                        N(15)  DA  R21_1+ R22_1+          ERR : calcul VAL(2931)
+                                Rd.31 col.1                                   R23_1+ R24_1+
+                                Rd. 30 col. 1
+                                                                              R25_1 + R74_1 +
+                                TOTAL TAX DEDUCTIBIL
+                                (sum de la rd.20 pân la                       R75_1
+                                rd.28, cu excepia celor de la rd.
+12.12.11  102.         R27_2    20.1, 22.1, 26.1, 26.2, 27.3)
+10.01.17
+                                Rd.29 col.2                                        R27_2 = R18_2+
+                                Rd.31 col.2                                        R19_2+ R20_2+     ERR : calcul TVA(29 31)
+                                Rd.30 col.2                                        R21_2+ R22_2+
+                                                                          DA R23_2+ R24_2+
+                                TOTAL TAX DEDUCTIBIL                               R25_2+ R43_2 +
+                                (sum de la rd.20 pân la                            R44_2+ + R74_2 +
+                                rd.29, cu excepia celor de la rd.                  R75_2
+                                20.1, 22.1, 26.1, 26.2, 27.3,
+16.11.12  103. 27.1    R27_1_1  27.4, 27.5)
+16.11.12  104.         R27_1_2
+          105. 30      R28_2    Rd.27.1 col.2
+                                Rd.27.1 col.2
+                 32             Rd.30 col.2
+                                Rd.32 col.2
+                                Rd.31 col.2
+
+                                SUB-TOTAL TAX DEDUS
+                                CONFORM ART. 297 I ART.
+                                298 SAU ART. 300 I ART.
+                                298 DIN CODUL FISCAL I
+                                COMPENSAIE ÎN COT
+                                FORFETAR
+          106. 31    R29_2  Rd.31 col.2
+                 33         Rd.33 col.2
+                            Rd.32 col.2
+          107. 32    R30_1                                  N(15)
+                 34         TVA efectiv restituit           N(15)
+                            cumprtorilor strini, inclusiv   N(15)
+          108.       R30_2  comisionul unitilor autorizate  N(15)
+                                                            N(15)
+          109. 33    R31_2  Rd.32 col.1                     N(15)
+                 35         Rd.34 col.1                     N(15)
+                            Rd.33 col.1
+          110. 34    R32_2
+                 36         Regularizri tax dedus
+                            Rd.32 col.2
+12.12.11                    Rd.34 col.2                                     R32_2 = R28_2+    ERR : calcul
+                            Rd.33 col.2                            DA R29_2+ R30_2+           TVA(323436)
+
+                            Regularizri tax dedus                           R31_2
+                            Rd.33 col.2
+12.12.11  111. 35    R33_2  Rd.35 col.2
+                 37         Rd.34 col.2
+
+                            Ajustri conform pro-rata /             DA  R33_2 = MAX            ERR : calcul
+                            ajustri de tax                                  (R32_2 ­ R17_2 ,  TVA(333537)
+
+                            Rd.34 col.2                                0)
+                            Rd.36 col.2
+12.12.11  112. 36    R34_2  Rd.35 col.2                                R34_2 = MAX            ERR : calcul
+                 38                                                         (R17_2 ­ R32_2 ,  TVA(343638)
+                            TOTAL TAX DEDUS                        DA
+                            (rd.32+rd.33+rd.34+rd.35)                  0)
+                            (rd.31+rd.32+rd.33+rd.34)
+
+                            Rd.35 col.2
+                            Rd.37 col.2
+                            Rd.36 col.2
+
+                            Suma negativ a TVA în
+                            perioada de raportare (rd.36-
+                            rd.19)
+                            Rd.36 col.2
+                            Rd.38 col.2
+                            Rd.37 col.2
+12.12.11  113. 37    R35_2  Taxa de plat în perioada de
+                 39         raportare (rd.19-rd.36)
+
+                            Rd.37col.2                       N(15)      R35_2=0 daca     ERR : TVA(353739)
+                            Rd.39col.2                       N(15)      R38_2 >0
+                            Rd.38 col.2                      N(15)
+          114. 38    R36_2                                   N(15)
+                 40         Soldul TVA de plat din
+                            decontul perioadei fiscale
+12.12.11  115. 39    R37_2  precedente (rd.45 din decontul
+                 41         perioadei fiscale precedente)
+                            neachitate pân la data
+                            depunerii decontului de TVA             DA  R37_2 = R34_2 +  ERR : calcul
+                                                                        R35_2 + R36_2    TVA(373941)
+                            Rd.38 col.2
+12.12.11  116. 40    R38_2  Rd.40 col.2
+                 42         Rd.39 col.2
+
+                            Diferene de TVA de plat                     R38_2=0 daca     ERR : TVA(384042)
+                            stabilite de organele de                    R35_2 >0
+                            inspecie fiscal prin decizie
+                            comunicat i neachitate pân
+                            la data depunerii decontului de
+                            TVA
+
+                            Rd.39 col.2
+                            Rd.41 col.2
+                            Rd.40 col.2
+
+                            TVA de plat cumulat
+                            (rd.38+rd.39+rd.40)
+
+                            Rd.40col.2
+                            Rd.42col.2
+                            Rd.41 col.2
+
+                            Soldul sumei negative a TVA
+                            reportate din perioada
+                            precedent pentru care nu s-a
+                            solicitat rambursare (rd.46 din
+                            decontul perioadei fiscale
+          117. 41    R39_2               precedente)
+                 43
+                     R40_2               Rd.41 col.2
+12.12.11  118. 42                        Rd.43 col.2                       N(15)
+                 44  R41_2               Rd.42 col.2
+                                                                           N(15)
+                     R42_2               Diferene negative de TVA                 DA  R40_2 = R33_2 +      ERR : calcul
+                                         stabilite de organele de          N(15)      R38_2 + R39_2        TVA(404244)
+                     nr_facturi          inspecie fiscal prin decizie
+12.12.11  119. 43    baza                comunicat pân la data             N(15)
+                 45  tva                 depunerii decontului de TVA
+                     nr_facturi_primite                                    N(15)
+                     baza_primite        Rd.42 col.2                       N(15)  DA  R41_2 = MAX          ERR : calcul
+                                         Rd.44 col.2                       N(15)           (R37_2 ­ R40_2  TVA(414345)
+                                         Rd.43 col.2                       N(15)
+                                                                           N(15)      , 0)
+                                         Suma negativ a TVA cumulate
+12.12.11  120. 44                        (rd.37+rd.42+rd.43)
+                 46                      (rd.36+rd.41+rd.42)
+
+                                         Rd.43 col.2                              DA  R42_2 = MAX          ERR : calcul
+                                         Rd.45 col.2                                       (R40_2 ­ R37_2  TVA(424446)
+                                         Rd.44 col.2
+                                                                                      , 0)
+                                         Sold TVA de plat la sfâritul
+01.01.16  121.                           perioadei de raportare (rd.40-
+01.01.16  122.                           rd.43)
+          123.
+          124.                           Rd.44 col.2
+          125.                           Rd.46 col.2
+                                         Rd.45 col.2
+
+                                         Soldul sumei negative de TVA
+                                         la sfâritul perioadei de
+                                         raportare (rd.44-rd.41)
+
+                                         (rd.43-rd.40)
+
+                                         Numar total facturi emise
+                                         Total baza de impozitare
+                                         Total TVA aferenta
+                                         Numar total facturi primite
+                                         Total baza de impozitare facturi
+01.01.16  126.  tva_primite    primite                              N(15)  valoare_a      ERR
+          127.  valoare_a      Total TVA aferenta facturi           N(15)  valoare_a1
+16.11.12        valoare_a1     primite                              N(15)
+01.01.16  128.  tva_a          Valoare livrari bunuri si prestari   N(15)  tva_a  tva_a1  ERR
+          129.  tva_a1         servicii a caror TVA a ramas         N(15)
+01.01.16  130.  valoare_b      neexigibila ca urmare a aplicarii    N(15)
+          131.                 sistemului TVA la incasare, din      N(15)
+16.11.12        valoare_b1     care                                 N(15)
+01.01.16        tva_b          Valoare livrari de bunuri i          N(15)
+                               prestari de servicii efectuate în    N(15)
+01.01.16        tva_b1         ultimele 6 luni/2 trimestre
+16.11.12        nr_fact_emise  calendaristice
+01.01.16                       TVA ramasa neexigibila pt
+                               livrari bunuri si prestari servicii
+                               ca urmare a aplicarii sistemului            valoare_b      ERR
+                               TVA la incasare, din care                   valoare_b1
+                               Valoare TVA aferenta livrarilor
+01.01.16  132.                 de bunuri i prestarilor de
+          133.                 servicii efectuate în ultimele 6
+16.11.12                       luni/2 trimestre calendaristice
+01.01.16                       Valoare achizitii de bunuri si
+                               servicii efectuate pt care nu s-a
+                               exercitat dreptul de deducere a             tva_b  tva_b1  ERR
+                               TVA, existenta in sold la
+01.01.16  134.                 sfarsitul perioadei de raportare,
+                               din care
+10.01.17  135.                 Valoare achizitii de bunuri i
+                               servicii efectuate în ultimele 6
+                               luni/2 trimestre calendaristice
+                               TVA aferenta achizitiilor de
+                               bunuri si servicii efectuate pt
+                               care nu s-a exercitat dreptul de
+                               deducere, existenta in sold la
+                               sfarsitul perioadei de raportare,
+                               din care
+                               Valoare TVA aferenta achizitiilor
+                               de bunuri i servicii efectuate în
+                               ultimele 6 luni/2 trimestre
+                               calendaristice
+                               Nr facturi emise dup
+                               inregistrarea în scopuri de tva pt
+                               operaiuni efectuate în perioada
+                               în care codul de inregistrare în
+                                             scopuri de tva a fost anulat
+
+10.01.17  136.       total_baza              Total baza de impozitare pt
+10.01.17
+                                             facturi emise dup inregistrarea
+
+                                             în scopuri de tva pt operaiuni     N(15)
+                                             efectuate în perioada în care
+
+                                             codul de inregistrare în scopuri
+
+                                             de tva a fost anulat
+
+          137.       total_tva               Total tva aferenta facturilor
+
+                                             emise dup inregistrarea în
+
+                                             scopuri de tva pt operaiuni        N(15)
+                                             efectuate în perioada în care
+
+                                             codul de inregistrare în scopuri
+
+                                             de tva a fost anulat
+
+          138. Informaii privind valoarea total, fr TVA, a prestrilor de servicii ctre persoane neimpozabile din alte state
+
+                     membre UE
+
+                     prevzute la art. 278 alin. (8) lit. b) din Codul fiscal, respectiv servicii de telecomunicaii, de radiodifuziune i
+
+                     televiziune,
+
+                     precum i servicii furnizate pe cale electronic
+
+          139.       total_precedent         Total an precedent                 N(15)
+
+          140.       total_curent            Total an curent (inclusiv periada  N(15)
+                                             de raportare)
+
+          141.       </ declaratie300>
+
+  Alte validari :                  Validare                                     Mesaje de eroare
+
+  Data Cod
+actualiz. valid
+
+                are
+
+12.12.11 V_1         - daca bifa_interne=1 , atunci campurile :      ERR: S-a bifat ca se aplica metoda
+                     R1_1, R2_1, R3_1, R3_1_1, R4_1, R5_1, R5_2,     simplificata pentru operatiuni interne
+15.02.12 V_2         R5_1_1, R5_1_2, R6_1, R6_2, R7_1, R7_2,         dar s-au gasit valori in randurile: 1, 2,
+15.02.12 V_3         R7_1_1, R7_1_2, R8_1, R8_2 si                   3, 3.1, 4, 5, 5.1, 6, 7, 7.1, 8, 18, 18.1,
+15.02.12 V_4         R18_1,R18_2, R18_1_1, R18_1_2, R19_1, R19_2,    19, 20, 20.1, 21, 26.1 20, 20.1, 21,
+                     R20_1, R20_2, R20_1_1, R20_1_2, R21_1,          22, 22.1, 23, 28.1
+                     R21_2, R26_1_1 sunt nulle
+                                                                     ERR: rd.17.1>rd.17 (col.1)
+                     R17_1_1<= R17_1                                 ERR: rd.17.1>rd.17 (col.2)
+                     R17_1_2<= R17_2                                 ERR: rd.27.1>rd.27 (col.1)
+                     R27_1_1<= R27_1
+15.02.12 V_5  R27_1_2<= R27_2  ERR: rd.27.1>rd.27 (col.2)
+06.03.12 V_6  R28_2<= R27_2    ERR: rd.28>rd.27 (col.2)
+
+12.12.11 V_7  R18_1= R5_1      ERR: rd.18<>rd.5  (col.1)
+                               ERR: rd.20<>rd.5  (col.1)
+
+12.12.11 V_8 R18_2= R5_2       ERR: rd.18<>rd.5  (col.2)
+                               ERR: rd.20<>rd.5  (col.2)
+
+12.12.11 V_9 R18_1_1= R5_1_1   ERR: rd.18.1<>rd.5.1 (col.1)
+                               ERR: rd.20.1<>rd.5.1 (col.1)
+
+12.12.11 V_10 R18_1_2= R5_1_2  ERR: rd.18.1<>rd.5.1 (col.2)
+                               ERR: rd.20.1<>rd.5.1 (col.2)
+
+12.12.11 V_11 R19_1= R6_1      ERR: rd.19<>rd.6  (col.1)
+                               ERR: rd.21<>rd.6  (col.1)
+
+12.12.11 V_12 R19_2= R6_2      ERR: rd.19<>rd.6  (col.2)
+                               ERR: rd.21<>rd.6  (col.2)
+
+12.12.11 V_13 R20_1= R7_1      ERR: rd.20<>rd.7  (col.1)
+                               ERR: rd.22<>rd.7  (col.1)
+
+12.12.11 V_14 R20_2= R7_2      ERR: rd.20<>rd.7  (col.2)
+                               ERR: rd.22<>rd.7  (col.2)
+
+12.12.11 V_15 R20_1_1= R7_1_1  ERR: rd.20.1<>rd.7.1 (col.1)
+                               ERR: rd.22.1<>rd.7.1 (col.1)
+
+12.12.11 V_16 R20_1_2= R7_1_2  ERR: rd.20.1<>rd.7.1 (col.2)
+                               ERR: rd.22.1<>rd.7.1 (col.2)
+
+12.12.11 V_17 R21_1= R8_1      ERR: rd.21<>rd.8 (col.1)
+12.12.11 V_18 R21_2= R8_2      ERR: rd.23<>rd.8 (col.1)
+12.12.11 V_19 R25_1= R12_1
+                               ERR: rd.21<>rd.8 (col.2)
+                               ERR: rd.23<>rd.8 (col.2)
+
+                               ERR: rd.25<>rd.12 (col.1)
+                               ERR: rd.27<>rd.12 (col.1)
+12.12.11 V_20 R25_2= R12_2                   ERR: rd.25<>rd.12 (col.2)
+                                             ERR: rd.27<>rd.12 (col.2)
+      V_21 R25_1_1= R12_1_1                  ERR: rd.27.1<>rd.12.1 (col.1)
+
+      V_22  R25_1_2= R12_1_2                 ERR: rd.27.1<>rd.12.1 (col.2)
+      V_23  R25_2_1= R12_2_1                 ERR: rd.27.2<>rd.12.2(col.1)
+
+      V_24  R25_2_2= R12_2_2                 ERR: rd.27.2<>rd.12.2 (col.2)
+      V_25  R25_3_1= R12_3_1                 ERR: rd.27.3<>rd.12.3(col.1)
+
+      V_26 R25_3_2= R12_3_2                  ERR: rd.27.3<>rd.12.3(col.2)
+
+Coduri CAEN ­ lista de valori
+
+CAEN  CAE   CAE             CAE  CAE   CAE   CAEN
+      N     N               N    N     N
+                                             9523
+0111 1414 2562 3900              4771  7211  9524
+                                 4772  7219  9525
+0112 1419 2571 4110              4773  7220  9529
+                                 4774  7311  9601
+0113 1420 2572 4120              4775  7312  9602
+                                 4776  7320  9603
+0114 1431 2573 4211              4777  7410  9604
+                                 4778  7420  9609
+0115 1439 2591 4212              4779  7430  9700
+                                 4781  7490  9900
+0116 1511 2592 4213              4782  7500  8422
+                                 4789  7711  5122
+0119 1512 2593 4221              4791  7712  9810
+                                 4799  7721
+0121 1520 2594 4222
+
+0122 1610 2599 4291
+
+0123 1621 2611 4299
+
+0124 1622 2612 4311
+
+0125 1623 2620 4312
+
+0126 1624 2630 4313
+
+0127 1629 2640 4321
+ 0128   1711   2651   4322   4910   7722  9820
+0129   1712   2652   4329   4920   7729
+0130   1721   2660   4331   4931   7731
+0141   1722   2670   4332   4932   7732
+0142   1723   2680   4333   4939   7733
+0143   1724   2711   4334   4941   7734
+0144   1729   2712   4339   4942   7735
+0145   1811   2720   4391   4950   7739
+0146   1812   2731   4399   5010   7740
+0147   1813   2732   4511   5020   7810
+0149   1814   2733   4519   5030   7820
+0150   1820   2740   4520   5040   7830
+0161   1910   2751   4531   5110   7911
+0162   1920   2752   4532   5121   7912
+0163   2011   2790   4540   5210   7990
+0164   2012   2811   4611   5221   8010
+0170   2013   2812   4612   5222   8020
+0210   2014   2813   4613   5223   8030
+0220   2015   2814   4614   5224   8110
+0230   2016   2815   4615   5229   8121
+0240   2017   2821   4616   5310   8122
+0311   2020   2822   4617   5320   8129
+0312   2030   2823   4618   5510   8130
+0321   2041   2824   4619   5520   8211
+0322   2042   2825   4621   5530   8219
+0510   2051   2829   4622   5590   8220
+0520   2052   2830   4623   5610   8230
+0610   2053   2841   4624   5621   8291
+0620   2059   2849   4631   5629   8292
+0710   2060   2891   4632   5630   8299
+0721   2110   2892   4633   5811   8411
+0729   2120   2893   4634   5812   8412
+0811   2211   2894   4635   5813   8413
+0812   2219   2895   4636   5814   8421
+0891  2221  2896  4637  5819  8423
+0892  2222  2899  4638  5821  8424
+0893  2223  2910  4639  5829  8425
+0899  2229  2920  4641  5911  8430
+0910  2311  2931  4642  5912  8510
+0990  2312  2932  4643  5913  8520
+1011  2313  3011  4644  5914  8531
+1012  2314  3012  4645  5920  8532
+1013  2319  3020  4646  6010  8541
+1020  2320  3030  4647  6020  8542
+1031  2331  3040  4648  6110  8551
+1032  2332  3091  4649  6120  8552
+1039  2341  3092  4651  6130  8553
+1041  2342  3099  4652  6190  8559
+1042  2343  3101  4661  6201  8560
+1051  2344  3102  4662  6202  8610
+1052  2349  3103  4663  6203  8621
+1061  2351  3109  4664  6209  8622
+1062  2352  3211  4665  6311  8623
+1071  2361  3212  4666  6312  8690
+1072  2362  3213  4669  6391  8710
+1073  2363  3220  4671  6399  8720
+1081  2364  3230  4672  6411  8730
+1082  2365  3240  4673  6419  8790
+1083  2369  3250  4674  6420  8810
+1084  2370  3291  4675  6430  8891
+1085  2391  3299  4676  6491  8899
+1086  2399  3311  4677  6492  9001
+1089  2410  3312  4690  6499  9002
+1091  2420  3313  4711  6511  9003
+1092  2431  3314  4719  6512  9004
+1101  2432  3315  4721  6520  9101
+1102  2433  3316  4722  6530  9102
+1103  2434  3317  4723  6611  9103
+1104  2441  3319  4724  6612  9104
+1105  2442  3320  4725  6619  9200
+1106  2443  3511  4726  6621  9311
+1107  2444  3512  4729  6622  9312
+1200  2445  3513  4730  6629  9313
+1310  2446  3514  4741  6630  9319
+1320  2451  3521  4742  6810  9321
+1330  2452  3522  4743  6820  9329
+1391  2453  3523  4751  6831  9411
+1392  2454  3530  4752  6832  9412
+1393  2511  3600  4753  6910  9420
+1394  2512  3700  4754  6920  9491
+1395  2521  3811  4759  7010  9492
+1396  2529  3812  4761  7021  9499
+1399  2530  3821  4762  7022  9511
+1411  2540  3822  4763  7111  9512
+1412  2550  3831  4764  7112  9521
+1413  2561  3832  4765  7120  9522
+

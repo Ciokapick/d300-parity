@@ -1,0 +1,168 @@
+
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/"
+><locale name="ro_RO" desc="Romanian_Romania"
+><calendarSymbols name="gregorian"
+><monthNames
+><month
+>ianuarie</month
+><month
+>februarie</month
+><month
+>martie</month
+><month
+>aprilie</month
+><month
+>mai</month
+><month
+>iunie</month
+><month
+>iulie</month
+><month
+>august</month
+><month
+>septembrie</month
+><month
+>octombrie</month
+><month
+>noiembrie</month
+><month
+>decembrie</month
+></monthNames
+><monthNames abbr="1"
+><month
+>Ian</month
+><month
+>Feb</month
+><month
+>Mar</month
+><month
+>Apr</month
+><month
+>Mai</month
+><month
+>Iun</month
+><month
+>Iul</month
+><month
+>Aug</month
+><month
+>Sep</month
+><month
+>Oct</month
+><month
+>Nov</month
+><month
+>Dec</month
+></monthNames
+><dayNames
+><day
+>duminică</day
+><day
+>luni</day
+><day
+>marţi</day
+><day
+>miercuri</day
+><day
+>joi</day
+><day
+>vineri</day
+><day
+>sîmbătă</day
+></dayNames
+><dayNames abbr="1"
+><day
+>D</day
+><day
+>L</day
+><day
+>Ma</day
+><day
+>Mi</day
+><day
+>J</day
+><day
+>V</day
+><day
+>S</day
+></dayNames
+><meridiemNames
+><meridiem
+>AM</meridiem
+><meridiem
+>PM</meridiem
+></meridiemNames
+><eraNames
+><era
+>d.C.</era
+><era
+>î.d.C.</era
+></eraNames
+></calendarSymbols
+><datePatterns
+><datePattern name="full"
+>D MMMM YYYY</datePattern
+><datePattern name="long"
+>D MMMM YYYY</datePattern
+><datePattern name="med"
+>DD.MM.YYYY</datePattern
+><datePattern name="short"
+>DD.MM.YYYY</datePattern
+></datePatterns
+><timePatterns
+><timePattern name="full"
+>HH:MM:SS Z</timePattern
+><timePattern name="long"
+>HH:MM:SS Z</timePattern
+><timePattern name="med"
+>HH:MM:SS</timePattern
+><timePattern name="short"
+>HH:MM</timePattern
+></timePatterns
+><dateTimeSymbols
+>GanjkHmsSEDFwWxhKzZ</dateTimeSymbols
+><numberPatterns
+><numberPattern name="numeric"
+>z,zz9.zzz</numberPattern
+><numberPattern name="currency"
+>z,zz9.99 $</numberPattern
+><numberPattern name="percent"
+>z,zz9%</numberPattern
+></numberPatterns
+><numberSymbols
+><numberSymbol name="decimal"
+>,</numberSymbol
+><numberSymbol name="grouping"
+>.</numberSymbol
+><numberSymbol name="percent"
+>%</numberSymbol
+><numberSymbol name="minus"
+>-</numberSymbol
+><numberSymbol name="zero"
+>0</numberSymbol
+></numberSymbols
+><currencySymbols
+><currencySymbol name="symbol"
+>LEI</currencySymbol
+><currencySymbol name="isoname"
+>RON</currencySymbol
+><currencySymbol name="decimal"
+>,</currencySymbol
+></currencySymbols
+><typefaces
+><typeface name="Myriad Pro"
+/><typeface name="Minion Pro"
+/><typeface name="Courier Std"
+/><typeface name="Adobe Pi Std"
+/><typeface name="Adobe Hebrew"
+/><typeface name="Adobe Arabic"
+/><typeface name="Adobe Thai"
+/><typeface name="Kozuka Gothic Pro-VI M"
+/><typeface name="Kozuka Mincho Pro-VI R"
+/><typeface name="Adobe Ming Std L"
+/><typeface name="Adobe Song Std L"
+/><typeface name="Adobe Myungjo Std M"
+/></typefaces
+></locale
+></localeSet
+>

@@ -1,0 +1,14 @@
+node_modules/
+dist/
+harness/oracle/out/
+# arhivele ANAF dezarhivate (jar-urile raman in zip-urile originale)
+legacy/anaf/validator/
+# regenerabil din PDF cu harness/extract_legacy.py (2.7 MB)
+legacy/extracted/xfa_template.xml
+__pycache__/
+.DS_Store
+Thumbs.db
+
+# corpus generat + fisierele lui de aur (reproductibile cu generate.mjs)
+harness/oracle/cases/gen/
+harness/oracle/golden/gen/
