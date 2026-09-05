@@ -136,6 +136,17 @@ tabelul de paritate ca „diferențe intenționate".
     câmpurile respective sunt oprite mai devreme de fundalul roșu (template), bifele au
     valori implicite non-nule, iar rândurile calculate sunt mereu numere. Singura ramură
     vie e CAEN. Confirmarea cifrică a defectului 9.
+18. **Formularul v12 scrie mereu namespace-ul v12, dar back-end-ul cere v10 pentru perioadele
+    dinainte de ianuarie 2026.** PDF-ul acceptă perioade începând cu mai 2024 (`an >= 2024`,
+    `2024 => luna >= 5`) și emite `xmlns="...v12"` indiferent de perioadă; validatorul oficial
+    refuză 110 din cele 364 de XML-uri ale corpusului exact din acest motiv. Un decont rectificativ
+    pentru 2025 făcut cu formularul curent ar fi respins la depunere. Găsit de oracolul 3 (`DUK.md`).
+19. **PDF-ul lasă să treacă coduri de identificare pe care back-end-ul le refuză.** Pentru un
+    CUI cu cifră de control greșită formularul doar alertează și validează oricum; validatorul
+    oficial respinge XML-ul (48 de cazuri din corpus). Iar regula V_1, corelația pentru metoda
+    simplificată, există doar în back-end, nu și în PDF: 20 de cazuri trec de formular și pică
+    la validator. Corelațiile rd.18=rd.5 etc. nu se pot declanșa niciodată, pentru că PDF-ul
+    calculează rândurile 20–23 ca oglindă a rândurilor 5–8.
 
 ## Note de semantică XFA învățate construind runtime-ul
 

@@ -8,6 +8,7 @@
 | diferente asteptate (declarate in expected.json) | 0 |
 | reguli vii atinse de corpus | 52 / 52 in `trace`, 52 / 52 cu dovezile indirecte |
 | XML-uri valide fata de XSD-ul oficial v12 | 359 / 364 |
+| XML-uri acceptate de validatorul oficial ANAF (DUKIntegrator) | 206 / 364 |
 | **verdict** | **PARITATE COMPLETA** |
 
 Comparate pe fiecare caz: mesajele (ordonate, cu textul verbatim), valorile
@@ -122,6 +123,50 @@ implementari.
 | `id-12-cnp-valid-13-cifre` | Element '{mfp:anaf:dgti:d300:declaratie:v12}declaratie300', attribute 'cui': [facet 'pattern'] The value '1800101221144' is not accepted by the pattern '[1-9]\d{1,9}'. |
 | `id-13-cnp-31-februarie-trece` | Element '{mfp:anaf:dgti:d300:declaratie:v12}declaratie300', attribute 'cui': [facet 'pattern'] The value '1800231221144' is not accepted by the pattern '[1-9]\d{1,9}'. |
 
+## Validatorul oficial ANAF (al treilea oracol)
+
+Rulat separat, nu din acest harness: un proces Java per XML dureaza minute, iar
+paritatea trebuie sa ramana de ordinul secundelor. Tabelul de mai jos e citit din
+`harness/duk/duk.json`, produs de `npm run duk`. Analiza pe categorii: [`DUK.md`](DUK.md).
+
+```
+java -jar tools/duk/dist/DUKIntegrator.jar -c <config> -v D300 <fisier.xml> <fisier_erori>
+```
+
+| | |
+|---|---|
+| XML-uri trimise validatorului | 364 |
+| acceptate | 206 |
+| dintre care doar cu atentionari | 14 |
+| refuzate | 158 |
+| cazuri fara XML (formular respins de original) | 54 |
+| verdicte diferite intre XML-ul oracolului si al modelului | 0 |
+
+Mesajele validatorului, grupate (valorile concrete inlocuite cu substituenti):
+
+| cazuri | gravitate | mesaj |
+|---|---|---|
+| 110 | eroare fatala | eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10' |
+| 110 | eroare fatala | va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare) |
+| 38 | eroare | eroare atribut: cui: CUI invalid ('68116490') |
+| 20 | eroare | S-a bifat ca se aplica metoda simplificata pentru operatiuni interne dar s-au gasit valori in randurile: 1, 2, 3, 3.1, 4, 5, 5.1, 6, 7, 7.1, 8, 20, 20.1, 21, 22, 22.1, 23, 28.1 |
+| 20 | eroare | eroare regula: V1: daca bifa_interne = 1 atunci si urmatoarele atribute: R3_1 (44640), R5_1_1 (276603), R18_1_1 (276603) trebuie sa fie nule |
+| 15 | atentionare | TVA(12.2) nu se incadreaza in 11% +- marja 1% |
+| 9 | eroare | eroare atribut: cuiSuccesor: CUI invalid ('18597230') |
+| 4 | atentionare | atentionare regula: R51: 8% din abs(R11_1 (27164)) (2173) <= abs(R11_2 (815)) <= 10% din abs(R11_1) (2716) |
+| 4 | atentionare | atentionare regula: R55: 20% din abs(R12_1_1 (7802450)) (1560490) <= abs(R12_1_2 (546172)) <= 22% din abs(R12_1_1) (1716539) |
+| 4 | atentionare | atentionare regula: R92: 20% din abs(R25_1_1 (7802450)) (1560490) <= abs(R25_1_2 (546172)) <= 22% din abs(R25_1_1) (1716539) |
+| 4 | eroare | eroare atribut: cui: sir mai lung de 10 caractere ('9000000000015') |
+| 2 | atentionare | atentionare regula: R49: 10% din abs(R10_1 (869254)) (86925) <= abs(R10_2 (541666)) <= 12% din abs(R10_1) (104310) |
+| 2 | atentionare | atentionare regula: R57: 10% din abs(R12_2_1 (56502900)) (5650290) <= abs(R12_2_2 (2071773)) <= 12% din abs(R12_2_1) (6780348) |
+| 2 | atentionare | atentionare regula: R84: 20% din abs(R22_1 (61425400)) (12285080) <= abs(R22_2 (-117815)) <= 22% din abs(R22_1) (13513588) |
+| 2 | atentionare | atentionare regula: R94: 10% din abs(R25_2_1 (56502900)) (5650290) <= abs(R26_2_2 (2071773)) <= 12% din abs(R25_2_1) (6780348) |
+| 1 | atentionare | atentionare regula: R47: 20% din abs(R9_1 (100000)) (20000) <= abs(R9_2 (5000)) <= 22% din abs(R9_1) (22000) |
+| 1 | atentionare | atentionare regula: R86: 10% din abs(R23_1 (1530670)) (153067) <= abs(R23_2 (6437900)) <= 12% din abs(R23_1) (183680) |
+| 1 | eroare | eroare regula: R15: banca (BANCA #1 EXEMPLU) nu poate contine caracterele ',' si '#' |
+| 1 | eroare | eroare regula: R16: cont (RO49AAAA1B31007593840000) nu poate contine caracterele ',' si '#' |
+
+
 ## Reproducere
 
 ```bash
@@ -144,4 +189,5 @@ de la o rulare la alta stau doar aici.
 
 - data: 2026-09-06
 - PDF-ul sursa: `D300_v12.0.2_12022026.pdf`
+- validatorul oficial: rulat pe 2026-09-06 cu openjdk version "21.0.12.1" 2026-08-18 LTS
 - timpul de rulare: sub 15 s (valoarea exacta in milisecunde, in `parity.json`)

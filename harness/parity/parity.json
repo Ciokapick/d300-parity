@@ -180,6 +180,125 @@
   ],
   "verdictDiferitOracolModel": []
  },
+ "duk": {
+  "rulat": true,
+  "eroare": null,
+  "data": "2026-09-06",
+  "invechit": false,
+  "cazuriLipsa": [],
+  "unelte": {
+   "java": "openjdk version \"21.0.12.1\" 2026-08-18 LTS",
+   "javaCale": "tools/jre/bin/java.exe",
+   "duk": "tools/duk/dist/DUKIntegrator.jar",
+   "validator": "legacy/anaf/validator/D300Validator.jar (din legacy/anaf/D300Validator_11022026_2.zip)",
+   "declaratie": "D300"
+  },
+  "comanda": "java -jar tools/duk/dist/DUKIntegrator.jar -c <config> -v D300 <fisier.xml> <fisier_erori>",
+  "rezultat": {
+   "acceptate": 206,
+   "dintreCareCuAtentionari": 14,
+   "refuzate": 158,
+   "necunoscute": 0
+  },
+  "grupe": [
+   {
+    "fel": "eroare fatala",
+    "exemplu": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'",
+    "cazuri": 110
+   },
+   {
+    "fel": "eroare fatala",
+    "exemplu": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)",
+    "cazuri": 110
+   },
+   {
+    "fel": "eroare",
+    "exemplu": "eroare atribut: cui: CUI invalid ('68116490')",
+    "cazuri": 38
+   },
+   {
+    "fel": "eroare",
+    "exemplu": "S-a bifat ca se aplica metoda simplificata pentru operatiuni interne dar s-au gasit valori in randurile: 1, 2, 3, 3.1, 4, 5, 5.1, 6, 7, 7.1, 8, 20, 20.1, 21, 22, 22.1, 23, 28.1",
+    "cazuri": 20
+   },
+   {
+    "fel": "eroare",
+    "exemplu": "eroare regula: V1: daca bifa_interne = 1 atunci si urmatoarele atribute: R3_1 (44640), R5_1_1 (276603), R18_1_1 (276603) trebuie sa fie nule",
+    "cazuri": 20
+   },
+   {
+    "fel": "atentionare",
+    "exemplu": "TVA(12.2) nu se incadreaza in 11% +- marja 1%",
+    "cazuri": 15
+   },
+   {
+    "fel": "eroare",
+    "exemplu": "eroare atribut: cuiSuccesor: CUI invalid ('18597230')",
+    "cazuri": 9
+   },
+   {
+    "fel": "atentionare",
+    "exemplu": "atentionare regula: R51: 8% din abs(R11_1 (27164)) (2173) <= abs(R11_2 (815)) <= 10% din abs(R11_1) (2716)",
+    "cazuri": 4
+   },
+   {
+    "fel": "atentionare",
+    "exemplu": "atentionare regula: R55: 20% din abs(R12_1_1 (7802450)) (1560490) <= abs(R12_1_2 (546172)) <= 22% din abs(R12_1_1) (1716539)",
+    "cazuri": 4
+   },
+   {
+    "fel": "atentionare",
+    "exemplu": "atentionare regula: R92: 20% din abs(R25_1_1 (7802450)) (1560490) <= abs(R25_1_2 (546172)) <= 22% din abs(R25_1_1) (1716539)",
+    "cazuri": 4
+   },
+   {
+    "fel": "eroare",
+    "exemplu": "eroare atribut: cui: sir mai lung de 10 caractere ('9000000000015')",
+    "cazuri": 4
+   },
+   {
+    "fel": "atentionare",
+    "exemplu": "atentionare regula: R49: 10% din abs(R10_1 (869254)) (86925) <= abs(R10_2 (541666)) <= 12% din abs(R10_1) (104310)",
+    "cazuri": 2
+   },
+   {
+    "fel": "atentionare",
+    "exemplu": "atentionare regula: R57: 10% din abs(R12_2_1 (56502900)) (5650290) <= abs(R12_2_2 (2071773)) <= 12% din abs(R12_2_1) (6780348)",
+    "cazuri": 2
+   },
+   {
+    "fel": "atentionare",
+    "exemplu": "atentionare regula: R84: 20% din abs(R22_1 (61425400)) (12285080) <= abs(R22_2 (-117815)) <= 22% din abs(R22_1) (13513588)",
+    "cazuri": 2
+   },
+   {
+    "fel": "atentionare",
+    "exemplu": "atentionare regula: R94: 10% din abs(R25_2_1 (56502900)) (5650290) <= abs(R26_2_2 (2071773)) <= 12% din abs(R25_2_1) (6780348)",
+    "cazuri": 2
+   },
+   {
+    "fel": "atentionare",
+    "exemplu": "atentionare regula: R47: 20% din abs(R9_1 (100000)) (20000) <= abs(R9_2 (5000)) <= 22% din abs(R9_1) (22000)",
+    "cazuri": 1
+   },
+   {
+    "fel": "atentionare",
+    "exemplu": "atentionare regula: R86: 10% din abs(R23_1 (1530670)) (153067) <= abs(R23_2 (6437900)) <= 12% din abs(R23_1) (183680)",
+    "cazuri": 1
+   },
+   {
+    "fel": "eroare",
+    "exemplu": "eroare regula: R15: banca (BANCA #1 EXEMPLU) nu poate contine caracterele ',' si '#'",
+    "cazuri": 1
+   },
+   {
+    "fel": "eroare",
+    "exemplu": "eroare regula: R16: cont (RO49AAAA1B31007593840000) nu poate contine caracterele ',' si '#'",
+    "cazuri": 1
+   }
+  ],
+  "verdictDiferitOracolModel": []
+ },
  "probleme": [],
- "durataMs": 8369
+ "durataMs": 8142
 }

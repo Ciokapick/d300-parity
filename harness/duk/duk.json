@@ -1,0 +1,5075 @@
+{
+ "data": "2026-09-06",
+ "unelte": {
+  "java": "openjdk version \"21.0.12.1\" 2026-08-18 LTS",
+  "javaCale": "tools/jre/bin/java.exe",
+  "duk": "tools/duk/dist/DUKIntegrator.jar",
+  "validator": "legacy/anaf/validator/D300Validator.jar (din legacy/anaf/D300Validator_11022026_2.zip)",
+  "declaratie": "D300"
+ },
+ "comanda": "java -jar tools/duk/dist/DUKIntegrator.jar -c <config> -v D300 <fisier.xml> <fisier_erori>",
+ "corpus": {
+  "cazuri": 418,
+  "cuXml": 364,
+  "faraXml": 54,
+  "generateIncluse": true
+ },
+ "rezultat": {
+  "acceptate": 206,
+  "dintreCareCuAtentionari": 14,
+  "refuzate": 158,
+  "necunoscute": 0
+ },
+ "grupe": [
+  {
+   "cheie": "eroare structura: namespace ('X') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='X'",
+   "sev": "F",
+   "fel": "eroare fatala",
+   "sectiune": "validari globale",
+   "exemplu": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'",
+   "aparitii": 110,
+   "cazuri": [
+    "gen-1-0003",
+    "gen-1-0007",
+    "gen-1-0011",
+    "gen-1-0016",
+    "gen-1-0017",
+    "gen-1-0019",
+    "gen-1-0020",
+    "gen-1-0023",
+    "gen-1-0029",
+    "gen-1-0031",
+    "gen-1-0032",
+    "gen-1-0034",
+    "gen-1-0036",
+    "gen-1-0038",
+    "gen-1-0039",
+    "gen-1-0043",
+    "gen-1-0046",
+    "gen-1-0047",
+    "gen-1-0048",
+    "gen-1-0052",
+    "gen-1-0055",
+    "gen-1-0063",
+    "gen-1-0064",
+    "gen-1-0068",
+    "gen-1-0073",
+    "gen-1-0077",
+    "gen-1-0078",
+    "gen-1-0080",
+    "gen-1-0081",
+    "gen-1-0082",
+    "gen-1-0087",
+    "gen-1-0089",
+    "gen-1-0091",
+    "gen-1-0092",
+    "gen-1-0095",
+    "gen-1-0096",
+    "gen-1-0099",
+    "gen-1-0100",
+    "gen-1-0107",
+    "gen-1-0108",
+    "gen-1-0109",
+    "gen-1-0118",
+    "gen-1-0120",
+    "gen-1-0121",
+    "gen-1-0123",
+    "gen-1-0124",
+    "gen-1-0128",
+    "gen-1-0129",
+    "gen-1-0144",
+    "gen-1-0146",
+    "gen-1-0149",
+    "gen-1-0150",
+    "gen-1-0154",
+    "gen-1-0156",
+    "gen-1-0157",
+    "gen-1-0160",
+    "gen-1-0170",
+    "gen-1-0179",
+    "gen-1-0180",
+    "gen-1-0181",
+    "gen-1-0183",
+    "gen-1-0184",
+    "gen-1-0190",
+    "gen-1-0193",
+    "gen-1-0202",
+    "gen-1-0203",
+    "gen-1-0204",
+    "gen-1-0206",
+    "gen-1-0209",
+    "gen-1-0210",
+    "gen-1-0212",
+    "gen-1-0213",
+    "gen-1-0218",
+    "gen-1-0219",
+    "gen-1-0223",
+    "gen-1-0224",
+    "gen-1-0229",
+    "gen-1-0231",
+    "gen-1-0233",
+    "gen-1-0237",
+    "gen-1-0238",
+    "gen-1-0240",
+    "gen-1-0242",
+    "gen-1-0243",
+    "gen-1-0244",
+    "gen-1-0249",
+    "gen-1-0250",
+    "gen-1-0258",
+    "gen-1-0259",
+    "gen-1-0260",
+    "gen-1-0261",
+    "gen-1-0262",
+    "gen-1-0263",
+    "gen-1-0264",
+    "gen-1-0265",
+    "gen-1-0267",
+    "gen-1-0274",
+    "gen-1-0276",
+    "gen-1-0280",
+    "gen-1-0285",
+    "gen-1-0288",
+    "gen-1-0289",
+    "gen-1-0290",
+    "gen-1-0292",
+    "gen-1-0294",
+    "gen-1-0296",
+    "gen-1-0297",
+    "gen-1-0299",
+    "gen-1-0300",
+    "per-03-an-2024-luna-valida"
+   ]
+  },
+  {
+   "cheie": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)",
+   "sev": "F",
+   "fel": "eroare fatala",
+   "sectiune": "validari globale",
+   "exemplu": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)",
+   "aparitii": 110,
+   "cazuri": [
+    "gen-1-0003",
+    "gen-1-0007",
+    "gen-1-0011",
+    "gen-1-0016",
+    "gen-1-0017",
+    "gen-1-0019",
+    "gen-1-0020",
+    "gen-1-0023",
+    "gen-1-0029",
+    "gen-1-0031",
+    "gen-1-0032",
+    "gen-1-0034",
+    "gen-1-0036",
+    "gen-1-0038",
+    "gen-1-0039",
+    "gen-1-0043",
+    "gen-1-0046",
+    "gen-1-0047",
+    "gen-1-0048",
+    "gen-1-0052",
+    "gen-1-0055",
+    "gen-1-0063",
+    "gen-1-0064",
+    "gen-1-0068",
+    "gen-1-0073",
+    "gen-1-0077",
+    "gen-1-0078",
+    "gen-1-0080",
+    "gen-1-0081",
+    "gen-1-0082",
+    "gen-1-0087",
+    "gen-1-0089",
+    "gen-1-0091",
+    "gen-1-0092",
+    "gen-1-0095",
+    "gen-1-0096",
+    "gen-1-0099",
+    "gen-1-0100",
+    "gen-1-0107",
+    "gen-1-0108",
+    "gen-1-0109",
+    "gen-1-0118",
+    "gen-1-0120",
+    "gen-1-0121",
+    "gen-1-0123",
+    "gen-1-0124",
+    "gen-1-0128",
+    "gen-1-0129",
+    "gen-1-0144",
+    "gen-1-0146",
+    "gen-1-0149",
+    "gen-1-0150",
+    "gen-1-0154",
+    "gen-1-0156",
+    "gen-1-0157",
+    "gen-1-0160",
+    "gen-1-0170",
+    "gen-1-0179",
+    "gen-1-0180",
+    "gen-1-0181",
+    "gen-1-0183",
+    "gen-1-0184",
+    "gen-1-0190",
+    "gen-1-0193",
+    "gen-1-0202",
+    "gen-1-0203",
+    "gen-1-0204",
+    "gen-1-0206",
+    "gen-1-0209",
+    "gen-1-0210",
+    "gen-1-0212",
+    "gen-1-0213",
+    "gen-1-0218",
+    "gen-1-0219",
+    "gen-1-0223",
+    "gen-1-0224",
+    "gen-1-0229",
+    "gen-1-0231",
+    "gen-1-0233",
+    "gen-1-0237",
+    "gen-1-0238",
+    "gen-1-0240",
+    "gen-1-0242",
+    "gen-1-0243",
+    "gen-1-0244",
+    "gen-1-0249",
+    "gen-1-0250",
+    "gen-1-0258",
+    "gen-1-0259",
+    "gen-1-0260",
+    "gen-1-0261",
+    "gen-1-0262",
+    "gen-1-0263",
+    "gen-1-0264",
+    "gen-1-0265",
+    "gen-1-0267",
+    "gen-1-0274",
+    "gen-1-0276",
+    "gen-1-0280",
+    "gen-1-0285",
+    "gen-1-0288",
+    "gen-1-0289",
+    "gen-1-0290",
+    "gen-1-0292",
+    "gen-1-0294",
+    "gen-1-0296",
+    "gen-1-0297",
+    "gen-1-0299",
+    "gen-1-0300",
+    "per-03-an-2024-luna-valida"
+   ]
+  },
+  {
+   "cheie": "eroare atribut: cui: CUI invalid ('X')",
+   "sev": "E",
+   "fel": "eroare",
+   "sectiune": "validari globale",
+   "exemplu": "eroare atribut: cui: CUI invalid ('68116490')",
+   "aparitii": 38,
+   "cazuri": [
+    "gen-1-0022",
+    "gen-1-0023",
+    "gen-1-0034",
+    "gen-1-0041",
+    "gen-1-0052",
+    "gen-1-0053",
+    "gen-1-0055",
+    "gen-1-0056",
+    "gen-1-0057",
+    "gen-1-0060",
+    "gen-1-0064",
+    "gen-1-0069",
+    "gen-1-0071",
+    "gen-1-0072",
+    "gen-1-0074",
+    "gen-1-0080",
+    "gen-1-0112",
+    "gen-1-0123",
+    "gen-1-0147",
+    "gen-1-0150",
+    "gen-1-0151",
+    "gen-1-0175",
+    "gen-1-0186",
+    "gen-1-0189",
+    "gen-1-0193",
+    "gen-1-0196",
+    "gen-1-0203",
+    "gen-1-0209",
+    "gen-1-0223",
+    "gen-1-0255",
+    "gen-1-0258",
+    "gen-1-0267",
+    "gen-1-0280",
+    "gen-1-0284",
+    "gen-1-0288",
+    "gen-1-0292",
+    "id-01-cui-invalid",
+    "id-09-cui-cu-zero-la-inceput"
+   ]
+  },
+  {
+   "cheie": "S-a bifat ca se aplica metoda simplificata pentru operatiuni interne dar s-au gasit valori in randurile: N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N",
+   "sev": "E",
+   "fel": "eroare",
+   "sectiune": "validari globale",
+   "exemplu": "S-a bifat ca se aplica metoda simplificata pentru operatiuni interne dar s-au gasit valori in randurile: 1, 2, 3, 3.1, 4, 5, 5.1, 6, 7, 7.1, 8, 20, 20.1, 21, 22, 22.1, 23, 28.1",
+   "aparitii": 20,
+   "cazuri": [
+    "gen-1-0051",
+    "gen-1-0072",
+    "gen-1-0076",
+    "gen-1-0084",
+    "gen-1-0088",
+    "gen-1-0116",
+    "gen-1-0131",
+    "gen-1-0132",
+    "gen-1-0133",
+    "gen-1-0137",
+    "gen-1-0145",
+    "gen-1-0147",
+    "gen-1-0188",
+    "gen-1-0211",
+    "gen-1-0216",
+    "gen-1-0228",
+    "gen-1-0235",
+    "gen-1-0256",
+    "gen-1-0286",
+    "gen-1-0298"
+   ]
+  },
+  {
+   "cheie": "eroare regula: V1: daca bifa_interne = N atunci si urmatoarele atribute: <lista> trebuie sa fie nule",
+   "sev": "E",
+   "fel": "eroare",
+   "sectiune": "validari globale",
+   "exemplu": "eroare regula: V1: daca bifa_interne = 1 atunci si urmatoarele atribute: R3_1 (44640), R5_1_1 (276603), R18_1_1 (276603) trebuie sa fie nule",
+   "aparitii": 20,
+   "cazuri": [
+    "gen-1-0051",
+    "gen-1-0072",
+    "gen-1-0076",
+    "gen-1-0084",
+    "gen-1-0088",
+    "gen-1-0116",
+    "gen-1-0131",
+    "gen-1-0132",
+    "gen-1-0133",
+    "gen-1-0137",
+    "gen-1-0145",
+    "gen-1-0147",
+    "gen-1-0188",
+    "gen-1-0211",
+    "gen-1-0216",
+    "gen-1-0228",
+    "gen-1-0235",
+    "gen-1-0256",
+    "gen-1-0286",
+    "gen-1-0298"
+   ]
+  },
+  {
+   "cheie": "TVA(N) nu se incadreaza in N% +- marja N%",
+   "sev": "A",
+   "fel": "atentionare",
+   "sectiune": "validari globale",
+   "exemplu": "TVA(12.2) nu se incadreaza in 11% +- marja 1%",
+   "aparitii": 22,
+   "cazuri": [
+    "gen-1-0006",
+    "gen-1-0024",
+    "gen-1-0070",
+    "gen-1-0127",
+    "gen-1-0177",
+    "gen-1-0187",
+    "gen-1-0200",
+    "gen-1-0217",
+    "gen-1-0225",
+    "gen-1-0266",
+    "gen-1-0275",
+    "tva-01-toleranta-depasita-21",
+    "tva-03-toleranta-depasita-11",
+    "tva-04-toleranta-depasita-9",
+    "tva-05-toleranta-depasita-achizitii"
+   ]
+  },
+  {
+   "cheie": "eroare atribut: cuiSuccesor: CUI invalid ('X')",
+   "sev": "E",
+   "fel": "eroare",
+   "sectiune": "validari globale",
+   "exemplu": "eroare atribut: cuiSuccesor: CUI invalid ('18597230')",
+   "aparitii": 9,
+   "cazuri": [
+    "antet-07-d-scc-cu-cif-succesor-invalid",
+    "gen-1-0006",
+    "gen-1-0051",
+    "gen-1-0107",
+    "gen-1-0119",
+    "gen-1-0139",
+    "gen-1-0179",
+    "gen-1-0184",
+    "gen-1-0212"
+   ]
+  },
+  {
+   "cheie": "atentionare regula: R51: N% din abs(R11_N (N)) (N) <= abs(R11_N (N)) <= N% din abs(R11_N) (N)",
+   "sev": "A",
+   "fel": "atentionare",
+   "sectiune": "validari globale",
+   "exemplu": "atentionare regula: R51: 8% din abs(R11_1 (27164)) (2173) <= abs(R11_2 (815)) <= 10% din abs(R11_1) (2716)",
+   "aparitii": 4,
+   "cazuri": [
+    "gen-1-0070",
+    "gen-1-0187",
+    "gen-1-0266",
+    "tva-04-toleranta-depasita-9"
+   ]
+  },
+  {
+   "cheie": "atentionare regula: R55: N% din abs(R12_N_N (N)) (N) <= abs(R12_N_N (N)) <= N% din abs(R12_N_N) (N)",
+   "sev": "A",
+   "fel": "atentionare",
+   "sectiune": "validari globale",
+   "exemplu": "atentionare regula: R55: 20% din abs(R12_1_1 (7802450)) (1560490) <= abs(R12_1_2 (546172)) <= 22% din abs(R12_1_1) (1716539)",
+   "aparitii": 4,
+   "cazuri": [
+    "gen-1-0127",
+    "gen-1-0200",
+    "gen-1-0225",
+    "gen-1-0275"
+   ]
+  },
+  {
+   "cheie": "atentionare regula: R92: N% din abs(R25_N_N (N)) (N) <= abs(R25_N_N (N)) <= N% din abs(R25_N_N) (N)",
+   "sev": "A",
+   "fel": "atentionare",
+   "sectiune": "validari globale",
+   "exemplu": "atentionare regula: R92: 20% din abs(R25_1_1 (7802450)) (1560490) <= abs(R25_1_2 (546172)) <= 22% din abs(R25_1_1) (1716539)",
+   "aparitii": 4,
+   "cazuri": [
+    "gen-1-0127",
+    "gen-1-0200",
+    "gen-1-0225",
+    "gen-1-0275"
+   ]
+  },
+  {
+   "cheie": "eroare atribut: cui: sir mai lung de N caractere ('X')",
+   "sev": "E",
+   "fel": "eroare",
+   "sectiune": "validari globale",
+   "exemplu": "eroare atribut: cui: sir mai lung de 10 caractere ('9000000000015')",
+   "aparitii": 4,
+   "cazuri": [
+    "id-03-nif-valid-13-cifre",
+    "id-04-nif-invalid-13-cifre",
+    "id-12-cnp-valid-13-cifre",
+    "id-13-cnp-31-februarie-trece"
+   ]
+  },
+  {
+   "cheie": "atentionare regula: R49: N% din abs(R10_N (N)) (N) <= abs(R10_N (N)) <= N% din abs(R10_N) (N)",
+   "sev": "A",
+   "fel": "atentionare",
+   "sectiune": "validari globale",
+   "exemplu": "atentionare regula: R49: 10% din abs(R10_1 (869254)) (86925) <= abs(R10_2 (541666)) <= 12% din abs(R10_1) (104310)",
+   "aparitii": 2,
+   "cazuri": [
+    "gen-1-0187",
+    "tva-03-toleranta-depasita-11"
+   ]
+  },
+  {
+   "cheie": "atentionare regula: R57: N% din abs(R12_N_N (N)) (N) <= abs(R12_N_N (N)) <= N% din abs(R12_N_N) (N)",
+   "sev": "A",
+   "fel": "atentionare",
+   "sectiune": "validari globale",
+   "exemplu": "atentionare regula: R57: 10% din abs(R12_2_1 (56502900)) (5650290) <= abs(R12_2_2 (2071773)) <= 12% din abs(R12_2_1) (6780348)",
+   "aparitii": 2,
+   "cazuri": [
+    "gen-1-0006",
+    "gen-1-0217"
+   ]
+  },
+  {
+   "cheie": "atentionare regula: R84: N% din abs(R22_N (N)) (N) <= abs(R22_N (N)) <= N% din abs(R22_N) (N)",
+   "sev": "A",
+   "fel": "atentionare",
+   "sectiune": "validari globale",
+   "exemplu": "atentionare regula: R84: 20% din abs(R22_1 (61425400)) (12285080) <= abs(R22_2 (-117815)) <= 22% din abs(R22_1) (13513588)",
+   "aparitii": 2,
+   "cazuri": [
+    "gen-1-0024",
+    "tva-05-toleranta-depasita-achizitii"
+   ]
+  },
+  {
+   "cheie": "atentionare regula: R94: N% din abs(R25_N_N (N)) (N) <= abs(R26_N_N (N)) <= N% din abs(R25_N_N) (N)",
+   "sev": "A",
+   "fel": "atentionare",
+   "sectiune": "validari globale",
+   "exemplu": "atentionare regula: R94: 10% din abs(R25_2_1 (56502900)) (5650290) <= abs(R26_2_2 (2071773)) <= 12% din abs(R25_2_1) (6780348)",
+   "aparitii": 2,
+   "cazuri": [
+    "gen-1-0006",
+    "gen-1-0217"
+   ]
+  },
+  {
+   "cheie": "atentionare regula: R47: N% din abs(R9_N (N)) (N) <= abs(R9_N (N)) <= N% din abs(R9_N) (N)",
+   "sev": "A",
+   "fel": "atentionare",
+   "sectiune": "validari globale",
+   "exemplu": "atentionare regula: R47: 20% din abs(R9_1 (100000)) (20000) <= abs(R9_2 (5000)) <= 22% din abs(R9_1) (22000)",
+   "aparitii": 1,
+   "cazuri": [
+    "tva-01-toleranta-depasita-21"
+   ]
+  },
+  {
+   "cheie": "atentionare regula: R86: N% din abs(R23_N (N)) (N) <= abs(R23_N (N)) <= N% din abs(R23_N) (N)",
+   "sev": "A",
+   "fel": "atentionare",
+   "sectiune": "validari globale",
+   "exemplu": "atentionare regula: R86: 10% din abs(R23_1 (1530670)) (153067) <= abs(R23_2 (6437900)) <= 12% din abs(R23_1) (183680)",
+   "aparitii": 1,
+   "cazuri": [
+    "gen-1-0177"
+   ]
+  },
+  {
+   "cheie": "eroare regula: R15: banca (BANCA #N EXEMPLU) nu poate contine caracterele 'X' si 'X'",
+   "sev": "E",
+   "fel": "eroare",
+   "sectiune": "validari globale",
+   "exemplu": "eroare regula: R15: banca (BANCA #1 EXEMPLU) nu poate contine caracterele ',' si '#'",
+   "aparitii": 1,
+   "cazuri": [
+    "den-04-caractere-nepermise-banca"
+   ]
+  },
+  {
+   "cheie": "eroare regula: R16: cont (RO49AAAA1B31007593840000) nu poate contine caracterele 'X' si 'X'",
+   "sev": "E",
+   "fel": "eroare",
+   "sectiune": "validari globale",
+   "exemplu": "eroare regula: R16: cont (RO49AAAA1B31007593840000) nu poate contine caracterele ',' si '#'",
+   "aparitii": 1,
+   "cazuri": [
+    "den-04-caractere-nepermise-banca"
+   ]
+  }
+ ],
+ "verdictDiferitOracolModel": [],
+ "verdicte": [
+  {
+   "case": "ab-01-rd-a-mai-mic-decat-a1",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "ab-02-rd-a-tva-peste-valoare",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "ab-03-rd-a1-tva-peste-rd-a-tva",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "ab-04-rd-a-a1-coerente",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "ab-05-rd-b-mai-mic-decat-b1",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "ab-06-rd-b-tva-peste-valoare",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "ab-07-rd-b1-tva-peste-valoare",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "ab-08-rd-a-negativ-comparat-in-modul",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "adresa-01-cod-postal-scurt",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "adresa-02-cod-postal-nenumeric-respins",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "adresa-03-caractere-nepermise-adresa",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "adresa-04-caractere-permise-adresa",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "antet-01-metoda-simplificata",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "antet-02-d-rez-cu-temei",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "antet-04-temei-legal-fortat-la-2",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "antet-05-temei-legal-fara-bifa",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "antet-06-d-scc-cu-cif-succesor-valid",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "antet-07-d-scc-cu-cif-succesor-invalid",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cuiSuccesor: CUI invalid ('18597230')"
+    }
+   ]
+  },
+  {
+   "case": "antet-08-cif-succesor-fara-bifa",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "antet-09-decont-consolidat-reprezentant",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "antet-10-declaratie-rectificativa",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "bife-01-toate-da",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "caen-01-rev3-goleste-rev2",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "calc-01-rd12-din-121-122",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "calc-02-rd19-total-taxa-colectata",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "calc-03-rd20-23-oglinda-rd5-8",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "calc-04-rd26-din-261-262",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "calc-05-rd30-total-taxa-deductibila",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "calc-06-tva-auto-21",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "calc-07-tva-auto-11",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "calc-08-tva-auto-9",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "calc-09-tva-auto-achizitii-24-25",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "calc-10-tva-auto-121-122",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "calc-11-valoare-goala-scrie-zero-in-tva",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "calc-12-rd35-total-taxa-dedusa",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "calc-13-rd36-suma-negativa-perioada",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "calc-14-rd37-taxa-de-plata-perioada",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "calc-15-rd40-tva-plata-cumulat",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "calc-16-rd43-suma-negativa-cumulata",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "calc-17-rd44-sold-de-plata",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "calc-18-rd45-sold-negativ",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "calc-19-suma-de-control",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "contact-01-telefon-invalid",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "contact-02-telefon-valid",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "contact-03-email-invalid",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "contact-04-email-valid",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "contact-05-fax-invalid",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "cor-01-rd29-mai-mic-decat-rd291",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "cor-02-rd29-coerent",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "cor-05-exclusivitate-respectata",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "den-01-caractere-nepermise-denumire",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "den-02-caractere-permise-denumire",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "den-03-majuscule-fortate",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "den-04-caractere-nepermise-banca",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare regula: R15: banca (BANCA #1 EXEMPLU) nu poate contine caracterele ',' si '#'"
+    },
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare regula: R16: cont (RO49AAAA1B31007593840000) nu poate contine caracterele ',' si '#'"
+    }
+   ]
+  },
+  {
+   "case": "evid-01-lunar-luna-3",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "evid-02-lunar-luna-12",
+   "gen": false,
+   "perioada": "2026-12",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "evid-03-trimestrial-luna-6",
+   "gen": false,
+   "perioada": "2026-06",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "evid-04-trimestrial-luna-12",
+   "gen": false,
+   "perioada": "2026-12",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "evid-05-semestrial-luna-6",
+   "gen": false,
+   "perioada": "2026-06",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "evid-06-semestrial-luna-12",
+   "gen": false,
+   "perioada": "2026-12",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "evid-07-anual-luna-12",
+   "gen": false,
+   "perioada": "2026-12",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "ext-01-valori-negative",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "ext-02-sume-de-15-cifre",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "ext-03-facturi-emise-si-primite",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "ext-04-alte-informatii-totaluri",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0003",
+   "gen": true,
+   "perioada": "2024-06",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0004",
+   "gen": true,
+   "perioada": "2026-11",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0005",
+   "gen": true,
+   "perioada": "2026-06",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0006",
+   "gen": true,
+   "perioada": "2026-06",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cuiSuccesor: CUI invalid ('33259631')"
+    },
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "TVA(12.2) nu se incadreaza in 11% +- marja 1%"
+    },
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "atentionare regula: R57: 10% din abs(R12_2_1 (56502900)) (5650290) <= abs(R12_2_2 (2071773)) <= 12% din abs(R12_2_1) (6780348)"
+    },
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "TVA(26.2) nu se incadreaza in 11% +- marja 1%"
+    },
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "atentionare regula: R94: 10% din abs(R25_2_1 (56502900)) (5650290) <= abs(R26_2_2 (2071773)) <= 12% din abs(R25_2_1) (6780348)"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0007",
+   "gen": true,
+   "perioada": "2025-03",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0008",
+   "gen": true,
+   "perioada": "2026-02",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0009",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0010",
+   "gen": true,
+   "perioada": "2026-08",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0011",
+   "gen": true,
+   "perioada": "2024-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0012",
+   "gen": true,
+   "perioada": "2026-06",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0014",
+   "gen": true,
+   "perioada": "2026-07",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0015",
+   "gen": true,
+   "perioada": "2026-06",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0016",
+   "gen": true,
+   "perioada": "2025-06",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0017",
+   "gen": true,
+   "perioada": "2024-05",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0018",
+   "gen": true,
+   "perioada": "2026-05",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0019",
+   "gen": true,
+   "perioada": "2025-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v11'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0020",
+   "gen": true,
+   "perioada": "2025-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v11'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0021",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0022",
+   "gen": true,
+   "perioada": "2026-05",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('68116490')"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0023",
+   "gen": true,
+   "perioada": "2024-11",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('93864010')"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0024",
+   "gen": true,
+   "perioada": "2026-02",
+   "status": "atentionari",
+   "mesaje": [
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "TVA(24) nu se incadreaza in 21% +- marja 1%"
+    },
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "atentionare regula: R84: 20% din abs(R22_1 (61425400)) (12285080) <= abs(R22_2 (-117815)) <= 22% din abs(R22_1) (13513588)"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0026",
+   "gen": true,
+   "perioada": "2026-04",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0027",
+   "gen": true,
+   "perioada": "2026-04",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0028",
+   "gen": true,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0029",
+   "gen": true,
+   "perioada": "2025-08",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v11'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0030",
+   "gen": true,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0031",
+   "gen": true,
+   "perioada": "2025-10",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v11'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0032",
+   "gen": true,
+   "perioada": "2025-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v11'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0033",
+   "gen": true,
+   "perioada": "2026-10",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0034",
+   "gen": true,
+   "perioada": "2024-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('30281180')"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0035",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0036",
+   "gen": true,
+   "perioada": "2024-05",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0037",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0038",
+   "gen": true,
+   "perioada": "2024-11",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0039",
+   "gen": true,
+   "perioada": "2025-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v11'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0040",
+   "gen": true,
+   "perioada": "2026-08",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0041",
+   "gen": true,
+   "perioada": "2026-07",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('97263900')"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0042",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0043",
+   "gen": true,
+   "perioada": "2025-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v11'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0044",
+   "gen": true,
+   "perioada": "2026-04",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0045",
+   "gen": true,
+   "perioada": "2026-06",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0046",
+   "gen": true,
+   "perioada": "2024-11",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0047",
+   "gen": true,
+   "perioada": "2025-09",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v11'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0048",
+   "gen": true,
+   "perioada": "2025-02",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0049",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0050",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0051",
+   "gen": true,
+   "perioada": "2026-11",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cuiSuccesor: CUI invalid ('19544161')"
+    },
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "S-a bifat ca se aplica metoda simplificata pentru operatiuni interne dar s-au gasit valori in randurile: 1, 2, 3, 3.1, 4, 5, 5.1, 6, 7, 7.1, 8, 20, 20.1, 21, 22, 22.1, 23, 28.1"
+    },
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare regula: V1: daca bifa_interne = 1 atunci si urmatoarele atribute: R3_1 (44640), R5_1_1 (276603), R18_1_1 (276603) trebuie sa fie nule"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0052",
+   "gen": true,
+   "perioada": "2024-06",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('93219640')"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0053",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('53894070')"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0054",
+   "gen": true,
+   "perioada": "2026-05",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0055",
+   "gen": true,
+   "perioada": "2024-06",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('79562760')"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0056",
+   "gen": true,
+   "perioada": "2026-05",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('36375560')"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0057",
+   "gen": true,
+   "perioada": "2026-11",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('86757060')"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0059",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0060",
+   "gen": true,
+   "perioada": "2026-02",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('76112440')"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0061",
+   "gen": true,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0062",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0063",
+   "gen": true,
+   "perioada": "2025-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v11'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0064",
+   "gen": true,
+   "perioada": "2025-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('26210860')"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v11'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0065",
+   "gen": true,
+   "perioada": "2026-02",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0066",
+   "gen": true,
+   "perioada": "2026-10",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0068",
+   "gen": true,
+   "perioada": "2025-11",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v11'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0069",
+   "gen": true,
+   "perioada": "2026-06",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('30380620')"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0070",
+   "gen": true,
+   "perioada": "2026-06",
+   "status": "atentionari",
+   "mesaje": [
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "TVA(11) nu se incadreaza in 5% +- marja 1%"
+    },
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "atentionare regula: R51: 8% din abs(R11_1 (27164)) (2173) <= abs(R11_2 (815)) <= 10% din abs(R11_1) (2716)"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0071",
+   "gen": true,
+   "perioada": "2026-05",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('20631780')"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0072",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('31459190')"
+    },
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "S-a bifat ca se aplica metoda simplificata pentru operatiuni interne dar s-au gasit valori in randurile: 1, 2, 3, 3.1, 4, 5, 5.1, 6, 7, 7.1, 8, 20, 20.1, 21, 22, 22.1, 23, 28.1"
+    },
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare regula: V1: daca bifa_interne = 1 atunci si urmatoarele atribute: R5_1_2 (79998500), R7_1 (4180600), R18_1_2 (79998500), R20_1 (4180600) trebuie sa fie nule"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0073",
+   "gen": true,
+   "perioada": "2025-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v11'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0074",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('75508930')"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0076",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "S-a bifat ca se aplica metoda simplificata pentru operatiuni interne dar s-au gasit valori in randurile: 1, 2, 3, 3.1, 4, 5, 5.1, 6, 7, 7.1, 8, 20, 20.1, 21, 22, 22.1, 23, 28.1"
+    },
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare regula: V1: daca bifa_interne = 1 atunci si urmatoarele atribute: R3_1 (2120040) trebuie sa fie nule"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0077",
+   "gen": true,
+   "perioada": "2025-10",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v11'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0078",
+   "gen": true,
+   "perioada": "2024-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0080",
+   "gen": true,
+   "perioada": "2025-06",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('24834280')"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0081",
+   "gen": true,
+   "perioada": "2024-08",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0082",
+   "gen": true,
+   "perioada": "2025-09",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v11'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0083",
+   "gen": true,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0084",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "S-a bifat ca se aplica metoda simplificata pentru operatiuni interne dar s-au gasit valori in randurile: 1, 2, 3, 3.1, 4, 5, 5.1, 6, 7, 7.1, 8, 20, 20.1, 21, 22, 22.1, 23, 28.1"
+    },
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare regula: V1: daca bifa_interne = 1 atunci si urmatoarele atribute: R5_1_1 (518937), R7_1_2 (886540), R18_1_1 (518937), R20_1_2 (886540) trebuie sa fie nule"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0085",
+   "gen": true,
+   "perioada": "2026-11",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0087",
+   "gen": true,
+   "perioada": "2024-09",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0088",
+   "gen": true,
+   "perioada": "2026-04",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "S-a bifat ca se aplica metoda simplificata pentru operatiuni interne dar s-au gasit valori in randurile: 1, 2, 3, 3.1, 4, 5, 5.1, 6, 7, 7.1, 8, 20, 20.1, 21, 22, 22.1, 23, 28.1"
+    },
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare regula: V1: daca bifa_interne = 1 atunci si urmatoarele atribute: R3_1 (988653), R8_1 (287827), R21_1 (287827) trebuie sa fie nule"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0089",
+   "gen": true,
+   "perioada": "2024-09",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0091",
+   "gen": true,
+   "perioada": "2025-06",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0092",
+   "gen": true,
+   "perioada": "2024-09",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0095",
+   "gen": true,
+   "perioada": "2025-03",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0096",
+   "gen": true,
+   "perioada": "2025-10",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v11'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0098",
+   "gen": true,
+   "perioada": "2026-02",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0099",
+   "gen": true,
+   "perioada": "2025-04",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0100",
+   "gen": true,
+   "perioada": "2024-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0101",
+   "gen": true,
+   "perioada": "2026-08",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0103",
+   "gen": true,
+   "perioada": "2026-06",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0105",
+   "gen": true,
+   "perioada": "2026-11",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0107",
+   "gen": true,
+   "perioada": "2024-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cuiSuccesor: CUI invalid ('96398160')"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0108",
+   "gen": true,
+   "perioada": "2025-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v11'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0109",
+   "gen": true,
+   "perioada": "2024-11",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0111",
+   "gen": true,
+   "perioada": "2026-06",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0112",
+   "gen": true,
+   "perioada": "2026-06",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('87497130')"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0113",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0114",
+   "gen": true,
+   "perioada": "2026-05",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0115",
+   "gen": true,
+   "perioada": "2026-11",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0116",
+   "gen": true,
+   "perioada": "2026-07",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "S-a bifat ca se aplica metoda simplificata pentru operatiuni interne dar s-au gasit valori in randurile: 1, 2, 3, 3.1, 4, 5, 5.1, 6, 7, 7.1, 8, 20, 20.1, 21, 22, 22.1, 23, 28.1"
+    },
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare regula: V1: daca bifa_interne = 1 atunci si urmatoarele atribute: R3_1 (172276), R3_1_1 (824916), R5_1 (-4637550), R7_1_1 (99384900), R18_1 (-4637550), R20_1_1 (99384900) trebuie sa fie nule"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0117",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0118",
+   "gen": true,
+   "perioada": "2024-09",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0119",
+   "gen": true,
+   "perioada": "2026-01",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cuiSuccesor: CUI invalid ('39542661')"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0120",
+   "gen": true,
+   "perioada": "2025-09",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v11'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0121",
+   "gen": true,
+   "perioada": "2024-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0122",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0123",
+   "gen": true,
+   "perioada": "2024-05",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('87431611')"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0124",
+   "gen": true,
+   "perioada": "2024-06",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0125",
+   "gen": true,
+   "perioada": "2026-06",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0127",
+   "gen": true,
+   "perioada": "2026-03",
+   "status": "atentionari",
+   "mesaje": [
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "TVA(12.1) nu se incadreaza in 21% +- marja 1%"
+    },
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "atentionare regula: R55: 20% din abs(R12_1_1 (7802450)) (1560490) <= abs(R12_1_2 (546172)) <= 22% din abs(R12_1_1) (1716539)"
+    },
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "TVA(26.1) nu se incadreaza in 21% +- marja 1%"
+    },
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "atentionare regula: R92: 20% din abs(R25_1_1 (7802450)) (1560490) <= abs(R25_1_2 (546172)) <= 22% din abs(R25_1_1) (1716539)"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0128",
+   "gen": true,
+   "perioada": "2024-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0129",
+   "gen": true,
+   "perioada": "2024-11",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0130",
+   "gen": true,
+   "perioada": "2026-09",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0131",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "S-a bifat ca se aplica metoda simplificata pentru operatiuni interne dar s-au gasit valori in randurile: 1, 2, 3, 3.1, 4, 5, 5.1, 6, 7, 7.1, 8, 20, 20.1, 21, 22, 22.1, 23, 28.1"
+    },
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare regula: V1: daca bifa_interne = 1 atunci si urmatoarele atribute: R7_1 (849241), R20_1 (849241) trebuie sa fie nule"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0132",
+   "gen": true,
+   "perioada": "2026-09",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "S-a bifat ca se aplica metoda simplificata pentru operatiuni interne dar s-au gasit valori in randurile: 1, 2, 3, 3.1, 4, 5, 5.1, 6, 7, 7.1, 8, 20, 20.1, 21, 22, 22.1, 23, 28.1"
+    },
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare regula: V1: daca bifa_interne = 1 atunci si urmatoarele atribute: R6_1 (823646), R19_1 (823646) trebuie sa fie nule"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0133",
+   "gen": true,
+   "perioada": "2026-02",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "S-a bifat ca se aplica metoda simplificata pentru operatiuni interne dar s-au gasit valori in randurile: 1, 2, 3, 3.1, 4, 5, 5.1, 6, 7, 7.1, 8, 20, 20.1, 21, 22, 22.1, 23, 28.1"
+    },
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare regula: V1: daca bifa_interne = 1 atunci si urmatoarele atribute: R3_1 (45204200), R26_1_1 (75194800) trebuie sa fie nule"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0135",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0136",
+   "gen": true,
+   "perioada": "2026-06",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0137",
+   "gen": true,
+   "perioada": "2026-06",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "S-a bifat ca se aplica metoda simplificata pentru operatiuni interne dar s-au gasit valori in randurile: 1, 2, 3, 3.1, 4, 5, 5.1, 6, 7, 7.1, 8, 20, 20.1, 21, 22, 22.1, 23, 28.1"
+    },
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare regula: V1: daca bifa_interne = 1 atunci si urmatoarele atribute: R5_1_1 (265182), R7_1_1 (301792), R18_1_1 (265182), R20_1_1 (301792) trebuie sa fie nule"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0138",
+   "gen": true,
+   "perioada": "2026-04",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0139",
+   "gen": true,
+   "perioada": "2026-08",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cuiSuccesor: CUI invalid ('67262050')"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0140",
+   "gen": true,
+   "perioada": "2026-09",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0141",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0144",
+   "gen": true,
+   "perioada": "2025-10",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v11'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0145",
+   "gen": true,
+   "perioada": "2026-11",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "S-a bifat ca se aplica metoda simplificata pentru operatiuni interne dar s-au gasit valori in randurile: 1, 2, 3, 3.1, 4, 5, 5.1, 6, 7, 7.1, 8, 20, 20.1, 21, 22, 22.1, 23, 28.1"
+    },
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare regula: V1: daca bifa_interne = 1 atunci si urmatoarele atribute: R5_1_2 (93210500), R18_1_2 (93210500) trebuie sa fie nule"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0146",
+   "gen": true,
+   "perioada": "2025-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v11'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0147",
+   "gen": true,
+   "perioada": "2026-09",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('37373550')"
+    },
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "S-a bifat ca se aplica metoda simplificata pentru operatiuni interne dar s-au gasit valori in randurile: 1, 2, 3, 3.1, 4, 5, 5.1, 6, 7, 7.1, 8, 20, 20.1, 21, 22, 22.1, 23, 28.1"
+    },
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare regula: V1: daca bifa_interne = 1 atunci si urmatoarele atribute: R5_1 (24458400), R18_1 (24458400) trebuie sa fie nule"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0149",
+   "gen": true,
+   "perioada": "2025-04",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0150",
+   "gen": true,
+   "perioada": "2024-09",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('21801120')"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0151",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('36477020')"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0153",
+   "gen": true,
+   "perioada": "2026-06",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0154",
+   "gen": true,
+   "perioada": "2024-06",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0155",
+   "gen": true,
+   "perioada": "2026-06",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0156",
+   "gen": true,
+   "perioada": "2024-05",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0157",
+   "gen": true,
+   "perioada": "2025-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v11'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0159",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0160",
+   "gen": true,
+   "perioada": "2024-09",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0161",
+   "gen": true,
+   "perioada": "2026-05",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0163",
+   "gen": true,
+   "perioada": "2026-04",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0164",
+   "gen": true,
+   "perioada": "2026-10",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0165",
+   "gen": true,
+   "perioada": "2026-07",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0166",
+   "gen": true,
+   "perioada": "2026-10",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0169",
+   "gen": true,
+   "perioada": "2026-10",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0170",
+   "gen": true,
+   "perioada": "2025-11",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v11'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0172",
+   "gen": true,
+   "perioada": "2026-02",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0174",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0175",
+   "gen": true,
+   "perioada": "2026-07",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('79530170')"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0176",
+   "gen": true,
+   "perioada": "2026-06",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0177",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "atentionari",
+   "mesaje": [
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "TVA(25) nu se incadreaza in 11% +- marja 1%"
+    },
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "atentionare regula: R86: 10% din abs(R23_1 (1530670)) (153067) <= abs(R23_2 (6437900)) <= 12% din abs(R23_1) (183680)"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0178",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0179",
+   "gen": true,
+   "perioada": "2025-05",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cuiSuccesor: CUI invalid ('80991940')"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0180",
+   "gen": true,
+   "perioada": "2024-08",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0181",
+   "gen": true,
+   "perioada": "2025-06",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0183",
+   "gen": true,
+   "perioada": "2024-08",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0184",
+   "gen": true,
+   "perioada": "2025-06",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cuiSuccesor: CUI invalid ('59483780')"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0186",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('89787040')"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0187",
+   "gen": true,
+   "perioada": "2026-03",
+   "status": "atentionari",
+   "mesaje": [
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "TVA(10) nu se incadreaza in 11% +- marja 1%"
+    },
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "atentionare regula: R49: 10% din abs(R10_1 (869254)) (86925) <= abs(R10_2 (541666)) <= 12% din abs(R10_1) (104310)"
+    },
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "TVA(11) nu se incadreaza in 5% +- marja 1%"
+    },
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "atentionare regula: R51: 8% din abs(R11_1 (-74495)) (5960) <= abs(R11_2 (-2235)) <= 10% din abs(R11_1) (7450)"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0188",
+   "gen": true,
+   "perioada": "2026-11",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "S-a bifat ca se aplica metoda simplificata pentru operatiuni interne dar s-au gasit valori in randurile: 1, 2, 3, 3.1, 4, 5, 5.1, 6, 7, 7.1, 8, 20, 20.1, 21, 22, 22.1, 23, 28.1"
+    },
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare regula: V1: daca bifa_interne = 1 atunci si urmatoarele atribute: R5_1 (-200562), R18_1 (-200562) trebuie sa fie nule"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0189",
+   "gen": true,
+   "perioada": "2026-09",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('65494280')"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0190",
+   "gen": true,
+   "perioada": "2024-10",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0191",
+   "gen": true,
+   "perioada": "2026-06",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0192",
+   "gen": true,
+   "perioada": "2026-09",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0193",
+   "gen": true,
+   "perioada": "2025-11",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('59588400')"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v11'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0194",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0195",
+   "gen": true,
+   "perioada": "2026-05",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0196",
+   "gen": true,
+   "perioada": "2026-10",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('56763940')"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0198",
+   "gen": true,
+   "perioada": "2026-09",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0199",
+   "gen": true,
+   "perioada": "2026-02",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0200",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "atentionari",
+   "mesaje": [
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "TVA(12.1) nu se incadreaza in 21% +- marja 1%"
+    },
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "atentionare regula: R55: 20% din abs(R12_1_1 (8718890)) (1743778) <= abs(R12_1_2 (71660200)) <= 22% din abs(R12_1_1) (1918156)"
+    },
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "TVA(26.1) nu se incadreaza in 21% +- marja 1%"
+    },
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "atentionare regula: R92: 20% din abs(R25_1_1 (8718890)) (1743778) <= abs(R25_1_2 (71660200)) <= 22% din abs(R25_1_1) (1918156)"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0201",
+   "gen": true,
+   "perioada": "2026-06",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0202",
+   "gen": true,
+   "perioada": "2024-07",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0203",
+   "gen": true,
+   "perioada": "2025-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('49938841')"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v11'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0204",
+   "gen": true,
+   "perioada": "2024-09",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0205",
+   "gen": true,
+   "perioada": "2026-06",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0206",
+   "gen": true,
+   "perioada": "2024-11",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0207",
+   "gen": true,
+   "perioada": "2026-09",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0209",
+   "gen": true,
+   "perioada": "2024-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('13125900')"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0210",
+   "gen": true,
+   "perioada": "2024-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0211",
+   "gen": true,
+   "perioada": "2026-09",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "S-a bifat ca se aplica metoda simplificata pentru operatiuni interne dar s-au gasit valori in randurile: 1, 2, 3, 3.1, 4, 5, 5.1, 6, 7, 7.1, 8, 20, 20.1, 21, 22, 22.1, 23, 28.1"
+    },
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare regula: V1: daca bifa_interne = 1 atunci si urmatoarele atribute: R3_1_1 (674772) trebuie sa fie nule"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0212",
+   "gen": true,
+   "perioada": "2025-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cuiSuccesor: CUI invalid ('45107290')"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v11'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0213",
+   "gen": true,
+   "perioada": "2024-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0214",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0215",
+   "gen": true,
+   "perioada": "2026-06",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0216",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "S-a bifat ca se aplica metoda simplificata pentru operatiuni interne dar s-au gasit valori in randurile: 1, 2, 3, 3.1, 4, 5, 5.1, 6, 7, 7.1, 8, 20, 20.1, 21, 22, 22.1, 23, 28.1"
+    },
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare regula: V1: daca bifa_interne = 1 atunci si urmatoarele atribute: R8_2 (521516), R21_2 (521516) trebuie sa fie nule"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0217",
+   "gen": true,
+   "perioada": "2026-05",
+   "status": "atentionari",
+   "mesaje": [
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "TVA(12.2) nu se incadreaza in 11% +- marja 1%"
+    },
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "atentionare regula: R57: 10% din abs(R12_2_1 (3131370)) (313137) <= abs(R12_2_2 (114817)) <= 12% din abs(R12_2_1) (375764)"
+    },
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "TVA(26.2) nu se incadreaza in 11% +- marja 1%"
+    },
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "atentionare regula: R94: 10% din abs(R25_2_1 (3131370)) (313137) <= abs(R26_2_2 (114817)) <= 12% din abs(R25_2_1) (375764)"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0218",
+   "gen": true,
+   "perioada": "2024-06",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0219",
+   "gen": true,
+   "perioada": "2025-01",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0220",
+   "gen": true,
+   "perioada": "2026-08",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0221",
+   "gen": true,
+   "perioada": "2026-06",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0222",
+   "gen": true,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0223",
+   "gen": true,
+   "perioada": "2024-06",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('27390530')"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0224",
+   "gen": true,
+   "perioada": "2024-11",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0225",
+   "gen": true,
+   "perioada": "2026-05",
+   "status": "atentionari",
+   "mesaje": [
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "TVA(12.1) nu se incadreaza in 21% +- marja 1%"
+    },
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "atentionare regula: R55: 20% din abs(R12_1_1 (357457)) (71491) <= abs(R12_1_2 (25022)) <= 22% din abs(R12_1_1) (78641)"
+    },
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "TVA(26.1) nu se incadreaza in 21% +- marja 1%"
+    },
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "atentionare regula: R92: 20% din abs(R25_1_1 (357457)) (71491) <= abs(R25_1_2 (25022)) <= 22% din abs(R25_1_1) (78641)"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0227",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0228",
+   "gen": true,
+   "perioada": "2026-03",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "S-a bifat ca se aplica metoda simplificata pentru operatiuni interne dar s-au gasit valori in randurile: 1, 2, 3, 3.1, 4, 5, 5.1, 6, 7, 7.1, 8, 20, 20.1, 21, 22, 22.1, 23, 28.1"
+    },
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare regula: V1: daca bifa_interne = 1 atunci si urmatoarele atribute: R5_1 (6433170), R18_1 (6433170) trebuie sa fie nule"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0229",
+   "gen": true,
+   "perioada": "2025-05",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0230",
+   "gen": true,
+   "perioada": "2026-07",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0231",
+   "gen": true,
+   "perioada": "2025-03",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0232",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0233",
+   "gen": true,
+   "perioada": "2024-05",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0234",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0235",
+   "gen": true,
+   "perioada": "2026-09",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "S-a bifat ca se aplica metoda simplificata pentru operatiuni interne dar s-au gasit valori in randurile: 1, 2, 3, 3.1, 4, 5, 5.1, 6, 7, 7.1, 8, 20, 20.1, 21, 22, 22.1, 23, 28.1"
+    },
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare regula: V1: daca bifa_interne = 1 atunci si urmatoarele atribute: R26_1_1 (1417700) trebuie sa fie nule"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0236",
+   "gen": true,
+   "perioada": "2026-08",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0237",
+   "gen": true,
+   "perioada": "2024-06",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0238",
+   "gen": true,
+   "perioada": "2024-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0239",
+   "gen": true,
+   "perioada": "2026-01",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0240",
+   "gen": true,
+   "perioada": "2025-11",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v11'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0242",
+   "gen": true,
+   "perioada": "2024-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0243",
+   "gen": true,
+   "perioada": "2025-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v11'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0244",
+   "gen": true,
+   "perioada": "2024-06",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0245",
+   "gen": true,
+   "perioada": "2026-07",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0249",
+   "gen": true,
+   "perioada": "2025-01",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0250",
+   "gen": true,
+   "perioada": "2024-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0252",
+   "gen": true,
+   "perioada": "2026-05",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0253",
+   "gen": true,
+   "perioada": "2026-06",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0254",
+   "gen": true,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0255",
+   "gen": true,
+   "perioada": "2026-03",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('12832701')"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0256",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "S-a bifat ca se aplica metoda simplificata pentru operatiuni interne dar s-au gasit valori in randurile: 1, 2, 3, 3.1, 4, 5, 5.1, 6, 7, 7.1, 8, 20, 20.1, 21, 22, 22.1, 23, 28.1"
+    },
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare regula: V1: daca bifa_interne = 1 atunci si urmatoarele atribute: R4_1 (79373100), R6_2 (37076400), R19_2 (37076400) trebuie sa fie nule"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0257",
+   "gen": true,
+   "perioada": "2026-04",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0258",
+   "gen": true,
+   "perioada": "2025-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('17083410')"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v11'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0259",
+   "gen": true,
+   "perioada": "2025-02",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0260",
+   "gen": true,
+   "perioada": "2024-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0261",
+   "gen": true,
+   "perioada": "2025-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v11'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0262",
+   "gen": true,
+   "perioada": "2025-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v11'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0263",
+   "gen": true,
+   "perioada": "2025-04",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0264",
+   "gen": true,
+   "perioada": "2025-06",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0265",
+   "gen": true,
+   "perioada": "2024-06",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0266",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "atentionari",
+   "mesaje": [
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "TVA(11) nu se incadreaza in 5% +- marja 1%"
+    },
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "atentionare regula: R51: 8% din abs(R11_1 (-65298300)) (5223864) <= abs(R11_2 (-1958949)) <= 10% din abs(R11_1) (6529830)"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0267",
+   "gen": true,
+   "perioada": "2025-01",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('49005360')"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0268",
+   "gen": true,
+   "perioada": "2026-08",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0270",
+   "gen": true,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0271",
+   "gen": true,
+   "perioada": "2026-09",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0272",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0273",
+   "gen": true,
+   "perioada": "2026-04",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0274",
+   "gen": true,
+   "perioada": "2025-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v11'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0275",
+   "gen": true,
+   "perioada": "2026-02",
+   "status": "atentionari",
+   "mesaje": [
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "TVA(12.1) nu se incadreaza in 21% +- marja 1%"
+    },
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "atentionare regula: R55: 20% din abs(R12_1_1 (769193)) (153839) <= abs(R12_1_2 (53844)) <= 22% din abs(R12_1_1) (169222)"
+    },
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "TVA(26.1) nu se incadreaza in 21% +- marja 1%"
+    },
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "atentionare regula: R92: 20% din abs(R25_1_1 (769193)) (153839) <= abs(R25_1_2 (53844)) <= 22% din abs(R25_1_1) (169222)"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0276",
+   "gen": true,
+   "perioada": "2024-05",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0277",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0279",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0280",
+   "gen": true,
+   "perioada": "2025-06",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('68947850')"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0281",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0282",
+   "gen": true,
+   "perioada": "2026-06",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0283",
+   "gen": true,
+   "perioada": "2026-06",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0284",
+   "gen": true,
+   "perioada": "2026-08",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('90853071')"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0285",
+   "gen": true,
+   "perioada": "2024-09",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0286",
+   "gen": true,
+   "perioada": "2026-12",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "S-a bifat ca se aplica metoda simplificata pentru operatiuni interne dar s-au gasit valori in randurile: 1, 2, 3, 3.1, 4, 5, 5.1, 6, 7, 7.1, 8, 20, 20.1, 21, 22, 22.1, 23, 28.1"
+    },
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare regula: V1: daca bifa_interne = 1 atunci si urmatoarele atribute: R7_1_2 (357683), R20_1_2 (357683) trebuie sa fie nule"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0288",
+   "gen": true,
+   "perioada": "2025-02",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('96647260')"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0289",
+   "gen": true,
+   "perioada": "2025-02",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0290",
+   "gen": true,
+   "perioada": "2025-07",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0291",
+   "gen": true,
+   "perioada": "2026-04",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0292",
+   "gen": true,
+   "perioada": "2024-09",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('28551761')"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0294",
+   "gen": true,
+   "perioada": "2024-11",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0295",
+   "gen": true,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "gen-1-0296",
+   "gen": true,
+   "perioada": "2025-09",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v11'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0297",
+   "gen": true,
+   "perioada": "2025-08",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v11'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0298",
+   "gen": true,
+   "perioada": "2026-10",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "S-a bifat ca se aplica metoda simplificata pentru operatiuni interne dar s-au gasit valori in randurile: 1, 2, 3, 3.1, 4, 5, 5.1, 6, 7, 7.1, 8, 20, 20.1, 21, 22, 22.1, 23, 28.1"
+    },
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare regula: V1: daca bifa_interne = 1 atunci si urmatoarele atribute: R3_1 (213463) trebuie sa fie nule"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0299",
+   "gen": true,
+   "perioada": "2024-07",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "gen-1-0300",
+   "gen": true,
+   "perioada": "2025-06",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "id-01-cui-invalid",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('18597230')"
+    }
+   ]
+  },
+  {
+   "case": "id-02-cui-cu-spatii",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "id-03-nif-valid-13-cifre",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: sir mai lung de 10 caractere ('9000000000015')"
+    }
+   ]
+  },
+  {
+   "case": "id-04-nif-invalid-13-cifre",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: sir mai lung de 10 caractere ('9000000000016')"
+    }
+   ]
+  },
+  {
+   "case": "id-06-iban-invalid",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "id-07-iban-tara-in-afara-listei",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "id-08-iban-minuscule-devin-majuscule",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "id-09-cui-cu-zero-la-inceput",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: CUI invalid ('01234567')"
+    }
+   ]
+  },
+  {
+   "case": "id-10-iban-lungime-gresita",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "id-11-iban-mod97-zero",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "id-12-cnp-valid-13-cifre",
+   "gen": false,
+   "perioada": "2026-02",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: sir mai lung de 10 caractere ('1800101221144')"
+    }
+   ]
+  },
+  {
+   "case": "id-13-cnp-31-februarie-trece",
+   "gen": false,
+   "perioada": "2026-02",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "E",
+     "sectiune": "validari globale",
+     "text": "eroare atribut: cui: sir mai lung de 10 caractere ('1800231221144')"
+    }
+   ]
+  },
+  {
+   "case": "jud-01-bucuresti-cu-sector",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "jud-02-alt-judet-fara-sector",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "jud-03-valoare-in-afara-nomenclatorului",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "jud-04-localitate-inainte-de-judet",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "per-03-an-2024-luna-valida",
+   "gen": false,
+   "perioada": "2024-05",
+   "status": "erori",
+   "mesaje": [
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "va rugam sa verificati daca folositi versiunea corecta de PDF inteligent sau daca XML-ul creat contine namespace-ul conform schemei XSD (pentru perioada de raportare)"
+    },
+    {
+     "sev": "F",
+     "sectiune": "validari globale",
+     "text": "eroare structura: namespace ('mfp:anaf:dgti:d300:declaratie:v12') lipsa sau incorect la sectiunea declaratie300. Valoarea corecta este xmlns='mfp:anaf:dgti:d300:declaratie:v10'"
+    }
+   ]
+  },
+  {
+   "case": "per-04-an-nenumeric-respins",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "per-05-trimestrial-luna-gresita",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "per-06-trimestrial-luna-achizitii",
+   "gen": false,
+   "perioada": "2026-05",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "per-07-semestrial-luna-gresita",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "per-08-anual-luna-gresita",
+   "gen": false,
+   "perioada": "2026-06",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "per-09-data-format-invalid",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "per-10-data-sfarsit-inainte-de-inceput",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "per-11-perioada-valida",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "pro-01-peste-100",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "pro-02-negativa",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "pro-03-valoare-partiala",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "ramb-01-sub-prag-respinsa",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "ramb-02-peste-prag-acceptata",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "ramb-03-exact-la-prag",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "sample-01",
+   "gen": false,
+   "perioada": "2026-01",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "tva-01-toleranta-depasita-21",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "atentionari",
+   "mesaje": [
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "TVA(9) nu se incadreaza in 21% +- marja 1%"
+    },
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "atentionare regula: R47: 20% din abs(R9_1 (100000)) (20000) <= abs(R9_2 (5000)) <= 22% din abs(R9_1) (22000)"
+    }
+   ]
+  },
+  {
+   "case": "tva-02-toleranta-respectata-21",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "tva-03-toleranta-depasita-11",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "atentionari",
+   "mesaje": [
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "TVA(10) nu se incadreaza in 11% +- marja 1%"
+    },
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "atentionare regula: R49: 10% din abs(R10_1 (100000)) (10000) <= abs(R10_2 (30000)) <= 12% din abs(R10_1) (12000)"
+    }
+   ]
+  },
+  {
+   "case": "tva-04-toleranta-depasita-9",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "atentionari",
+   "mesaje": [
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "TVA(11) nu se incadreaza in 5% +- marja 1%"
+    },
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "atentionare regula: R51: 8% din abs(R11_1 (100000)) (8000) <= abs(R11_2 (1000)) <= 10% din abs(R11_1) (10000)"
+    }
+   ]
+  },
+  {
+   "case": "tva-05-toleranta-depasita-achizitii",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "atentionari",
+   "mesaje": [
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "TVA(24) nu se incadreaza in 21% +- marja 1%"
+    },
+    {
+     "sev": "A",
+     "sectiune": "validari globale",
+     "text": "atentionare regula: R84: 20% din abs(R22_1 (100000)) (20000) <= abs(R22_2 (50000)) <= 22% din abs(R22_1) (22000)"
+    }
+   ]
+  },
+  {
+   "case": "valid-01-lunar-complet",
+   "gen": false,
+   "perioada": "2026-09",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "valid-02-trimestrial-complet",
+   "gen": false,
+   "perioada": "2026-09",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "valid-03-semestrial-complet",
+   "gen": false,
+   "perioada": "2026-12",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "valid-04-anual-complet",
+   "gen": false,
+   "perioada": "2026-12",
+   "status": "ok",
+   "mesaje": []
+  },
+  {
+   "case": "valid-05-metoda-simplificata-decont-curat",
+   "gen": false,
+   "perioada": "2026-03",
+   "status": "ok",
+   "mesaje": []
+  }
+ ],
+ "probleme": [],
+ "durataMs": 113789
+}

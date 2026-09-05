@@ -19,6 +19,7 @@
     "gen:presets": "node harness/gen-presets.mjs",
     "golden": "node harness/oracle/golden.mjs",
     "golden:check": "node harness/oracle/golden.mjs --check",
+    "duk": "npx tsx harness/duk/run.mjs",
     "parity": "npx tsx harness/parity/run.mjs",
     "parity:regen": "node harness/oracle/generate.mjs --seed 1 --count 300 --out cases/gen && npx tsx harness/parity/run.mjs"
   },

@@ -253,8 +253,8 @@ for (const { case: c, gen } of entries) {
     else unexpected.push(d);
   }
 
+  xmlByCase.set(c.name, { model: m.xml, oracle: o.xml, same: o.xml === m.xml });
   if (withXsd) {
-    xmlByCase.set(c.name, { model: m.xml, oracle: o.xml, same: o.xml === m.xml });
     if (m.xml) xmlBatch.push({ name: `model:${c.name}`, xml: m.xml });
     // XML-ul oracolului se trimite doar cand difera ca sir: daca sirurile sunt egale
     // verdictul e identic prin constructie si a doua validare n-ar dovedi nimic
@@ -291,6 +291,25 @@ if (withXsd) {
         if (okO !== v.ok) xsd.verdictDiff.push({ case: name, oracle: okO, model: v.ok });
       }
     }
+  }
+}
+
+// ------------------------------------------------- DUK (al treilea oracol)
+// Validatorul oficial Java NU se ruleaza de aici: paritatea trebuie sa ramana de
+// ordinul secundelor, iar un proces Java per XML dureaza minute. Citim doar
+// rezultatul lasat de `npm run duk` (harness/duk/duk.json), daca exista.
+const DUK_JSON = path.join(ROOT, 'harness', 'duk', 'duk.json');
+let duk = null;
+if (fs.existsSync(DUK_JSON)) {
+  try {
+    const d = JSON.parse(fs.readFileSync(DUK_JSON, 'utf8'));
+    // cazurile din duk.json trebuie sa fie cele din rularea curenta; daca nu sunt,
+    // raportul spune asta in loc sa amestece doua corpusuri
+    const rulate = new Set((d.verdicte ?? []).map((v) => v.case));
+    const lipsa = [...xmlByCase.keys()].filter((n) => xmlByCase.get(n).model && !rulate.has(n));
+    duk = { ...d, lipsa, invechit: lipsa.length > 0 || rulate.size !== stats.xml };
+  } catch (e) {
+    duk = { eroare: `duk.json nu poate fi citit: ${e.message}` };
   }
 }
 
@@ -372,6 +391,18 @@ const report = {
     invalidList: xsd.invalidList,
     verdictDiferitOracolModel: xsd.verdictDiff,
   },
+  duk: duk === null ? { rulat: false, motiv: 'harness/duk/duk.json lipseste (ruleaza npm run duk)' } : {
+    rulat: !duk.eroare,
+    eroare: duk.eroare ?? null,
+    data: duk.data ?? null,
+    invechit: duk.invechit ?? null,
+    cazuriLipsa: duk.lipsa ?? [],
+    unelte: duk.unelte ?? null,
+    comanda: duk.comanda ?? null,
+    rezultat: duk.rezultat ?? null,
+    grupe: (duk.grupe ?? []).map((g) => ({ fel: g.fel, exemplu: g.exemplu, cazuri: g.cazuri.length })),
+    verdictDiferitOracolModel: duk.verdictDiferitOracolModel ?? [],
+  },
   probleme: errors,
   durataMs: durationMs,
 };
@@ -394,6 +425,9 @@ L.push(`| diferente neasteptate | **${unexpected.length}** |`);
 L.push(`| diferente asteptate (declarate in expected.json) | ${acknowledged.length} |`);
 L.push(`| reguli vii atinse de corpus | ${live.length - neatinse.length} / ${live.length} in \`trace\`, ${realAtinse} / ${live.length} cu dovezile indirecte |`);
 L.push(`| XML-uri valide fata de XSD-ul oficial v12 | ${xsd.valide} / ${xsd.valide + xsd.invalide} |`);
+if (duk && !duk.eroare && duk.rezultat) {
+  L.push(`| XML-uri acceptate de validatorul oficial ANAF (DUKIntegrator) | ${duk.rezultat.acceptate} / ${duk.corpus.cuXml} |`);
+}
 L.push(`| **verdict** | **${verdict}** |`);
 L.push('');
 L.push('Comparate pe fiecare caz: mesajele (ordonate, cu textul verbatim), valorile');
@@ -569,6 +603,58 @@ if (!xsd.rulat) {
   }
 }
 
+L.push('## Validatorul oficial ANAF (al treilea oracol)');
+L.push('');
+if (duk === null) {
+  L.push('Nerulat: `harness/duk/duk.json` lipseste. Se produce cu `npm run duk`, care cere');
+  L.push('un JRE portabil in `tools/jre/` si kitul DUKIntegrator in `tools/duk/`; instalarea si');
+  L.push('analiza rezultatelor sunt in [`DUK.md`](DUK.md).');
+} else if (duk.eroare) {
+  L.push(`Nerulat: ${duk.eroare}`);
+} else {
+  L.push('Rulat separat, nu din acest harness: un proces Java per XML dureaza minute, iar');
+  L.push('paritatea trebuie sa ramana de ordinul secundelor. Tabelul de mai jos e citit din');
+  L.push('`harness/duk/duk.json`, produs de `npm run duk`. Analiza pe categorii: [`DUK.md`](DUK.md).');
+  L.push('');
+  L.push('```');
+  L.push(duk.comanda);
+  L.push('```');
+  L.push('');
+  if (duk.invechit) {
+    L.push(`**Atentie:** \`duk.json\` e dintr-o alta rulare decat corpusul curent (${duk.lipsa.length} cazuri`);
+    L.push('cu XML nu apar in el). Ruleaza din nou `npm run duk`.');
+    L.push('');
+  }
+  L.push('| | |');
+  L.push('|---|---|');
+  L.push(`| XML-uri trimise validatorului | ${duk.corpus.cuXml} |`);
+  L.push(`| acceptate | ${duk.rezultat.acceptate} |`);
+  L.push(`| dintre care doar cu atentionari | ${duk.rezultat.dintreCareCuAtentionari} |`);
+  L.push(`| refuzate | ${duk.rezultat.refuzate} |`);
+  L.push(`| cazuri fara XML (formular respins de original) | ${duk.corpus.faraXml} |`);
+  L.push(`| verdicte diferite intre XML-ul oracolului si al modelului | ${duk.verdictDiferitOracolModel.length} |`);
+  L.push('');
+  if (duk.grupe.length) {
+    L.push('Mesajele validatorului, grupate (valorile concrete inlocuite cu substituenti):');
+    L.push('');
+    L.push('| cazuri | gravitate | mesaj |');
+    L.push('|---|---|---|');
+    for (const g of duk.grupe) {
+      L.push(`| ${g.cazuri.length} | ${g.fel} | ${g.exemplu.replace(/\|/g, '\\|')} |`);
+    }
+    L.push('');
+  }
+  if (duk.verdictDiferitOracolModel.length) {
+    L.push('**Verdicte diferite** (nu ar trebui sa existe: sirurile XML sunt comparate octet cu octet):');
+    L.push('');
+    L.push('| caz | oracol | model |');
+    L.push('|---|---|---|');
+    for (const p of duk.verdictDiferitOracolModel) L.push(`| \`${p.case}\` | ${p.oracle} | ${p.model} |`);
+    L.push('');
+  }
+}
+L.push('');
+
 if (errors.length) {
   L.push('## Probleme de rulare');
   L.push('');
@@ -598,6 +684,7 @@ L.push('de la o rulare la alta stau doar aici.');
 L.push('');
 L.push(`- data: ${dataZi}`);
 L.push(`- PDF-ul sursa: \`${PDF_VERSION}\``);
+if (duk && !duk.eroare) L.push(`- validatorul oficial: rulat pe ${duk.data} cu ${duk.unelte.java}`);
 L.push(`- timpul de rulare: ${bucket} (valoarea exacta in milisecunde, in \`parity.json\`)`);
 L.push('');
 
@@ -610,6 +697,9 @@ console.log(`diferente         : ${unexpected.length} neasteptate, ${acknowledge
 console.log(`reguli atinse     : ${live.length - neatinse.length} / ${live.length}${neatinse.length ? ` (neatinse: ${neatinse.join(', ')})` : ''}`);
 if (xsd.rulat) console.log(`XSD               : ${xsd.valide} valide, ${xsd.invalide} invalide, ${xsd.verdictDiff.length} verdicte divergente`);
 else console.log(`XSD               : nerulat${xsd.eroare ? ` (${xsd.eroare})` : ''}`);
+if (duk === null) console.log('DUK               : nerulat (harness/duk/duk.json lipseste; npm run duk)');
+else if (duk.eroare) console.log(`DUK               : ${duk.eroare}`);
+else console.log(`DUK               : ${duk.rezultat.acceptate} acceptate, ${duk.rezultat.refuzate} refuzate (din ${duk.corpus.cuXml}), rulat ${duk.data}${duk.invechit ? ' -- INVECHIT fata de corpusul curent' : ''}`);
 console.log(`durata            : ${(durationMs / 1000).toFixed(1)} s`);
 console.log(`scris             : docs/PARITATE.md, harness/parity/parity.json`);
 

@@ -5,7 +5,8 @@ import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
   {
-    ignores: ['dist/**', 'node_modules/**', 'legacy/**', 'harness/oracle/**', 'coverage/**'],
+    // tools/ conține JRE-ul portabil și kitul DUKIntegrator, descărcate (vezi docs/DUK.md)
+    ignores: ['dist/**', 'node_modules/**', 'legacy/**', 'harness/oracle/**', 'coverage/**', 'tools/**'],
   },
 
   js.configs.recommended,

@@ -3,6 +3,11 @@ dist/
 harness/oracle/out/
 # arhivele ANAF dezarhivate (jar-urile raman in zip-urile originale)
 legacy/anaf/validator/
+# unelte descarcate pentru al treilea oracol: JRE-ul portabil (Temurin) si kitul
+# DUKIntegrator, plus folderul de lucru al lui npm run duk. Se refac dupa docs/DUK.md.
+tools/
+# rezultatul unei rulari partiale a oracolului 3 (npm run duk --only / --no-gen)
+harness/duk/duk.partial.json
 # regenerabil din PDF cu harness/extract_legacy.py (2.7 MB)
 legacy/extracted/xfa_template.xml
 __pycache__/
@@ -12,3 +17,7 @@ Thumbs.db
 # corpus generat + fisierele lui de aur (reproductibile cu generate.mjs)
 harness/oracle/cases/gen/
 harness/oracle/golden/gen/
+
+# iesirile verificarii in Reader si rularile partiale DUK
+harness/reader/out/
+harness/duk/duk.partial.json

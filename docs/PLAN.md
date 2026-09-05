@@ -14,7 +14,7 @@ Adobe Reader pe calculatoarele contabililor.
 
 ## Unde suntem (4 septembrie 2026)
 
-Fazele 0–4 și 6 sunt gata, faza 5 (oracolul 3) e amânată prin decizie. Tabelul de
+Toate fazele, 0–6, sunt gata; oracolul 3 a rulat pe 6 septembrie (vezi `DUK.md`). Tabelul de
 paritate e verde pe tot corpusul:
 
 | | |
@@ -51,7 +51,7 @@ Codul e curat și rulabil. Cifrele complete sunt în `INVENTAR-LEGACY.md`; pe sc
 |---|---|---|---|
 | 1 | codul original rulat în Node (`harness/oracle`) | mesajele și XML-ul pe care le-ar produce PDF-ul | gata, rulat pe toate cele 418 de cazuri, zero API-uri Acrobat neacoperite |
 | 2 | XSD-ul oficial v12 (`legacy/anaf/d300_v12_11022026.xml`) | XML-ul respectă contractul | gata, rulat pe tot corpusul: 359 / 364 valide, cele 5 invalide sunt defectul #14 |
-| 3 | validatorul oficial Java, `D300Validator.jar` prin DUKIntegrator | back-end-ul ANAF îl acceptă; are reguli în plus față de PDF (corelațiile rd.18=rd.5 etc.) | **amânat prin decizie** (faza 5), cere JRE + kitul DUKIntegrator |
+| 3 | validatorul oficial Java, `D300Validator.jar` prin DUKIntegrator | back-end-ul ANAF îl acceptă; are reguli în plus față de PDF (corelațiile rd.18=rd.5 etc.) | gata: `npm run duk`, 364 XML-uri, 206 acceptate / 158 refuzate, fiecare refuz explicat în `DUK.md`; 0 verdicte divergente între oracol și model |
 | R | Adobe Reader, manual | ipotezele shim-ului A1–A4 sunt adevărate | de făcut, 20 de minute |
 
 **Ipoteze de confirmat în Reader** (sunt scrise și în capul lui `legacy-runtime.mjs`):
@@ -177,14 +177,21 @@ Undo pe ștergeri nu s-a implementat: originalul nu are așa ceva, iar „Formul
 `vite preview` cerea `isPreview` în `vite.config.ts` ca să folosească base-ul
 `/d300-parity/` al build-ului; altfel pagina rămânea goală. Corectat.
 
-### 5. Oracolul 3 — amânat prin decizie (estimat 1 zi)
+### 5. Oracolul 3 — gata pe 6 septembrie (estimat 1 zi)
 
 JRE + DUKIntegrator, rulat pe toate XML-urile din corpus, rezultatele intră în
 tabelul de paritate. Aici apar regulile de back-end care **nu** sunt în PDF
 (documentul de structură le listează: corelațiile rd.18=rd.5, rd.20=rd.7 etc.).
 Ele se implementează în modelul nou ca reguli separate, marcate „server-side".
 
-**Stare:** amânat la decizia autorului, după faza 6. Nu blochează nimic: paritatea față de
+**Livrat:** JRE portabil în `tools/` (fără instalare de sistem), DUKIntegrator 1.4.17.3.3 cu
+pluginul D300 J12.0.1, `harness/duk/run.mjs` (`npm run duk`, un proces Java per XML, ~2 minute),
+rând nou în tabelul de paritate și analiza completă în `DUK.md`. Trei descoperiri: back-end-ul
+cere namespace-ul v10 pentru perioadele dinainte de 2026, dar formularul v12 scrie mereu v12
+(defectul #18); regula V_1 pentru metoda simplificată există doar în back-end; codurile de
+identificare pe care PDF-ul doar le semnalează sunt refuzate de back-end (#19).
+
+**Starea anterioară:** amânat la decizia autorului, după faza 6. Nu bloca nimic: paritatea față de
 PDF e completă și dovedită fără el, iar contractul XML e deja verificat de oracolul 2.
 Ce lipsește e confirmarea că back-end-ul ANAF acceptă XML-urile și, mai interesant, lista
 regulilor de corelație pe care PDF-ul nu le verifică deloc. Până atunci, nici documentele,
