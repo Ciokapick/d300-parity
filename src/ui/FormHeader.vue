@@ -41,8 +41,8 @@ onBeforeUnmount(revoke);
     </p>
 
     <p class="linkuri">
-      <a href="docs/PARITATE.md">Tabelul de paritate</a>
-      <a href="#">Codul sursă</a>
+      <a href="https://github.com/Ciokapick/d300-parity/blob/main/docs/PARITATE.md">Tabelul de paritate</a>
+      <a href="https://github.com/Ciokapick/d300-parity">Codul sursă</a>
     </p>
 
     <PresetPicker />

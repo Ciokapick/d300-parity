@@ -1,7 +1,5 @@
 # Verifica proiectul la fiecare push (typecheck, lint, teste, build) si publica pe
-# GitHub Pages din `dist/` (Vite, base /d300-parity/) doar la declansare manuala:
-# repo-ul e privat, iar Pages pe repo privat cere un plan platit. Cand repo-ul devine
-# public, deploy-ul se poate lega din nou de push pe main.
+# GitHub Pages din `dist/` (Vite, base /d300-parity/) la push pe main sau manual.
 name: pages
 
 on:
@@ -37,7 +35,6 @@ jobs:
           path: dist
 
   deploy:
-    if: github.event_name == 'workflow_dispatch'
     needs: build
     runs-on: ubuntu-latest
     environment:

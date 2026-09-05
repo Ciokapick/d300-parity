@@ -83,6 +83,7 @@ export function pressValidate(state: FormState): ValidateOutcome {
     erori = validForm(ctx);
     if (erori === null) {
       xml = genXML(ctx.values, ctx.editValue);
+      ctx.fire('xml.genXML');
       // button.blochez: stampila din antet; blocarea campurilor e treaba interfetei
       ctx.set('Antet.IdDoc.formValid', 'FORMULAR VALIDAT');
       ctx.fire('button.blochez', 'Antet.IdDoc.formValid');

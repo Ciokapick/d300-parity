@@ -1,0 +1,14 @@
+# Linii LF peste tot, pe orice sistem: fisierele de aur si XML-urile trebuie sa ramana
+# identice octet cu octet indiferent de masina care le regenereaza.
+* text=auto eol=lf
+
+# binare
+*.pdf binary
+*.zip binary
+*.jar binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.woff binary
+*.woff2 binary

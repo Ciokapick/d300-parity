@@ -70,6 +70,7 @@ function trimAndStore(ctx: Ctx, path: string): string | null {
   const raw = ctx.get(path);
   if (raw === null) return null;
   ctx.set(path, trimSpaces(String(raw)));
+  ctx.fire('checksums.text', path);
   const stored = ctx.get(path);
   return stored === null ? null : String(stored);
 }
@@ -361,6 +362,7 @@ function onExit(ctx: Ctx, path: string): void {
       if (stored === null) return;
       if (stored.length <= 10) {
         // isCUI emite singur `cui.zero` inainte de a intoarce false
+        ctx.fire('checksums.cui', path);
         const ok = isCUI(stored, (m) => ctx.say(m));
         if (!ok) {
           ctx.say({ kind: 'alert', text: text('cui.invalid') });
@@ -368,6 +370,8 @@ function onExit(ctx: Ctx, path: string): void {
         }
       } else if (stored.length <= 13) {
         // `undefined == false` e fals, deci NIF-ul corect nu produce mesaj
+        ctx.fire('checksums.cnpNif', path);
+        if (stored.charAt(0) !== '9') ctx.fire('checksums.cnp', path);
         if (isCnpNif(stored) === false) {
           ctx.say({ kind: 'alert', text: text('cnp.invalid') });
           ctx.fire('exit.cif.identificare', path);
@@ -401,6 +405,7 @@ function onExit(ctx: Ctx, path: string): void {
     case 'identifCntr.contact.telefon':
     case 'identifCntr.contact.fax': {
       const sir = ctx.get(path);
+      if (sir !== null) ctx.fire('checksums.telefon', path);
       if (sir !== null && !PHONE_RE.test(String(sir))) {
         ctx.say({ kind: 'alert', text: text('telefon.invalid') });
         ctx.fire('exit.telefon', path);
@@ -411,6 +416,7 @@ function onExit(ctx: Ctx, path: string): void {
     // -------------------------------------------------- #123
     case 'identifCntr.contact.email': {
       const raw = ctx.get(path);
+      if (raw !== null) ctx.fire('checksums.email', path);
       if (raw !== null && !EMAIL_RE.test(String(raw))) {
         ctx.say({ kind: 'messageBox', title: '', text: text('email.invalid') });
         ctx.set(path, null);
@@ -427,6 +433,7 @@ function onExit(ctx: Ctx, path: string): void {
       if (fieldValue === null) return;
       const iban = String(fieldValue);
       if (!IBAN_COUNTRY_CODES.includes(iban.substring(0, 2))) return;
+      ctx.fire('checksums.iban', path);
       const err = isValidIBANNumber(iban);
       // `err == false` e adevarat si pentru restul 0
       if (err === false || Number(err) === 0) {

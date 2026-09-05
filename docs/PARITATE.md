@@ -6,7 +6,7 @@
 | cazuri identice cap-coada | 418 / 418 |
 | diferente neasteptate | **0** |
 | diferente asteptate (declarate in expected.json) | 0 |
-| reguli vii atinse de corpus | 43 / 52 in `trace`, 52 / 52 cu dovezile indirecte |
+| reguli vii atinse de corpus | 52 / 52 in `trace`, 52 / 52 cu dovezile indirecte |
 | XML-uri valide fata de XSD-ul oficial v12 | 359 / 364 |
 | **verdict** | **PARITATE COMPLETA** |
 
@@ -52,9 +52,9 @@ Reuniunea id-urilor din `trace` peste tot corpusul, fata de `LIVE_RULE_IDS` din
 
 | corpus | reguli atinse |
 |---|---|
-| scrise de mana | 43 / 52 |
-| generate | 29 / 52 |
-| **reuniune** | **43 / 52** |
+| scrise de mana | 52 / 52 |
+| generate | 36 / 52 |
+| **reuniune** | **52 / 52** |
 
 Listele de mai jos numara doar regulile **instrumentate** (cele care apeleaza
 `ctx.fire`). Cele 9 fara punct de instrumentare sunt tratate separat, mai jos.
@@ -83,33 +83,6 @@ Listele de mai jos numara doar regulile **instrumentate** (cele care apeleaza
 - `exit.caen.exclusiv`
 - `exit.r30.min`
 - `exit.nedeductibil.A`
-
-### Reguli fara punct de instrumentare (9)
-
-Aceste reguli sunt implementate ca **functii pure** in `src/domain/checksums.ts`,
-`src/domain/nrEvid.ts` si `src/domain/xml.ts`: nu primesc `ctx`, deci nu apeleaza
-`ctx.fire` si **nu pot** aparea in `trace`, oricat de bogat ar fi corpusul. Absenta lor
-din tabelul de mai sus e o lipsa de instrumentare in model, nu o gaura in corpus.
-Nu le-am "reparat": harnessul nu modifica `src/**`.
-
-Cat sunt totusi exercitate se masoara indirect, pe un criteriu explicit per regula:
-numarul de cazuri in care s-a indeplinit conditia in care apelantul le cheama.
-
-| regula | criteriul de apel | de mana | generate | total |
-|---|---|---|---|---|
-| `xml.genXML` | cazuri in care validForm a trecut si s-a generat D300.xml | 107 | 257 | **364** |
-| `nrEvid.calcul` | cazuri in care Antet.nr_evid a iesit nenul (calc.nr_evid a apelat calculateRegistrationNumber) | 115 | 300 | **415** |
-| `checksums.cui` | cazuri cu un cod de identificare nenul de cel mult 10 caractere (ramura isCUI din exit.cif.identificare) | 112 | 300 | **412** |
-| `checksums.cnpNif` | cazuri cu un cod de identificare de 11-13 caractere (ramura isCnpNif) | 4 | 0 | **4** |
-| `checksums.cnp` | cazuri cu un cod de 13 caractere care nu incepe cu 9 (isCnpNif deleaga spre isCNP) | 2 | 0 | **2** |
-| `checksums.iban` | cazuri cu identifCntr.banca.iban nenul (exit.iban apeleaza isValidIBANNumber) | 116 | 300 | **416** |
-| `checksums.telefon` | cazuri cu telefon sau fax nenul (regex-ul regTel e evaluat) | 5 | 188 | **193** |
-| `checksums.email` | cazuri cu identifCntr.contact.email nenul (regex-ul de email e evaluat) | 3 | 148 | **151** |
-| `checksums.text` | cazuri cu cel putin un camp text nenul supus trimSpaces / invalidChr | 117 | 300 | **417** |
-
-Toate cele 9 sunt exercitate de corpus; le lipseste doar urma in `trace`.
-
-Cu dovezile indirecte luate in calcul, acoperirea reala e **52 / 52**.
 
 Regulile marcate `dead: true` in registru sunt cod mort in original (comentat sau
 inert); nu intra in `LIVE_RULE_IDS` si nu pot fi atinse:
@@ -169,6 +142,6 @@ Cod de iesire 0 daca nu exista diferente neasteptate, 1 altfel.
 Tot ce e mai sus e determinist: doua rulari dau acelasi fisier. Datele care variaza
 de la o rulare la alta stau doar aici.
 
-- data: 2026-09-04
+- data: 2026-09-06
 - PDF-ul sursa: `D300_v12.0.2_12022026.pdf`
 - timpul de rulare: sub 15 s (valoarea exacta in milisecunde, in `parity.json`)

@@ -1,5 +1,5 @@
 {
- "data": "2026-09-04",
+ "data": "2026-09-06",
  "sursa": {
   "pdf": "D300_v12.0.2_12022026.pdf",
   "xsd": "legacy/anaf/d300_v12_11022026.xml"
@@ -27,29 +27,9 @@
  },
  "acoperire": {
   "live": 52,
-  "atinse": 43,
-  "neatinse": [
-   "xml.genXML",
-   "checksums.cui",
-   "checksums.cnp",
-   "checksums.cnpNif",
-   "checksums.iban",
-   "checksums.telefon",
-   "checksums.email",
-   "checksums.text",
-   "nrEvid.calcul"
-  ],
-  "neatinseDoarManual": [
-   "xml.genXML",
-   "checksums.cui",
-   "checksums.cnp",
-   "checksums.cnpNif",
-   "checksums.iban",
-   "checksums.telefon",
-   "checksums.email",
-   "checksums.text",
-   "nrEvid.calcul"
-  ],
+  "atinse": 52,
+  "neatinse": [],
+  "neatinseDoarManual": [],
   "neatinseDoarGenerat": [
    "change.uppercase",
    "change.numeric.silent",
@@ -65,29 +45,12 @@
    "exit.caen.exclusiv",
    "exit.r30.min",
    "exit.nedeductibil.A",
-   "xml.genXML",
-   "checksums.cui",
    "checksums.cnp",
-   "checksums.cnpNif",
-   "checksums.iban",
-   "checksums.telefon",
-   "checksums.email",
-   "checksums.text",
-   "nrEvid.calcul"
+   "checksums.cnpNif"
   ],
-  "atinseManual": 43,
-  "atinseGenerat": 29,
-  "neatinseFaraInstrumentare": [
-   "xml.genXML",
-   "checksums.cui",
-   "checksums.cnp",
-   "checksums.cnpNif",
-   "checksums.iban",
-   "checksums.telefon",
-   "checksums.email",
-   "checksums.text",
-   "nrEvid.calcul"
-  ],
+  "atinseManual": 52,
+  "atinseGenerat": 36,
+  "neatinseFaraInstrumentare": [],
   "neatinseCuInstrumentare": [],
   "doveziIndirecte": [
    {
@@ -96,7 +59,7 @@
     "manual": 107,
     "gen": 257,
     "total": 364,
-    "inTrace": false
+    "inTrace": true
    },
    {
     "id": "nrEvid.calcul",
@@ -104,7 +67,7 @@
     "manual": 115,
     "gen": 300,
     "total": 415,
-    "inTrace": false
+    "inTrace": true
    },
    {
     "id": "checksums.cui",
@@ -112,7 +75,7 @@
     "manual": 112,
     "gen": 300,
     "total": 412,
-    "inTrace": false
+    "inTrace": true
    },
    {
     "id": "checksums.cnpNif",
@@ -120,7 +83,7 @@
     "manual": 4,
     "gen": 0,
     "total": 4,
-    "inTrace": false
+    "inTrace": true
    },
    {
     "id": "checksums.cnp",
@@ -128,7 +91,7 @@
     "manual": 2,
     "gen": 0,
     "total": 2,
-    "inTrace": false
+    "inTrace": true
    },
    {
     "id": "checksums.iban",
@@ -136,7 +99,7 @@
     "manual": 116,
     "gen": 300,
     "total": 416,
-    "inTrace": false
+    "inTrace": true
    },
    {
     "id": "checksums.telefon",
@@ -144,7 +107,7 @@
     "manual": 5,
     "gen": 188,
     "total": 193,
-    "inTrace": false
+    "inTrace": true
    },
    {
     "id": "checksums.email",
@@ -152,7 +115,7 @@
     "manual": 3,
     "gen": 148,
     "total": 151,
-    "inTrace": false
+    "inTrace": true
    },
    {
     "id": "checksums.text",
@@ -160,7 +123,7 @@
     "manual": 117,
     "gen": 300,
     "total": 417,
-    "inTrace": false
+    "inTrace": true
    }
   ],
   "idNecunoscuteInTrace": [],
@@ -218,5 +181,5 @@
   "verdictDiferitOracolModel": []
  },
  "probleme": [],
- "durataMs": 6587
+ "durataMs": 8369
 }

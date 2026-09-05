@@ -93,7 +93,10 @@ function calcNrEvid(ctx: Ctx): boolean {
   const perioada = getReferencePeriod(ctx.get('Antet.metaDate.an_r'), ctx.get('Antet.metaDate.luna_r'));
   const valoare: FieldValue =
     perioada === null ? null : calculateRegistrationNumber(ctx.get('Antet.metaDate.tipDecont'), perioada);
-  return assign(ctx, 'calc.nr_evid', 'Antet.nr_evid', valoare);
+  const changed = assign(ctx, 'calc.nr_evid', 'Antet.nr_evid', valoare);
+  // algoritmul numarului de evidenta, in trace doar cand a produs o valoare noua
+  if (changed && perioada !== null) ctx.fire('nrEvid.calcul', 'Antet.nr_evid');
+  return changed;
 }
 
 // ------------------------------------------------------------------ #195 rd.35
